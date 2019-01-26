@@ -1,0 +1,160 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f0b0c553be8edd4682e9180fdd13e37, type: 3}
+  m_Name: I2Languages
+  m_EditorClassIdentifier: 
+  mSource:
+    UserAgreesToHaveItOnTheScene: 0
+    UserAgreesToHaveItInsideThePluginsFolder: 0
+    GoogleLiveSyncIsUptoDate: 1
+    mTerms:
+    - Term: //Guest 1
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 0000000000000000
+      Languages_Touch: []
+    - Term: guest_1_1
+      TermType: 0
+      Description: 
+      Languages:
+      - Hi
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 0000000000000000
+      Languages_Touch: []
+    - Term: guest_1_2
+      TermType: 0
+      Description: 
+      Languages:
+      - I'm not a vampire
+      - Oh good!
+      - guest_1_3
+      - You sure?
+      - guest_1_4
+      - 
+      - 
+      - 
+      Flags: 0000000000000000
+      Languages_Touch: []
+    - Term: guest_1_3
+      TermType: 0
+      Description: 
+      Languages:
+      - Bleh bleh bleh!
+      - 
+      - end_1
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 0000000000000000
+      Languages_Touch: []
+    - Term: guest_1_4
+      TermType: 0
+      Description: 
+      Languages:
+      - 'Oh, definitely. No vampire here. ::shifty eyes::'
+      - Come on in.
+      - end_2
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 0000000000000000
+      Languages_Touch: []
+    - Term: end_1
+      TermType: 0
+      Description: 
+      Languages:
+      - You are dead
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 0000000000000000
+      Languages_Touch: []
+    - Term: end_2
+      TermType: 0
+      Description: 
+      Languages:
+      - Party Time!
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 0000000000000000
+      Languages_Touch: []
+    CaseInsensitiveTerms: 0
+    OnMissingTranslation: 1
+    mTerm_AppName: 
+    mLanguages:
+    - Name: dialogue
+      Code: 
+      Flags: 0
+    - Name: response_1
+      Code: 
+      Flags: 0
+    - Name: response_1_link
+      Code: 
+      Flags: 0
+    - Name: response_2
+      Code: 
+      Flags: 0
+    - Name: response_2_link
+      Code: 
+      Flags: 0
+    - Name: response_3
+      Code: 
+      Flags: 0
+    - Name: response_3_link
+      Code: 
+      Flags: 0
+    - Name: Description
+      Code: 
+      Flags: 0
+    IgnoreDeviceLanguage: 0
+    _AllowUnloadingLanguages: 1
+    Google_WebServiceURL: https://script.google.com/macros/s/AKfycbyTHLOw0mSBTa6Ufd1UEzDAtNCYjd1zUlQpf_ew1A/exec
+    Google_SpreadsheetKey: 1SAkO2quLFZu3g7w1gxC8mKpIjiZmL4wyQ4gYlq_1ubo
+    Google_SpreadsheetName: I2Loc MyNeighbourTheVampire Localization
+    Google_LastUpdatedVersion: 1548478774629
+    Google_Password: vampires
+    GoogleUpdateFrequency: 0
+    GoogleInEditorCheckFrequency: 0
+    GoogleUpdateDelay: 5
+    Assets: []
+    Spreadsheet_LocalFileName: 
+    Spreadsheet_LocalCSVSeparator: ','
+    Spreadsheet_LocalCSVEncoding: utf-8
+    Spreadsheet_SpecializationAsRows: 1
