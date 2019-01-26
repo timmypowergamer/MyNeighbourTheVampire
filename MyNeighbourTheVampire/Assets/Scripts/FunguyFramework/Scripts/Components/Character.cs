@@ -44,9 +44,7 @@ namespace Fungus
 		public class PortraitData
 		{
 			public string Name;
-			public string IntroAnimationName;
-			public string LoopAnimationName;
-			public float Speed = 1;
+			public Sprite Sprite;
 		}
 
         protected PortraitState portaitState = new PortraitState();

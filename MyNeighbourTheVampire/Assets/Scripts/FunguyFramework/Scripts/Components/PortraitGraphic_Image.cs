@@ -22,11 +22,11 @@ public class PortraitGraphic_Image : PortraitGraphic
 
 	public override void SetColor(Color c)
 	{
-		throw new System.NotImplementedException();
+		Image.color = c;
 	}
 
 	public override void SetPortrait(Character.PortraitData portrait)
 	{
-		throw new System.NotImplementedException();
+		Image.sprite = portrait.Sprite;
 	}
 }

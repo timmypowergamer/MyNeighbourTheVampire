@@ -14,18 +14,14 @@ public enum CanvasType
 public enum CanvasStates
 {
     Menu,
-    Build,
-    Test,
-    Play
+    Game
 }
 
 public enum UIPanelID
 {
     NONE = 0,
     HUD = 1,
-    Build = 2, 
-    GameOver = 3,
-    MainMenu = 4
+    Dialogue = 2
 }
 
 public class CanvasManager : MonoBehaviour
