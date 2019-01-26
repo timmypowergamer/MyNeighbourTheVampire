@@ -390,7 +390,12 @@ namespace Fungus
 			{
 				ConversationItem item = conversationItems[i];
 
-				CheckConditions(item.Condition);
+				string alt = CheckConditions(item.Condition);
+				if(!string.IsNullOrEmpty(alt))
+				{
+					CanvasManager.instance.Get<UILetterboxedDialogue>(UIPanelID.Dialogue).NextConvoID = alt;
+					yield break;
+				}
 
 				if (item.Character != null)
 				{
@@ -524,21 +529,9 @@ namespace Fungus
 			string[] conditions = conditionString.Split('|');
 			for(int i = 0; i < conditions.Length; i++)
 			{
-				if(conditions[i].Contains("==") || conditions[i].Contains(">=") || conditions[i].Contains("<=") || conditions[i].Contains("!="))
+				if(conditions[i].Contains("=="))
 				{
-					//check var
-					if(conditions[i].Contains("|"))
-					{
-						string[] evals = conditions[i].Split('|');
-						for(int j = 0; j < evals.Length; j++)
-						{
-							return evalConditionalString(evals[i]);
-						}
-					}
-					else
-					{
-						return evalConditionalString(conditions[i]);
-					}
+					return evalConditionalString(conditions[i]);
 				}
 				else if(conditions[i].Contains("="))
 				{
@@ -552,7 +545,14 @@ namespace Fungus
 
 		public string evalConditionalString(string conditionalString)
 		{
-			//stub. implement later (maybe)
+			string[] conds = conditionalString.Split(new string[] { "==", ">" }, System.StringSplitOptions.None);
+			if(_variables.ContainsKey(conds[0]))
+			{
+				if(_variables[conds[0]] == conds[1])
+				{
+					return conds[2];
+				}
+			}
 			return null;
 		}
 

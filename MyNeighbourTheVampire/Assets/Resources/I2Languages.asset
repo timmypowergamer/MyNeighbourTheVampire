@@ -129,21 +129,7 @@ MonoBehaviour:
       - 
       Flags: 0000000000000000
       Languages_Touch: []
-    - Term: Character Planner/Mom
-      TermType: 0
-      Description: 
-      Languages:
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      Flags: 0000000000000000
-      Languages_Touch: []
-    - Term: Character Planner/Dad
+    - Term: Character Planner/Mom + Dad
       TermType: 0
       Description: 
       Languages:
@@ -374,7 +360,7 @@ MonoBehaviour:
       - 
       - '...'
       - Come on in.
-      - endings/end_2
+      - 
       - 
       - 
       - 
@@ -388,9 +374,9 @@ MonoBehaviour:
       - nervous
       - Are <i>you</i> a <$name>?
       - No
-      - endings/end_2
+      - 
       - Yes
-      - endings/end_3
+      - 
       - 
       - 
       Flags: 0000000000000000
@@ -402,7 +388,7 @@ MonoBehaviour:
       - evil
       - 'Bleh bleh bleh! '
       - 
-      - endings/end_1
+      - 
       - 
       - 
       - 
@@ -413,7 +399,7 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - nervous
+      - name==wumpire>answer
       - Oh, definitely. No <$name> here.
       - Come on in.
       - 
@@ -430,7 +416,21 @@ MonoBehaviour:
       - evil hide offscreenright
       - Mua ha ha...
       - 
-      - endings/end_1
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 0000000000000000
+      Languages_Touch: []
+    - Term: GUEST_1/answer/1
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - I might be...
+      - Cool
+      - 
       - 
       - 
       - 
@@ -469,8 +469,9 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - evil hide offscreenright
       - 
+      - Neighbour of Dracula described this as shocking as he's normally as quiet,
+        never bothered anyone.
       - 
       - 
       - 
@@ -498,7 +499,7 @@ MonoBehaviour:
       Description: 
       Languages:
       - guest_1 normal noclear
-      - "A group of archaeologists have accidently awoken dracula. \n"
+      - "A group of archaeologists have accidently awoken Dracula. \n"
       - 
       - 
       - 
@@ -512,9 +513,8 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - Dracula's awkening  has sleeping vampire DNA in some people around the world.
-        When interviewed dracula states he wants to rule the world with a Iron Fist.
-        Neighbour of Dracula described him as quiet.
+      - Dracula's awkening has awoken dormant vampire DNA in some people around the
+        world.
       - 
       - 
       - 
@@ -528,7 +528,7 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - 
+      - 'Dacula releases statement that he wants to rule the world with a Iron Fist. '
       - 
       - 
       - 
@@ -864,7 +864,7 @@ MonoBehaviour:
     Google_WebServiceURL: https://script.google.com/macros/s/AKfycbyTHLOw0mSBTa6Ufd1UEzDAtNCYjd1zUlQpf_ew1A/exec
     Google_SpreadsheetKey: 1SAkO2quLFZu3g7w1gxC8mKpIjiZmL4wyQ4gYlq_1ubo
     Google_SpreadsheetName: I2Loc MyNeighbourTheVampire Localization
-    Google_LastUpdatedVersion: 1548539960835
+    Google_LastUpdatedVersion: 1548541553820
     Google_Password: vampires
     GoogleUpdateFrequency: 0
     GoogleInEditorCheckFrequency: 0
