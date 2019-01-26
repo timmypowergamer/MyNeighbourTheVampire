@@ -41,11 +41,12 @@ public class UILetterboxedDialogue : UIPanel {
 
 
 		_characterID = characterID;
+
 		_convoID = $"{_characterID}/{conversationKey}";
 		_autoClose = closeOnFinished;
 		Open("bring_in");
 
-		List<ConversationManager.ConversationItem> conversation = ConversationManager.GetConversationItems(_convoID);
+		List<ConversationManager.ConversationItem> conversation = ConversationManager.GetConversationItems(_characterID, conversationKey);
 		if (conversation.Count == 0)
 		{
 			Debug.LogError($"Could not find conversation for key '{_convoID}' in localization sheet");
@@ -69,7 +70,7 @@ public class UILetterboxedDialogue : UIPanel {
 
 		_convoID = $"{_characterID}/{conversationKey}";
 
-		List<ConversationManager.ConversationItem> conversation = ConversationManager.GetConversationItems(_convoID);
+		List<ConversationManager.ConversationItem> conversation = ConversationManager.GetConversationItems(_characterID, conversationKey);
 		if (conversation.Count == 0)
 		{
 			Debug.LogError($"Could not find conversation for key '{_convoID}' in localization sheet");

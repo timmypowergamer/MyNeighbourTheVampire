@@ -343,7 +343,7 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - guest_1 normal noclear
+      - noclear
       - <nl>I am a mushroom...
       - 
       - 
@@ -357,7 +357,7 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - 
+      - name=wumpire
       - Not a vampire...<wi><nl>...
       - Oh good!
       - enter
@@ -386,7 +386,7 @@ MonoBehaviour:
       Description: 
       Languages:
       - nervous
-      - Are <i>you</i> a vampire?
+      - Are <i>you</i> a <$name>?
       - No
       - endings/end_2
       - Yes
@@ -414,16 +414,16 @@ MonoBehaviour:
       Description: 
       Languages:
       - nervous
-      - 'Oh, definitely. No vampire here. ::shifty eyes::'
+      - Oh, definitely. No <$name> here.
       - Come on in.
-      - question_2
+      - 
       - 
       - 
       - 
       - 
       Flags: 0000000000000000
       Languages_Touch: []
-    - Term: GUEST_1/question_2/1
+    - Term: GUEST_1/question/v/2
       TermType: 0
       Description: 
       Languages:
@@ -431,6 +431,134 @@ MonoBehaviour:
       - Mua ha ha...
       - 
       - endings/end_1
+      - 
+      - 
+      - 
+      - 
+      Flags: 0000000000000000
+      Languages_Touch: []
+    - Term: Burt News///Guest
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 0000000000000000
+      Languages_Touch: []
+    - Term: Burt News/name
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - Burt the Newsguy
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 0000000000000000
+      Languages_Touch: []
+    - Term: Burt News/
+      TermType: 0
+      Description: 
+      Languages:
+      - evil hide offscreenright
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 0000000000000000
+      Languages_Touch: []
+    - Term: Burt News/intro/1
+      TermType: 0
+      Description: 
+      Languages:
+      - guest_1 normal offscreenleft center
+      - We interrupt up your possibile mid life crisis to bring you breaking news
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 0000000000000000
+      Languages_Touch: []
+    - Term: Burt News/intro/2
+      TermType: 0
+      Description: 
+      Languages:
+      - guest_1 normal noclear
+      - "A group of archaeologists have accidently awoken dracula. \n"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 0000000000000000
+      Languages_Touch: []
+    - Term: Burt News/intro/3
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - Dracula's awkening  has sleeping vampire DNA in some people around the world.
+        When interviewed dracula states he wants to rule the world with a Iron Fist.
+        Neighbour of Dracula described him as quiet.
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 0000000000000000
+      Languages_Touch: []
+    - Term: Burt News/intro/4
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 0000000000000000
+      Languages_Touch: []
+    - Term: Burt News/day2
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 0000000000000000
+      Languages_Touch: []
+    - Term: Burt News/day3
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - 
+      - 
       - 
       - 
       - 
@@ -736,7 +864,7 @@ MonoBehaviour:
     Google_WebServiceURL: https://script.google.com/macros/s/AKfycbyTHLOw0mSBTa6Ufd1UEzDAtNCYjd1zUlQpf_ew1A/exec
     Google_SpreadsheetKey: 1SAkO2quLFZu3g7w1gxC8mKpIjiZmL4wyQ4gYlq_1ubo
     Google_SpreadsheetName: I2Loc MyNeighbourTheVampire Localization
-    Google_LastUpdatedVersion: 1548532680034
+    Google_LastUpdatedVersion: 1548539960835
     Google_Password: vampires
     GoogleUpdateFrequency: 0
     GoogleInEditorCheckFrequency: 0

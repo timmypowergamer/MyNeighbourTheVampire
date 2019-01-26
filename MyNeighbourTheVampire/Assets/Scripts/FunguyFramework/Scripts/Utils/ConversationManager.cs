@@ -30,11 +30,14 @@ namespace Fungus
 			public bool ClearPreviousLine { get; set; }
 			public string[] ResponseLinks { get; set; }
 			public string[] ResponseTexts { get; set; }
+			public string Condition;
 		}
 
 		protected Dictionary<string, Character> characters;
 
 		protected bool exitSayWait;
+
+		private Dictionary<string, string> _variables = new Dictionary<string, string>();
 
 		protected virtual void Awake()
 		{
@@ -167,7 +170,7 @@ namespace Fungus
 				for(int i = 0; i < links.Length; i++)
 				{
 					linkSplit = links[i].Split('=');
-					if (!string.IsNullOrEmpty(linkSplit[0]))
+					if (!string.IsNullOrEmpty(linkSplit[0]) || !string.IsNullOrEmpty(linkSplit[1]))
 					{
 						linkList.Add(linkSplit[0]);
 						responseList.Add(linkSplit[1]);
@@ -204,6 +207,14 @@ namespace Fungus
 			if (item.Character == null)
 			{
 				item.Character = currentCharacter;
+			}
+
+			for(int i = 0; i < sayParams.Length; i++)
+			{
+				if(sayParams[i].Contains("="))
+				{
+					item.Condition = sayParams[i];
+				}
 			}
 
 			// Check if there's a Hide parameter
@@ -341,6 +352,12 @@ namespace Fungus
 			return characters[charKey];
 		}
 
+		public List<Character> GetAllCharacters ()
+		{
+			if (characters == null) PopulateCharacterCache();
+			return new List<Character>(characters.Values);
+		}
+
 		/// <summary>
 		/// Parse and execute a conversation string.
 		/// </summary>
@@ -372,6 +389,8 @@ namespace Fungus
 			for (int i = 0; i < conversationItems.Count; ++i)
 			{
 				ConversationItem item = conversationItems[i];
+
+				CheckConditions(item.Condition);
 
 				if (item.Character != null)
 				{
@@ -453,11 +472,11 @@ namespace Fungus
 
 				previousCharacter = currentCharacter;
 
-				bool hasResponse = (item.ResponseLinks != null && item.ResponseLinks.Length > 0);
+				bool hasResponse = (item.ResponseLinks != null && item.ResponseLinks.Length > 0) || (item.ResponseTexts != null && item.ResponseTexts.Length > 0);
 
 				if (!string.IsNullOrEmpty(item.Text)) {
 					exitSayWait = false;
-					sayDialog.Say(item.Text, item.ClearPreviousLine, !hasResponse, true, true, false, null, () => {
+					sayDialog.Say(ReplaceVariableTokens(item.Text), item.ClearPreviousLine, !hasResponse, true, true, false, null, () => {
 						exitSayWait = true;
 					});
 
@@ -477,20 +496,82 @@ namespace Fungus
 					{
 						yield return null;
 					}
-					CanvasManager.instance.Get<UILetterboxedDialogue>(UIPanelID.Dialogue).NextConvoID = choice;
-					yield break;
+					if (!string.IsNullOrEmpty(choice))
+					{
+						CanvasManager.instance.Get<UILetterboxedDialogue>(UIPanelID.Dialogue).NextConvoID = choice;
+						yield break;
+					}
 				}
 			}
 		}
 
-		public static List<ConversationItem> GetConversationItems(string conversationKey)
+		public string ReplaceVariableTokens(string text)
+		{
+			foreach(KeyValuePair<string, string> kvp in _variables)
+			{
+				if(text.Contains( $"<${kvp.Key}>"))
+				{
+					text = text.Replace($"<${kvp.Key}>", kvp.Value);
+				}
+			}
+			return text;
+		}
+
+		public string CheckConditions(string conditionString)
+		{
+			if (string.IsNullOrEmpty(conditionString)) return "";
+
+			string[] conditions = conditionString.Split('|');
+			for(int i = 0; i < conditions.Length; i++)
+			{
+				if(conditions[i].Contains("==") || conditions[i].Contains(">=") || conditions[i].Contains("<=") || conditions[i].Contains("!="))
+				{
+					//check var
+					if(conditions[i].Contains("|"))
+					{
+						string[] evals = conditions[i].Split('|');
+						for(int j = 0; j < evals.Length; j++)
+						{
+							return evalConditionalString(evals[i]);
+						}
+					}
+					else
+					{
+						return evalConditionalString(conditions[i]);
+					}
+				}
+				else if(conditions[i].Contains("="))
+				{
+					//set var
+					string[] setVar = conditions[i].Split('=');
+					_variables[setVar[0]] = setVar[1];
+				}
+			}
+			return null;
+		}
+
+		public string evalConditionalString(string conditionalString)
+		{
+			//stub. implement later (maybe)
+			return null;
+		}
+
+		public static List<ConversationItem> GetConversationItems(string characterID, string conversationKey)
 		{
 			StringBuilder sb = new StringBuilder();
 
-			var translationList = LocalizationManager.GetTermsList(conversationKey);
+			string key = characterID + "/" + conversationKey;
+
+			var translationList = LocalizationManager.GetTermsList(key);
+			if (GameManager.Instance.IsVampire(characterID))
+			{
+				var altList = LocalizationManager.GetTermsList(key + "/v");
+				if (altList != null && altList.Count > 0) translationList = altList;
+			}
+			
 			if(translationList == null)
 			{
-				Debug.LogError($"Conversation '{conversationKey}' is missing!");
+				Debug.LogError($"Conversation '{key}' is missing!");
 				return new List<ConversationItem>();
 			}
 			for(int i = 0; i < translationList.Count; i++)
