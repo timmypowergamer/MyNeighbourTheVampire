@@ -98,7 +98,7 @@ namespace Fungus
 		{
 			//find SimpleScript say strings with portrait options
 			//You can test regex matches here: http://regexstorm.net/tester
-			var sayRegex = new Regex(@"(?<sayParams>[^:]*):(?<text>[^:]*):(?<links>[^:]*)");
+			var sayRegex = new Regex(@"(?<sayParams>[\W\w^\r]*?):(?<text>[\W\w^\r]*?):(?<links>[\W\w^\r]*?)\t");
 			MatchCollection sayMatches = sayRegex.Matches(conv);
 
 			var items = new List<ConversationItem>(sayMatches.Count);
@@ -162,13 +162,21 @@ namespace Fungus
 			if(links != null)
 			{
 				string[] linkSplit;
-				item.ResponseLinks = new string[links.Length];
-				item.ResponseTexts = new string[links.Length];
+				List<string> responseList = new List<string>();
+				List<string> linkList = new List<string>();
 				for(int i = 0; i < links.Length; i++)
 				{
 					linkSplit = links[i].Split('=');
-					item.ResponseLinks[i] = linkSplit[0];
-					item.ResponseTexts[i] = linkSplit[1];
+					if (!string.IsNullOrEmpty(linkSplit[0]))
+					{
+						linkList.Add(linkSplit[0]);
+						responseList.Add(linkSplit[1]);
+					}
+				}
+				if(linkList.Count > 0)
+				{
+					item.ResponseLinks = linkList.ToArray();
+					item.ResponseTexts = responseList.ToArray();
 				}
 			}
 
@@ -445,9 +453,11 @@ namespace Fungus
 
 				previousCharacter = currentCharacter;
 
+				bool hasResponse = (item.ResponseLinks != null && item.ResponseLinks.Length > 0);
+
 				if (!string.IsNullOrEmpty(item.Text)) {
 					exitSayWait = false;
-					sayDialog.Say(item.Text, item.ClearPreviousLine, true, true, true, false, null, () => {
+					sayDialog.Say(item.Text, item.ClearPreviousLine, !hasResponse, true, true, false, null, () => {
 						exitSayWait = true;
 					});
 
@@ -456,6 +466,19 @@ namespace Fungus
 						yield return null;
 					}
 					exitSayWait = false;
+				}
+
+				if(hasResponse)
+				{
+					bool exitChoice = false;
+					string choice = "";
+					CanvasManager.instance.Get<UIDialogueOptions>(UIPanelID.DialogueOptions).Open(item.ResponseLinks, item.ResponseTexts, (string s) => { exitChoice = true; choice = s; });
+					while (!exitChoice)
+					{
+						yield return null;
+					}
+					CanvasManager.instance.Get<UILetterboxedDialogue>(UIPanelID.Dialogue).NextConvoID = choice;
+					yield break;
 				}
 			}
 		}
@@ -472,12 +495,13 @@ namespace Fungus
 			}
 			for(int i = 0; i < translationList.Count; i++)
 			{
-				sb.AppendLine($"{LocUtil.TranslateWithDefault("", "params", false, translationList[i])}:{LocUtil.TranslateWithDefault("", "dialogue", false, translationList[i])}:");
+				sb.Append($"{LocUtil.TranslateWithDefault("", "params", false, translationList[i])}:{LocUtil.TranslateWithDefault("", "dialogue", false, translationList[i])}:");
 				for (int j = 1; j < 4; j++)
 				{
 					if (j > 1) sb.Append("|");
 					sb.Append($"{LocUtil.TranslateWithDefault("", "response_" + j + "_link", false, translationList[i])}={LocUtil.TranslateWithDefault("", "response_" + j, false, translationList[i])}");
 				}
+				sb.Append("\t");
 			}
 			if(sb.Length > 0)
 			{

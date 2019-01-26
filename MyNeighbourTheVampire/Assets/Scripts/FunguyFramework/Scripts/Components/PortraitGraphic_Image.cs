@@ -27,6 +27,9 @@ public class PortraitGraphic_Image : PortraitGraphic
 
 	public override void SetPortrait(Character.PortraitData portrait)
 	{
-		Image.sprite = portrait.Sprite;
+		if (portrait != null)
+		{
+			Image.sprite = portrait.Sprite;
+		}
 	}
 }

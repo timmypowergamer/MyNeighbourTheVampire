@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: CookingCloseButton
+  m_Controller: {fileID: 9100000, guid: 71c93f848137d154793291f5db9719a3, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 74849355673631734, guid: 71c93f848137d154793291f5db9719a3,
+      type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 7b07c15a7673e5049976735f1ec184da, type: 2}
+  - m_OriginalClip: {fileID: 74661482548506632, guid: 71c93f848137d154793291f5db9719a3,
+      type: 2}
+    m_OverrideClip: {fileID: 74661482548506632, guid: 71c93f848137d154793291f5db9719a3,
+      type: 2}
+  - m_OriginalClip: {fileID: 74765988536677908, guid: 71c93f848137d154793291f5db9719a3,
+      type: 2}
+    m_OverrideClip: {fileID: 74765988536677908, guid: 71c93f848137d154793291f5db9719a3,
+      type: 2}
+  - m_OriginalClip: {fileID: 74669803536408628, guid: 71c93f848137d154793291f5db9719a3,
+      type: 2}
+    m_OverrideClip: {fileID: 74669803536408628, guid: 71c93f848137d154793291f5db9719a3,
+      type: 2}

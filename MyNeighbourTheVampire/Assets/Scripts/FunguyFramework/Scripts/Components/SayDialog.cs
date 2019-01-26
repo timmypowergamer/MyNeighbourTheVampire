@@ -306,7 +306,7 @@ namespace Fungus
 				else
 				{
 					background.sprite = null;
-					background.color = speakingCharacter.NameColor;
+					//background.color = speakingCharacter.NameColor;
 				}
 
                 SetCharacterName(characterName, character.NameColor);

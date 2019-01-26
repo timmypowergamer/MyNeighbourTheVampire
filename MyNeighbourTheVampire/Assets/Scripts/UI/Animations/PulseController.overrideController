@@ -1,0 +1,12 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: PulseController
+  m_Controller: {fileID: 9100000, guid: 1fbbbbf92c8decd43850acf7528f1dae, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: b2e47d0a8adaf8742b897cd8e2c26181, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: c8c26e95f8c65144a9db2f9b9b995ca1, type: 2}

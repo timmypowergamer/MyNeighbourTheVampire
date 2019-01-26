@@ -10,11 +10,14 @@ public class UILetterboxedDialogue : UIPanel {
 	public System.Action<string> OnConversationComplete;
 	public System.Action<string> OnConversationCancelled;
 	private string _convoID;
+	private string _characterID;
 	private bool _isPlaying = false;
 	private bool _autoClose = true;
 	[SerializeField] private float _defaultStartDelay = 1f;
 	[SerializeField] private float _defaultEndDelay = 1f;
 	[SerializeField] private SayDialog _dialog;
+
+	public string NextConvoID = "";
 
 	/// <summary>
 	/// Opens the dialogue window and plays a conversation that matches the conversationKey.
@@ -23,7 +26,7 @@ public class UILetterboxedDialogue : UIPanel {
 	/// <param name="startDelay">Time to wait before starting the conversation. -1 for default</param>
 	/// <param name="endDelay">Time to wait after finishing the conversation before the complete callback is called. -1 for default</param>
 	/// <param name="closeOnFinished">Automatically close the window when the conversation is finished (and after endDelay has expired)</param>
-	public void PlayConversation(string conversationKey, float startDelay = -1, float endDelay = -1, bool closeOnFinished = true)
+	public void PlayConversation(string characterID, string conversationKey, float startDelay = -1, float endDelay = -1, bool closeOnFinished = true)
 	{
 		if(_isPlaying)
 		{
@@ -36,14 +39,16 @@ public class UILetterboxedDialogue : UIPanel {
 			return;
 		}
 
-		_convoID = conversationKey;
+
+		_characterID = characterID;
+		_convoID = $"{_characterID}/{conversationKey}";
 		_autoClose = closeOnFinished;
 		Open("bring_in");
 
-		List<ConversationManager.ConversationItem> conversation = ConversationManager.GetConversationItems(conversationKey);
+		List<ConversationManager.ConversationItem> conversation = ConversationManager.GetConversationItems(_convoID);
 		if (conversation.Count == 0)
 		{
-			Debug.LogError($"Could not find conversation for key '{conversationKey}' in localization sheet");
+			Debug.LogError($"Could not find conversation for key '{_convoID}' in localization sheet");
 			Close("close");
 			OnConversationComplete?.Invoke(_convoID);
 			OnConversationComplete = null;
@@ -52,6 +57,30 @@ public class UILetterboxedDialogue : UIPanel {
 		}
 
 		CanvasManager.instance.StartCoroutine(playConversation(conversation, startDelay, endDelay));
+	}
+
+	private void divertConversation(string conversationKey, float endDelay)
+	{
+		if (string.IsNullOrEmpty(conversationKey))
+		{
+			Debug.LogError($"Please specify a conversation key to open Dialogue panel with");
+			return;
+		}
+
+		_convoID = $"{_characterID}/{conversationKey}";
+
+		List<ConversationManager.ConversationItem> conversation = ConversationManager.GetConversationItems(_convoID);
+		if (conversation.Count == 0)
+		{
+			Debug.LogError($"Could not find conversation for key '{_convoID}' in localization sheet");
+			Close("close");
+			OnConversationComplete?.Invoke(_convoID);
+			OnConversationComplete = null;
+			OnConversationCancelled = null;
+			return;
+		}
+
+		CanvasManager.instance.StartCoroutine(playConversation(conversation, 0, endDelay));
 	}
 
 	private IEnumerator playConversation(List<ConversationManager.ConversationItem> conversationItems, float startDelay, float endDelay)
@@ -63,6 +92,14 @@ public class UILetterboxedDialogue : UIPanel {
 		_dialog.SetCharacter(null);
 		yield return new WaitForSeconds(startDelay);
 		yield return ConversationManager.Instance.DoConversation(conversationItems);
+
+		if(!string.IsNullOrEmpty(NextConvoID))
+		{
+			divertConversation(NextConvoID, endDelay);
+			NextConvoID = "";
+			yield break;
+		}
+
 		yield return new WaitForSeconds(endDelay);
 		OnConversationComplete?.Invoke(_convoID);
 		OnConversationComplete = null;

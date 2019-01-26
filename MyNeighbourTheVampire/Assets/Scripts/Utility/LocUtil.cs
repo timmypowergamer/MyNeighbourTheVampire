@@ -74,7 +74,7 @@ public class LocUtil
 
 	static HashSet<string> missing = new HashSet<string>();
 
-	static string _translateWithDefault(string term, string key = null, string def = null, bool logMissing = true)
+	static string _translateWithDefault(string term, string key = "dialogue", string def = null, bool logMissing = true)
 	{
 		var translation = LocalizationManager.GetTermTranslation(term, overrideLanguage: key);
 

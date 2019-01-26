@@ -21,7 +21,8 @@ public enum UIPanelID
 {
     NONE = 0,
     HUD = 1,
-    Dialogue = 2
+    Dialogue = 2,
+	DialogueOptions = 3
 }
 
 public class CanvasManager : MonoBehaviour
