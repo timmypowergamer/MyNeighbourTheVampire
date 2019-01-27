@@ -249,8 +249,8 @@ namespace Fungus
 
                     // Trim string till we have the latest matching glpyh.
                     int index = 0;
-                    while (keys.Count(s => manip.Contains(s)) > 1) {
-                        manip = manip.Substring(++index, manip.Length);
+                    while (keys.Count(s => manip.Contains(s)) > 1 && index + 1 < manip.Length) {
+                        manip = manip.Substring(++index, manip.Length - index);
                     };
 
                     string sKeyResult = keys.FirstOrDefault(s => manip.Contains(s));

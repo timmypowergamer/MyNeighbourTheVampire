@@ -3208,7 +3208,7 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - playerkill
+      - 
       - " \u201Cthe worst we had was one bathroom malfunction, which won't ever happen
         again\""
       - 
@@ -3954,7 +3954,7 @@ MonoBehaviour:
       - I don't know... Trust is a two way street, Buffy.
       - noinvite
       - Says the girl who seems to only date vampires.
-      - 
+      - retort
       Flags: 000000000000000000
       Languages_Touch: []
     - Term: Buffy/invite/1
@@ -4023,11 +4023,27 @@ MonoBehaviour:
       Languages:
       - 
       - 
+      - Hey! How do you know about my dating life? Are you stalking me?
       - 
       - 
       - 
       - 
       - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Buffy/retort/2
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - Well anyways, again I would like to be at this party to make sure nothing
+        goes down.
+      - Fine, you can come.
+      - invite
+      - "I can keep the vampires out myself. I don\u2019t need your so called expertise."
+      - noinvite
       - 
       - 
       Flags: 000000000000000000
@@ -5106,7 +5122,7 @@ MonoBehaviour:
     Google_WebServiceURL: https://script.google.com/macros/s/AKfycbyTHLOw0mSBTa6Ufd1UEzDAtNCYjd1zUlQpf_ew1A/exec
     Google_SpreadsheetKey: 1SAkO2quLFZu3g7w1gxC8mKpIjiZmL4wyQ4gYlq_1ubo
     Google_SpreadsheetName: I2Loc MyNeighbourTheVampire Localization
-    Google_LastUpdatedVersion: 1548620805883
+    Google_LastUpdatedVersion: 1548621597326
     Google_Password: vampires
     GoogleUpdateFrequency: 0
     GoogleInEditorCheckFrequency: 0
