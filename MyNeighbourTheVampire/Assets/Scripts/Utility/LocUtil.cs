@@ -43,7 +43,7 @@ public class LocUtil
 	static public string TranslateWithDefault(string def, params string[] parts)
 	{
 		if (parts.Length == 1)
-			return _translateWithDefault(parts[0], def);
+			return _translateWithDefault(parts[0], def: def);
 		else return _translateWithDefault(string.Join("/", parts), def: def);
 	}
 

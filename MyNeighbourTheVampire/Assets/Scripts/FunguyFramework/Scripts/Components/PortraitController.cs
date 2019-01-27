@@ -67,8 +67,11 @@ namespace Fungus
             stage = GetComponentInParent<Stage>();
         }
 
+		public bool IsWaiting = false;
+
         protected virtual void FinishCommand(PortraitOptions options)
         {
+			IsWaiting = true;
             if (options.onComplete != null)
             {
                 if (!options.waitUntilFinished)
@@ -187,7 +190,7 @@ namespace Fungus
 			PortraitGraphic graphic;
 			if (character.GraphicPrefab != null)
 			{
-				graphic = Instantiate(character.GraphicPrefab, stage.PortraitRoot.transform, true);
+				graphic = Instantiate(character.GraphicPrefab, stage.PortraitRoot.transform, false);
 				graphic.gameObject.SetActive(true);
 			}
 			else
@@ -237,6 +240,8 @@ namespace Fungus
 
             // Wait until next frame just to be safe
             yield return new WaitForEndOfFrame();
+
+			IsWaiting = false;
 
             if (onComplete != null)
             {
@@ -298,7 +303,7 @@ namespace Fungus
 
             if (options.waitUntilFinished)
             {
-                waitTimer = duration;
+                options.fadeDuration = duration;
             }
         }
 
@@ -558,6 +563,11 @@ namespace Fungus
 
             LeanTween.color(character.State.portraitGraphic.rectTransform, targetColor, duration).setEase(stage.FadeEaseType);
         }
+
+		public virtual void Clean()
+		{
+			
+		}
 
         #endregion
     }

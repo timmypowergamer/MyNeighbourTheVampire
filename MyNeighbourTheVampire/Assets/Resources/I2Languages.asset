@@ -29,7 +29,8 @@ MonoBehaviour:
       - 
       - 
       - 
-      Flags: 0000000000000000
+      - 
+      Flags: 000000000000000000
       Languages_Touch: []
     - Term: DOC/tehphen@gmail.com
       TermType: 0
@@ -43,7 +44,8 @@ MonoBehaviour:
       - 
       - 
       - 
-      Flags: 0000000000000000
+      - 
+      Flags: 000000000000000000
       Languages_Touch: []
     - Term: DOC/
       TermType: 0
@@ -57,7 +59,8 @@ MonoBehaviour:
       - 
       - 
       - 
-      Flags: 0000000000000000
+      - 
+      Flags: 000000000000000000
       Languages_Touch: []
     - Term: DOC/http://fungusdocs.snozbot.com/narrative_text_tags.html
       TermType: 0
@@ -71,12 +74,104 @@ MonoBehaviour:
       - 
       - 
       - 
-      Flags: 0000000000000000
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: 'DOC/Extra:'
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: DOC/Spell Check
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: DOC/Moon Speak Voices
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: DOC/Sound Effects
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: DOC/Background Music
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: DOC/Extra italics and vfx on text
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
       Languages_Touch: []
     - Term: Character Planner/Name
       TermType: 0
       Description: 
       Languages:
+      - Scene Tested in Game?
       - 
       - 
       - 
@@ -85,12 +180,13 @@ MonoBehaviour:
       - 
       - 
       - 
-      Flags: 0000000000000000
+      Flags: 000000000000000000
       Languages_Touch: []
     - Term: Character Planner/
       TermType: 0
       Description: 
       Languages:
+      - "\u2713"
       - 
       - 
       - 
@@ -99,12 +195,13 @@ MonoBehaviour:
       - 
       - 
       - 
-      Flags: 0000000000000000
+      Flags: 000000000000000000
       Languages_Touch: []
     - Term: Character Planner/Burt
       TermType: 0
       Description: 
       Languages:
+      - "\u2713"
       - 
       - 
       - 
@@ -113,12 +210,13 @@ MonoBehaviour:
       - 
       - 
       - 
-      Flags: 0000000000000000
+      Flags: 000000000000000000
       Languages_Touch: []
     - Term: Character Planner/Ernie
       TermType: 0
       Description: 
       Languages:
+      - "\u2713"
       - 
       - 
       - 
@@ -127,12 +225,13 @@ MonoBehaviour:
       - 
       - 
       - 
-      Flags: 0000000000000000
+      Flags: 000000000000000000
       Languages_Touch: []
     - Term: Character Planner/Mom + Dad
       TermType: 0
       Description: 
       Languages:
+      - C
       - 
       - 
       - 
@@ -141,12 +240,13 @@ MonoBehaviour:
       - 
       - 
       - 
-      Flags: 0000000000000000
+      Flags: 000000000000000000
       Languages_Touch: []
     - Term: Character Planner/Sam
       TermType: 0
       Description: 
       Languages:
+      - C
       - 
       - 
       - 
@@ -155,7 +255,7 @@ MonoBehaviour:
       - 
       - 
       - 
-      Flags: 0000000000000000
+      Flags: 000000000000000000
       Languages_Touch: []
     - Term: Character Planner/Duke
       TermType: 0
@@ -169,12 +269,14 @@ MonoBehaviour:
       - 
       - 
       - 
-      Flags: 0000000000000000
+      - 
+      Flags: 000000000000000000
       Languages_Touch: []
     - Term: Character Planner/Tim the Vampire
       TermType: 0
       Description: 
       Languages:
+      - C
       - 
       - 
       - 
@@ -183,12 +285,13 @@ MonoBehaviour:
       - 
       - 
       - 
-      Flags: 0000000000000000
+      Flags: 000000000000000000
       Languages_Touch: []
     - Term: Character Planner/Paul
       TermType: 0
       Description: 
       Languages:
+      - "\u2713"
       - 
       - 
       - 
@@ -197,12 +300,13 @@ MonoBehaviour:
       - 
       - 
       - 
-      Flags: 0000000000000000
+      Flags: 000000000000000000
       Languages_Touch: []
     - Term: Character Planner/Buffy
       TermType: 0
       Description: 
       Languages:
+      - C
       - 
       - 
       - 
@@ -211,12 +315,13 @@ MonoBehaviour:
       - 
       - 
       - 
-      Flags: 0000000000000000
+      Flags: 000000000000000000
       Languages_Touch: []
     - Term: Character Planner/Lucy
       TermType: 0
       Description: 
       Languages:
+      - C
       - 
       - 
       - 
@@ -225,12 +330,13 @@ MonoBehaviour:
       - 
       - 
       - 
-      Flags: 0000000000000000
+      Flags: 000000000000000000
       Languages_Touch: []
     - Term: Character Planner/Nurse Gloom
       TermType: 0
       Description: 
       Languages:
+      - C
       - 
       - 
       - 
@@ -239,7 +345,22 @@ MonoBehaviour:
       - 
       - 
       - 
-      Flags: 0000000000000000
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Character Planner/Chef Ramsy
+      TermType: 0
+      Description: 
+      Languages:
+      - "\u2713"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
       Languages_Touch: []
     - Term: Character Planner/Talking Mushroom
       TermType: 0
@@ -253,21 +374,8 @@ MonoBehaviour:
       - 
       - 
       - 
-      Flags: 0000000000000000
-      Languages_Touch: []
-    - Term: Character Planner/Chef Ramsy
-      TermType: 0
-      Description: 
-      Languages:
       - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      Flags: 0000000000000000
+      Flags: 000000000000000000
       Languages_Touch: []
     - Term: GUEST_1///Guest
       TermType: 0
@@ -281,12 +389,14 @@ MonoBehaviour:
       - 
       - 
       - 
-      Flags: 0000000000000000
+      - 
+      Flags: 000000000000000000
       Languages_Touch: []
     - Term: GUEST_1/name
       TermType: 0
       Description: 
       Languages:
+      - 
       - 
       - Stake Delivery Guy
       - 
@@ -295,7 +405,7 @@ MonoBehaviour:
       - 
       - 
       - 
-      Flags: 0000000000000000
+      Flags: 000000000000000000
       Languages_Touch: []
     - Term: GUEST_1/
       TermType: 0
@@ -309,12 +419,14 @@ MonoBehaviour:
       - 
       - 
       - 
-      Flags: 0000000000000000
+      - 
+      Flags: 000000000000000000
       Languages_Touch: []
     - Term: GUEST_1/intro/1
       TermType: 0
       Description: 
       Languages:
+      - 
       - guest_1 normal offscreenleft center
       - Hi.
       - 
@@ -323,12 +435,13 @@ MonoBehaviour:
       - 
       - 
       - 
-      Flags: 0000000000000000
+      Flags: 000000000000000000
       Languages_Touch: []
     - Term: GUEST_1/intro/2
       TermType: 0
       Description: 
       Languages:
+      - 
       - noclear
       - <nl>I am a mushroom...
       - 
@@ -337,12 +450,13 @@ MonoBehaviour:
       - 
       - 
       - 
-      Flags: 0000000000000000
+      Flags: 000000000000000000
       Languages_Touch: []
     - Term: GUEST_1/intro/3
       TermType: 0
       Description: 
       Languages:
+      - 
       - name=wumpire
       - Not a vampire...<wi><nl>...
       - Oh good!
@@ -351,12 +465,13 @@ MonoBehaviour:
       - question
       - 
       - 
-      Flags: 0000000000000000
+      Flags: 000000000000000000
       Languages_Touch: []
     - Term: GUEST_1/enter/1
       TermType: 0
       Description: 
       Languages:
+      - 
       - 
       - '...'
       - Come on in.
@@ -365,12 +480,13 @@ MonoBehaviour:
       - 
       - 
       - 
-      Flags: 0000000000000000
+      Flags: 000000000000000000
       Languages_Touch: []
     - Term: GUEST_1/question/1
       TermType: 0
       Description: 
       Languages:
+      - 
       - nervous
       - Are <i>you</i> a <$name>?
       - No
@@ -379,12 +495,13 @@ MonoBehaviour:
       - 
       - 
       - 
-      Flags: 0000000000000000
+      Flags: 000000000000000000
       Languages_Touch: []
     - Term: GUEST_1/enter/v/1
       TermType: 0
       Description: 
       Languages:
+      - 
       - evil
       - 'Bleh bleh bleh! '
       - 
@@ -393,12 +510,13 @@ MonoBehaviour:
       - 
       - 
       - 
-      Flags: 0000000000000000
+      Flags: 000000000000000000
       Languages_Touch: []
     - Term: GUEST_1/question/v/1
       TermType: 0
       Description: 
       Languages:
+      - 
       - name==wumpire>answer
       - Oh, definitely. No <$name> here.
       - Come on in.
@@ -407,12 +525,13 @@ MonoBehaviour:
       - 
       - 
       - 
-      Flags: 0000000000000000
+      Flags: 000000000000000000
       Languages_Touch: []
     - Term: GUEST_1/question/v/2
       TermType: 0
       Description: 
       Languages:
+      - 
       - evil hide offscreenright
       - Mua ha ha...
       - 
@@ -421,12 +540,13 @@ MonoBehaviour:
       - 
       - 
       - 
-      Flags: 0000000000000000
+      Flags: 000000000000000000
       Languages_Touch: []
     - Term: GUEST_1/answer/1
       TermType: 0
       Description: 
       Languages:
+      - 
       - 
       - I might be...
       - Cool
@@ -435,9 +555,9 @@ MonoBehaviour:
       - 
       - 
       - 
-      Flags: 0000000000000000
+      Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Burt News///Guest
+    - Term: Duke///Guest
       TermType: 0
       Description: 
       Languages:
@@ -449,12 +569,791 @@ MonoBehaviour:
       - 
       - 
       - 
-      Flags: 0000000000000000
+      - 
+      Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Burt News/name
+    - Term: Duke/name
       TermType: 0
       Description: 
       Languages:
+      - 
+      - 
+      - Duke
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Duke/
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Duke/intro
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - Good day, you must have heard the terrible news, have you not?
+      - Of course I have. Vampires are everywhere!
+      - responseA
+      - No, what happened?
+      - responseB
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Duke/responseA
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - Of course you have. However, do you know the one thing everyone must have
+        during these trying times?
+      - Garlic?
+      - garlicResponse
+      - A crucifix?
+      - crucifixResponse
+      - A wooden stake?
+      - stakeResponse
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Duke/responseB
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - "Vampires have been unleashed! The end times are near. However, I have the
+        perfect antidote for this occasion. You can have your very own wooden stake
+        for an easy payment of $19.99. Just stick\u2019em with the pointy end!"
+      - That does sound like a good idea. I better get one.
+      - finalB
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Duke/garlicResponse
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - "A fine thought. However that stuff doesn\u2019t work as well as you think.
+        No! You need a more effective weapon like this wooden stake! You can get one
+        today for only $19.99!"
+      - "I guess I do need one if I want to survive. I\u2019ll take one."
+      - finalA
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Duke/crucifixResponse
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - True, that does keep them away, temporarily. If you want to permanently kill
+        a vampire however you must have one of these wooden stakes! Get one right
+        now for just $19.99!
+      - "I guess I do need one if I want to survive. I\u2019ll take one."
+      - finalA
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Duke/stakeResponse
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - Exactly! And since you seem to be missing one I would like to offer you a
+        perfect deal. Your very own wooden stake for an easy payment of $19.99.
+      - "I guess I do need one if I want to survive. I\u2019ll take one."
+      - finalA
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Duke/finalA
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - "Wonderful, remember you gotta stick\u2019em with the pointy end!"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Duke/finalB
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - "Wonderful, don\u2019t let those bloodsuckers in."
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Parents///Guest
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Parents/name
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - Parents
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Parents/
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Parents/intro
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - mom
+      - Hey honey, we love your new home. I brought your favourite garlic chocolate
+        chip cookies.
+      - Thanks! You know I love them.
+      - dadIntro
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Parents/intro/v
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - mom
+      - Hey honey, we love your new home. I brought your favourite chocolate chip
+        cookies.
+      - Thanks! You know I love them.
+      - dadIntro
+      - Thank you but you know I like them better with garlic.
+      - answer1
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Parents/dadIntro
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - dad
+      - "Hi <$player>, I heard you have a party this weekend. You are planning to
+        invite us aren\u2019t you?"
+      - "Of course you\u2019re invited. I wouldn\u2019t leave my own parents out."
+      - answer4
+      - "Umm, This isn\u2019t really a party for old-timers like yourselves."
+      - answer5
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Parents/answer1
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - mom
+      - "Oh I\u2019m sorry, I recently developed an allergy so I couldn\u2019t add
+        it in this time."
+      - You look a little pale, and a bit younger too.
+      - answer2
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Parents/answer2
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - mom
+      - "Why, thank you honey! Well, we recently joined this amazing new health club.
+        It\u2019s done wonders for our looks. Our new Fortnite addiction doesn\u2019t
+        help our complexion though."
+      - When did you start playing Fortnite?
+      - answer3
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Parents/answer3
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - mom
+      - A while ago but nevermind that.
+      - Alright then.
+      - dadIntro
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Parents/answer4
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - both
+      - Great, we will see you there!
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Parents/answer4/v
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - both
+      - Great, we hope to see some young blood there.
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Parents/answer5
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - both
+      - "That\u2019s a little we aren\u2019t as young as we used to be. Well, you
+        have fun now."
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Parents/answer5/v
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - both
+      - "Are you sure? Until recently we\u2019ve felt younger than ever."
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Parents/Day3
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Parents/day3intro/1
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - mom
+      - Hello honey, thank you so much for inviting us.
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Parents/day3intro/2
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - dad
+      - "I can\u2019t wait to get this party started!"
+      - "I\u2019ve found you out, you were vampires all along!"
+      - kill
+      - Come right in mom and dad.
+      - notkill
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Parents/kill/v
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - both
+      - AAH! How could you stab your own parents?
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Parents/kill/1
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - mom
+      - "How could you <$player>! I\u2019m your mother!"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Parents/kill/2
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - dad
+      - "<$player>! I can\u2019t believe you\u2019ve done this!"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Parents/notkill
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - both
+      - "Don\u2019t mind if we do. This party looks great."
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Parents/notkill/v
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - both
+      - "Don\u2019t mind if we do. We could use some fresh blood."
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Lucy///Guest
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Lucy/name
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - Lucy
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Lucy/
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Lucy/intro
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - "Hello mister, wanna buy some cookies? They\u2019re special Halloween ones
+        with a bloody red cream in the middle. Our new vampire overlords love them."
+      - "Sure, I\u2019d love some."
+      - acceptCookies
+      - "*looks warily at the cookies* I\u2019m not quite interested right now."
+      - declineCookies
+      - What exactly is that filling made of?
+      - explain
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Lucy/intro/v
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - "Hello mister, wanna buy some cookies? They\u2019re special Halloween ones
+        with a bloody red cream in the middle. *drools* My vampire overlords love
+        them."
+      - "Sure, I\u2019d love some."
+      - acceptCookies
+      - "*looks warily at the cookies* I\u2019m not quite interested right now."
+      - declineCookies
+      - What exactly is that filling made of?
+      - explain
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Lucy/acceptCookies
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - "Great! That will be $5 per box. Oh! Looks like you\u2019re planning a party.
+        I love parties! Can I come, can I come, can I?"
+      - Oh, sure you can. Come by tomorrow.
+      - end1
+      - "Sorry, it\u2019s not really a party for kids."
+      - end2
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Lucy/declineCookies
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - "Aww, that\u2019s too bad. You\u2019re missing out that\u2019s for sure. Oh!
+        Looks like you\u2019re planning a party. I love parties! Can I come, can I
+        come, can I?"
+      - "Oh, I guess I can\u2019t say no. The party is tomorrow night."
+      - end1
+      - "Sorry, it\u2019s not really a party for kids."
+      - end3
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Lucy/explain
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - "It\u2019s just a regular strawberry filling with extra food coloring. Looks
+        pretty good right? Wanna buy some?"
+      - "Sure, I\u2019d love some."
+      - acceptCookies
+      - "*looks warily at the cookies* I\u2019m not quite interested right now."
+      - declineCookies
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Lucy/explain/v
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - "Well it\u2019s sort of a special recipe. They taste really good though. Won\u2019t
+        you buy some?"
+      - "Sure, I\u2019d love some."
+      - acceptCookies
+      - "*looks warily at the cookies* I\u2019m not quite interested right now."
+      - declineCookies
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Lucy/end1
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - "Yay, I\u2019ll be here tomorrow! Bye!"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Lucy/end2
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - Aww, oh well thanks for buying some cookies. Bye!
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Lucy/end3
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - "Aww, you\u2019re a meanie!"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Lucy/day3
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Lucy/day3intro
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - Hey <$player>, thanks again for inviting me! Looks like there are a ton of
+        excellent snacks here! By the way, I brought some more flavors of cookies
+        if you wanted to buy some.
+      - I reject your cookies and your blood sucking ways! DIE!
+      - kill2
+      - There are tons of potential buys here, get in there.
+      - kill3
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Lucy/day3intro/v
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - Hey <$player>, thanks again for inviting me! You have potato chips, know what
+        goes great with potato chips? More girl guide cookies. I brought some if you
+        want to take a look.
+      - I reject your cookies and your blood sucking ways! DIE!
+      - kill1
+      - There are tons of potential buys here, get in there.
+      - kill3
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Lucy/kill1
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - "AAAH! How dare you! I\u2019m just a little girl!"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Lucy/kill2
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - Ouch! Why did you do that <$player>? It hurts...
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Lucy/kill3
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - "Yay, it\u2019s going to be so much fun!"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Burt///Guest
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Burt/name
+      TermType: 0
+      Description: 
+      Languages:
+      - 
       - 
       - Burt the Newsguy
       - 
@@ -463,12 +1362,89 @@ MonoBehaviour:
       - 
       - 
       - 
-      Flags: 0000000000000000
+      Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Burt News/
+    - Term: Burt/
       TermType: 0
       Description: 
       Languages:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Burt/intro/1
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - Burt offscreenbottom center normal
+      - We interrupt up your possibile mid life crisis to bring you breaking news!!!
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Burt/intro/2
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - "A group of archaeologists have accidently awoken Dracula. \n"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Burt/intro/3
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - Dracula's awakening has awoken dormant vampire DNA in some people around the
+        world.
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Burt/intro/4
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - 'Dracula releases statement that he wants to rule the world with a Iron Fist. '
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Burt/intro/5
+      TermType: 0
+      Description: 
+      Languages:
+      - 
       - 
       - Neighbour of Dracula described this as shocking as he's normally as quiet,
         never bothered anyone.
@@ -478,80 +1454,396 @@ MonoBehaviour:
       - 
       - 
       - 
-      Flags: 0000000000000000
+      Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Burt News/intro/1
-      TermType: 0
-      Description: 
-      Languages:
-      - guest_1 normal offscreenleft center
-      - We interrupt up your possibile mid life crisis to bring you breaking news
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      Flags: 0000000000000000
-      Languages_Touch: []
-    - Term: Burt News/intro/2
-      TermType: 0
-      Description: 
-      Languages:
-      - guest_1 normal noclear
-      - "A group of archaeologists have accidently awoken Dracula. \n"
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      Flags: 0000000000000000
-      Languages_Touch: []
-    - Term: Burt News/intro/3
-      TermType: 0
-      Description: 
-      Languages:
-      - 
-      - Dracula's awkening has awoken dormant vampire DNA in some people around the
-        world.
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      Flags: 0000000000000000
-      Languages_Touch: []
-    - Term: Burt News/intro/4
-      TermType: 0
-      Description: 
-      Languages:
-      - 
-      - 'Dacula releases statement that he wants to rule the world with a Iron Fist. '
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      Flags: 0000000000000000
-      Languages_Touch: []
-    - Term: Burt News/day2
+    - Term: Burt/intro/6
       TermType: 0
       Description: 
       Languages:
       - 
       - 
+      - "The Gov\u2019t recommends you not to invite any vampire into your home."
       - 
       - 
       - 
       - 
       - 
       - 
-      Flags: 0000000000000000
+      Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Burt News/day3
+    - Term: Burt/intro/7
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - "Here are some vampire facts and symptoms.\nThey can\u2019t enter your house
+        uninvited\nIncreased Sensitivity to Sunlight\nUnnaturally Sharp Canine Fangs\n"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Burt/intro/7.1
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - "Sudden interest in blood type, drinking blood, bloodshot eyes, and replacing
+        usual meals with blood.\nChanges in appearance such as dark eyes,  pale skin,
+        or suddenly becoming a Bat.\nRefuses to give up seat for the Elderly on Transit,
+        saying they\u2019re 1000 years older.\nSudden allergies to Holy Items such
+        as crosses, water, and garlic\n"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Burt/intro/7.2
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - 'Pours ice and water in separate glasses at restaurants
+
+        Pays with cheques at the supermarket.
+
+        Constant complaining about war against werewolves.
+
+        Never stops talking about how good the things we do in the shadows brings.'
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Burt/intro/8
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - On other news, World Renown Party Planner <$PLAYER> has recently moved into
+        the neighbourhood.
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Burt/intro/9
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - 'Plans for a block party will proceed regardless of recent rise of Vampires. '
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Burt/intro/10
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - "\u201CNo human\u2019s safety will be at risk\u201D stated <$PLAYER>"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Burt/intro/11
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - " \u201Cthe worst we had was one bathroom malfunction, which won't ever happen
+        again\""
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Burt/intro/12
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - '{NAME}''s party aims to be the BIGGEST PARTY yet, aiming for 104 guests.'
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Burt/intro/13
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - With over 100 Guests already RSVP'd <$PLAYER> only needs 4 more guests to
+        go.
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Burt/intro/14
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - '
+
+
+        Coming up after the break, humans that grow on hair?
+
+'
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Burt/intro/15
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - Burt normal hide offscreenbottom
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Burt/day2/1
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - Burt offscreenbottom center normal
+      - 'Turns out vampires LIKE garlic and does not infact cause any of the previously
+        thought of mentioned symptoms. '
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Burt/day2/2
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - 'The original article was recently confirmed to be written by a vampire solely
+        so he could keep working in a garlic-bread factory. '
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Burt/day2/3
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - Just goes to show you nobody can be trusted these days, not even me.
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Burt/day2/4
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - Dracula has indicated that he will continue to fight for the rights of vampire
+        kind, as he believes they are the next evolutionary step of mankind.
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Burt/day2/5
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - Vampires surveyed indicates that 67% are happier then the avaerage human,
+        possibly due to the abundance of blood in the world.
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Burt/day2/6
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - fade
+      - ' Be extra weary of inviting guests into your home for the forseeable future.'
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Burt/day3/1
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - Burt offscreenbottom center normal
+      - This just in! The Federal Government has enacted total vigilantee law!
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Burt/day3/2
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - Any person trying to gain access into your home can now be met with lethal
+        force if you so choose.
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Burt/day3/3
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - So if you have any wooden steaks sitting around, make sure you have them by
+        your door.
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Burt/day3/4
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - In other news [NAME]'s party is sure to be a hit and totally worth the chance
+        of death upon trying to enter another persons home.
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Burt/day3/5
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - Make sure you try extra hard not to look like a vampire when trying to get
+        in.
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Burt/day3/6
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - And now sports!
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Ernie///Guest
       TermType: 0
       Description: 
       Languages:
@@ -563,9 +1855,25 @@ MonoBehaviour:
       - 
       - 
       - 
-      Flags: 0000000000000000
+      - 
+      Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Nurse Gloom///Guest
+    - Term: Ernie/name
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - Ernie the Deliveryguy
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Ernie/
       TermType: 0
       Description: 
       Languages:
@@ -577,161 +1885,322 @@ MonoBehaviour:
       - 
       - 
       - 
-      Flags: 0000000000000000
+      - 
+      Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Nurse Gloom/name
+    - Term: Ernie/intro/1
       TermType: 0
       Description: 
       Languages:
       - 
-      - Nurse Gloom
+      - Ernie normal offscreenleft center
+      - "Delivery Mattress Delivery! For Mr. I. C. Weeiners. That\u2019s not right\u2026
+        you don\u2019t look like a I. C. Weeiners at all. Well just sign here and
+        it\u2019s all yours I guess."
       - 
       - 
       - 
       - 
       - 
       - 
-      Flags: 0000000000000000
+      Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Nurse Gloom/
+    - Term: Ernie/intro/2
       TermType: 0
       Description: 
       Languages:
       - 
       - 
+      - "Well just sign here and it\u2019s all yours I guess."
       - 
       - 
       - 
       - 
       - 
       - 
-      Flags: 0000000000000000
+      Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Nurse Gloom/intro/1
-      TermType: 0
-      Description: 
-      Languages:
-      - guest_1 normal offscreenleft center
-      - Hi.
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      Flags: 0000000000000000
-      Languages_Touch: []
-    - Term: Nurse Gloom/intro/2
-      TermType: 0
-      Description: 
-      Languages:
-      - guest_1 normal noclear
-      - <nl>I am a mushroom...
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      Flags: 0000000000000000
-      Languages_Touch: []
-    - Term: Nurse Gloom/intro/3
+    - Term: Ernie/intro/3
       TermType: 0
       Description: 
       Languages:
       - 
-      - Not a vampire...
+      - 
+      - "You new around here? You know Paul\u2019s Deep Fried Holy Water Garlic Bread,
+        ordained by a Minister. It is to DIE for."
+      - "Wait, didn\u2019t I just see you on the news?"
+      - burt
+      - What's around your neck?
+      - garlic
       - 
       - 
-      - 
-      - 
-      - 
-      - 
-      Flags: 0000000000000000
+      Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Nurse Gloom/intro/4
+    - Term: Ernie/burt/1
       TermType: 0
       Description: 
       Languages:
       - 
-      - '...'
-      - Oh good!
-      - enter
-      - You sure?
-      - question
+      - 
+      - "No no, I\u2019m a totally different pallet swap. I get that alot."
       - 
       - 
-      Flags: 0000000000000000
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Nurse Gloom/enter/1
+    - Term: Ernie/burt/2
       TermType: 0
       Description: 
       Languages:
       - 
-      - '...'
-      - Come on in.
-      - endings/end_2
+      - 
+      - Anyways, where do you want this Mattress?
+      - Come in plop it right there
+      - matress
+      - "Leave it outside, I\u2019ll sleep on the floor tyvm"
+      - intro2
       - 
       - 
-      - 
-      - 
-      Flags: 0000000000000000
+      Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Nurse Gloom/question/1
+    - Term: Ernie/garlic/1
       TermType: 0
       Description: 
       Languages:
-      - nervous
-      - Are <i>you</i> a vampire?
-      - No
-      - endings/end_2
-      - Yes
-      - endings/end_3
       - 
       - 
-      Flags: 0000000000000000
+      - "I wear this garlic necklace to keep Vampires out from biting my neck. I heard
+        from my brother it\u2019s super effective!"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Nurse Gloom/enter/v/1
+    - Term: Ernie/garlic/2
       TermType: 0
       Description: 
       Languages:
-      - evil
-      - 'Bleh bleh bleh! '
-      - 
-      - endings/end_1
       - 
       - 
+      - Anyways, where do you want this Mattress?
+      - Come in plop it right there
+      - matress
+      - "Leave it outside, I\u2019ll sleep on the floor tyvm"
+      - intro2
       - 
       - 
-      Flags: 0000000000000000
+      Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Nurse Gloom/question/v/1
+    - Term: Ernie/matress/1
       TermType: 0
       Description: 
       Languages:
-      - nervous
-      - 'Oh, definitely. No vampire here. ::shifty eyes::'
-      - Come on in.
-      - question_2
+      - 
+      - Ernie normal hide offscreenleft
+      - "Man I\u2019m so lucky your house has no stairs."
       - 
       - 
       - 
       - 
-      Flags: 0000000000000000
+      - 
+      - 
+      Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Nurse Gloom/question_2/1
+    - Term: Ernie/intro2/1
       TermType: 0
       Description: 
       Languages:
-      - evil hide offscreenright
-      - Mua ha ha...
       - 
-      - endings/end_1
-      - 
+      - Ernie normal hide offscreenleft
+      - "Alright! I\u2019m off to the park now, later {NAME}."
       - 
       - 
       - 
-      Flags: 0000000000000000
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Ernie/intro3/1
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - Ernie normal offscreenright center
+      - "I don\u2019t know what came over me, maybe I\u2019ve become psychic, but
+        I heard you really really wanted Wendy\u2019s. "
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Ernie/intro3/2
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - 'I have the sudden urge to want to come into your House. Right now.
+
+'
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Ernie/intro3/3
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - Also to massage your neck with my teeth.
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Ernie/intro3/4
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - "It suddenly became unbelievably hot out here. I just know everything will
+        be better once I\u2019m in your home. {emit, sweat image, steam}"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Ernie/intro3/5
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - I would just love to come inside to put this down on your table, just for
+        a bit.
+      - How about no.
+      - end
+      - Uh what happened to your neck?
+      - neck
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Ernie/intro3/6
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - 'Pretty Please? Can I please be invited into your place?
+
+'
+      - Sure
+      - really
+      - uh.. no.
+      - end
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Ernie/really/1
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - Really? Nobody invites me anywhere.
+      - "Sweet I\u2019ma just stay right over here till you want that massage."
+      - end
+      - On second thought, nevermind.
+      - end
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Ernie/neck/1
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - I walked through the park and someone was offering Neck massages, said would
+        help my blood flow. Then suddenly I was here.
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Ernie/neck/2
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - 'Pretty Please? Can I please be invited into your place?
+
+'
+      - Sure
+      - really
+      - uh.. no.
+      - end
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Ernie/end/1
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - hide
+      - '[Door Shut]'
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Ernie/end_bad/1
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - '[Door Shut]'
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
       Languages_Touch: []
     - Term: Copy of guest_1///Guest
       TermType: 0
@@ -745,12 +2214,14 @@ MonoBehaviour:
       - 
       - 
       - 
-      Flags: 0000000000000000
+      - 
+      Flags: 000000000000000000
       Languages_Touch: []
     - Term: Copy of guest_1/name
       TermType: 0
       Description: 
       Languages:
+      - 
       - 
       - Stake Delivery Guy
       - 
@@ -759,7 +2230,7 @@ MonoBehaviour:
       - 
       - 
       - 
-      Flags: 0000000000000000
+      Flags: 000000000000000000
       Languages_Touch: []
     - Term: Copy of guest_1/
       TermType: 0
@@ -773,12 +2244,14 @@ MonoBehaviour:
       - 
       - 
       - 
-      Flags: 0000000000000000
+      - 
+      Flags: 000000000000000000
       Languages_Touch: []
     - Term: Copy of guest_1/intro_1
       TermType: 0
       Description: 
       Languages:
+      - 
       - guest_1 normal offscreenleft center
       - Hi
       - 
@@ -787,12 +2260,13 @@ MonoBehaviour:
       - 
       - 
       - 
-      Flags: 0000000000000000
+      Flags: 000000000000000000
       Languages_Touch: []
     - Term: Copy of guest_1/intro_2
       TermType: 0
       Description: 
       Languages:
+      - 
       - nervous
       - I'm not a vampire
       - Oh good!
@@ -801,12 +2275,13 @@ MonoBehaviour:
       - regular_1
       - 
       - 
-      Flags: 0000000000000000
+      Flags: 000000000000000000
       Languages_Touch: []
     - Term: Copy of guest_1/vampire_1
       TermType: 0
       Description: 
       Languages:
+      - 
       - evil
       - Bleh bleh bleh!
       - 
@@ -815,12 +2290,13 @@ MonoBehaviour:
       - 
       - 
       - 
-      Flags: 0000000000000000
+      Flags: 000000000000000000
       Languages_Touch: []
     - Term: Copy of guest_1/regular_1
       TermType: 0
       Description: 
       Languages:
+      - 
       - nervous hide offscreenright
       - 'Oh, definitely. No vampire here. ::shifty eyes::'
       - Come on in.
@@ -829,12 +2305,15 @@ MonoBehaviour:
       - 
       - 
       - 
-      Flags: 0000000000000000
+      Flags: 000000000000000000
       Languages_Touch: []
     CaseInsensitiveTerms: 0
     OnMissingTranslation: 1
     mTerm_AppName: 
     mLanguages:
+    - Name: x
+      Code: fr-LU
+      Flags: 0
     - Name: params
       Code: 
       Flags: 0
@@ -864,7 +2343,7 @@ MonoBehaviour:
     Google_WebServiceURL: https://script.google.com/macros/s/AKfycbyTHLOw0mSBTa6Ufd1UEzDAtNCYjd1zUlQpf_ew1A/exec
     Google_SpreadsheetKey: 1SAkO2quLFZu3g7w1gxC8mKpIjiZmL4wyQ4gYlq_1ubo
     Google_SpreadsheetName: I2Loc MyNeighbourTheVampire Localization
-    Google_LastUpdatedVersion: 1548541553820
+    Google_LastUpdatedVersion: 1548555771620
     Google_Password: vampires
     GoogleUpdateFrequency: 0
     GoogleInEditorCheckFrequency: 0

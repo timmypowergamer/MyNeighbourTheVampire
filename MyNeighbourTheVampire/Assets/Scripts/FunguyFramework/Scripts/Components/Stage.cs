@@ -160,7 +160,20 @@ namespace Fungus
             return null;
         }
 
-        #endregion
-    }
+		public override void Clean()
+		{
+			base.Clean();
+
+			foreach(Character c in new List<Character>(CharactersOnStage))
+			{
+				PortraitOptions po = new PortraitOptions();
+				po.character = c;
+				po.display = DisplayType.Hide;
+				Hide(po);
+			}
+		}
+
+		#endregion
+	}
 }
 

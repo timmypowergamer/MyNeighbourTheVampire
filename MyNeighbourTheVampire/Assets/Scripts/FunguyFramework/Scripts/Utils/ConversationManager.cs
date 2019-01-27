@@ -37,7 +37,7 @@ namespace Fungus
 
 		protected bool exitSayWait;
 
-		private Dictionary<string, string> _variables = new Dictionary<string, string>();
+		public Dictionary<string, string> Variables = new Dictionary<string, string>();
 
 		protected virtual void Awake()
 		{
@@ -492,6 +492,8 @@ namespace Fungus
 					exitSayWait = false;
 				}
 
+
+
 				if(hasResponse)
 				{
 					bool exitChoice = false;
@@ -512,7 +514,7 @@ namespace Fungus
 
 		public string ReplaceVariableTokens(string text)
 		{
-			foreach(KeyValuePair<string, string> kvp in _variables)
+			foreach(KeyValuePair<string, string> kvp in Variables)
 			{
 				if(text.Contains( $"<${kvp.Key}>"))
 				{
@@ -537,7 +539,7 @@ namespace Fungus
 				{
 					//set var
 					string[] setVar = conditions[i].Split('=');
-					_variables[setVar[0]] = setVar[1];
+					Variables[setVar[0]] = setVar[1];
 				}
 			}
 			return null;
@@ -546,9 +548,9 @@ namespace Fungus
 		public string evalConditionalString(string conditionalString)
 		{
 			string[] conds = conditionalString.Split(new string[] { "==", ">" }, System.StringSplitOptions.None);
-			if(_variables.ContainsKey(conds[0]))
+			if(Variables.ContainsKey(conds[0]))
 			{
-				if(_variables[conds[0]] == conds[1])
+				if(Variables[conds[0]] == conds[1])
 				{
 					return conds[2];
 				}

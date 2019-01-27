@@ -41,7 +41,7 @@ namespace Fungus
             shiftOffset = new Vector2(0, 0);
             move = false;
             shiftIntoPlace = false;
-            waitUntilFinished = false;
+            waitUntilFinished = true;
             onComplete = null;
 
             // Special values that can be overridden

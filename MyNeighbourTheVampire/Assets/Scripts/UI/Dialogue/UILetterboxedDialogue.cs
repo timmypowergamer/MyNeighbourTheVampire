@@ -57,6 +57,9 @@ public class UILetterboxedDialogue : UIPanel {
 			return;
 		}
 
+		Stage.GetActiveStage().Clean();
+		_dialog.Clear();
+		_dialog.SetCharacterName(null, Color.white);
 		CanvasManager.instance.StartCoroutine(playConversation(conversation, startDelay, endDelay));
 	}
 
@@ -90,7 +93,7 @@ public class UILetterboxedDialogue : UIPanel {
 		if (endDelay < 0) endDelay = _defaultEndDelay;
 		_isPlaying = true;
 		_dialog.Clear();
-		_dialog.SetCharacter(null);
+		//_dialog.SetCharacter(null);
 		yield return new WaitForSeconds(startDelay);
 		yield return ConversationManager.Instance.DoConversation(conversationItems);
 
@@ -101,16 +104,16 @@ public class UILetterboxedDialogue : UIPanel {
 			yield break;
 		}
 
+		while (Stage.GetActiveStage().IsWaiting) yield return null;
+
 		yield return new WaitForSeconds(endDelay);
-		OnConversationComplete?.Invoke(_convoID);
-		OnConversationComplete = null;
-		OnConversationCancelled = null;
+
+		_dialog.ClearBG();
+
 		if(_autoClose)
 		{
 			Close("close");
 		}
-		_convoID = "";
-		_isPlaying = false;
 	}
 
 	public void CancelConversation()
@@ -125,5 +128,16 @@ public class UILetterboxedDialogue : UIPanel {
 		}
 		_convoID = "";
 		_isPlaying = false;
+	}
+
+	public override void Close()
+	{
+		OnConversationComplete?.Invoke(_convoID);
+		OnConversationComplete = null;
+		OnConversationCancelled = null;
+		_convoID = "";
+		_isPlaying = false;
+		Stage.GetActiveStage().Clean();
+		base.Close();
 	}
 }

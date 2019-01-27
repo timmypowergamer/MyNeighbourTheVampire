@@ -24,6 +24,8 @@ namespace Fungus
         [Tooltip("The name text UI object")]
         [SerializeField] protected TextMeshProUGUI nameText;
 
+		[SerializeField] protected GameObject nameBox;
+
 		[Tooltip("Graphic that should be colored with character color")]
 		[SerializeField] protected Graphic nameColorGraphic;
 
@@ -37,6 +39,8 @@ namespace Fungus
 
 		[SerializeField] protected Image background;
 		public virtual Image Background { get { return background; } }
+
+		[SerializeField] protected Image backgroundPrefab;
 
 
         [Tooltip("Close any other open Say Dialogs when this one is active")]
@@ -52,6 +56,9 @@ namespace Fungus
         protected bool fadeWhenDone = true;
         protected float targetAlpha = 0f;
         protected float fadeCoolDownTimer = 0f;
+
+		protected Image _lastBackground;
+		protected Image _currentBackground;
 
         protected Sprite currentCharacterImage;
 
@@ -137,22 +144,22 @@ namespace Fungus
 
         protected virtual void UpdateAlpha()
         {
-            //if (GetWriter().IsWriting)
-            //{
-            //    targetAlpha = 1f;
-            //    fadeCoolDownTimer = 0.1f;
-            //}
-            //else if (fadeWhenDone && Mathf.Approximately(fadeCoolDownTimer, 0f))
-            //{
-            //    targetAlpha = 0f;
-            //}
-            //else
-            //{
-            //    // Add a short delay before we start fading in case there's another Say command in the next frame or two.
-            //    // This avoids a noticeable flicker between consecutive Say commands.
-            //    fadeCoolDownTimer = Mathf.Max(0f, fadeCoolDownTimer - Time.deltaTime);
-            //}
-        }
+			if (GetWriter().IsWriting)
+			{
+				targetAlpha = 1f;
+				fadeCoolDownTimer = 0.1f;
+			}
+			else if (fadeWhenDone && Mathf.Approximately(fadeCoolDownTimer, 0f))
+			{
+				targetAlpha = 0f;
+			}
+			else
+			{
+				// Add a short delay before we start fading in case there's another Say command in the next frame or two.
+				// This avoids a noticeable flicker between consecutive Say commands.
+				fadeCoolDownTimer = Mathf.Max(0f, fadeCoolDownTimer - Time.deltaTime);
+			}
+		}
 
         protected virtual void ClearStoryText()
         {
@@ -298,20 +305,41 @@ namespace Fungus
                     characterName = character.GetObjectName();
                 }
 
-				if(prevSpeakingCharacter == null && speakingCharacter.BackgroundImage != null)
+				if(speakingCharacter.BackgroundImage != null)
 				{
-					background.color = Color.white;
-					background.sprite = speakingCharacter.BackgroundImage;
+					if(_currentBackground == null || _currentBackground.sprite != speakingCharacter.BackgroundImage)
+					{
+						if (_currentBackground != null)
+						{
+							_lastBackground = _currentBackground;
+							_lastBackground.GetComponent<Animator>().SetTrigger("hide");
+						}
+						_currentBackground = Instantiate(backgroundPrefab, background.transform, false);
+						_currentBackground.sprite = speakingCharacter.BackgroundImage;
+						_currentBackground.GetComponent<Animator>().SetTrigger("show");
+					}
+					//background.color = Color.white;
+					//background.sprite = speakingCharacter.BackgroundImage;
 				}
 				else
 				{
-					background.sprite = null;
+					//background.color = Color.clear;
+					//background.sprite = null;
 					//background.color = speakingCharacter.NameColor;
 				}
 
                 SetCharacterName(characterName, character.NameColor);
 			}
         }
+
+		public void ClearBG()
+		{
+			if (_currentBackground != null)
+			{
+				_lastBackground = _currentBackground;
+				_lastBackground.GetComponent<Animator>().SetTrigger("hide");
+			}
+		}
 
         /// <summary>
         /// Sets the character image to display on the Say Dialog.
@@ -327,9 +355,15 @@ namespace Fungus
         /// </summary>
         public virtual void SetCharacterName(string name, Color color)
         {
-            if (nameText != null)
+			if(string.IsNullOrEmpty(name))
+			{
+				nameBox.SetActive(false);
+				return;
+			}
+			nameBox.SetActive(true);
+			if (nameText != null)
             {
-				var subbedName = LocUtil.Translate(name);
+				var subbedName = LocUtil.TranslateWithDefault(name, name);
 
                 nameText.text = subbedName;
             }
