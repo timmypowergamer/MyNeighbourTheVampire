@@ -244,14 +244,22 @@ namespace Fungus
                 {
                     // Read glpyh for mapped sounds
                     int boopIndex = -1;
-                    string[] keys = new string[] { "a", "o", "e", "u", "i", "r", "p" };
-                    string sKeyResult = keys.FirstOrDefault(s => glyphs.Contains(s));
+                    string[] keys = new string[] { "a", "oo", "e", "u", "i", "r", "p" };
+                    string manip = glyphs;
+
+                    // Trim string till we have the latest matching glpyh.
+                    int index = 0;
+                    while (keys.Count(s => manip.Contains(s)) > 1) {
+                        manip = manip.Substring(++index, manip.Length);
+                    };
+
+                    string sKeyResult = keys.FirstOrDefault(s => manip.Contains(s));
                     switch (sKeyResult)
                     {
                         case "a":
                             boopIndex = 0;
                             break;
-                        case "o":
+                        case "oo":
                             boopIndex = 1;
                             break;
                         case "e":
@@ -276,8 +284,10 @@ namespace Fungus
                     if (targetAudioSource.clip != null)
                     {
                         targetAudioSource.loop = false;
+                        targetAudioSource.pitch = Random.Range(0.70f, 1.10f);
                         targetVolume = volume;
                         targetAudioSource.Play();
+                        
 
                         float extend = targetAudioSource.clip.length;
                         nextBeepTime = Time.realtimeSinceStartup + extend;
