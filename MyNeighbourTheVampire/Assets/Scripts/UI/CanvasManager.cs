@@ -23,7 +23,8 @@ public enum UIPanelID
     HUD = 1,
     Dialogue = 2,
 	DialogueOptions = 3,
-	EnterName = 4
+	EnterName = 4,
+	Fader = 5
 }
 
 public class CanvasManager : MonoBehaviour

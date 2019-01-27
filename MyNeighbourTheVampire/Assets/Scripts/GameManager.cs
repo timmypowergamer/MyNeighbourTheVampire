@@ -172,14 +172,21 @@ public class GameManager : MonoBehaviour
 	{
 		if (_currentBackground == null || _currentBackground.sprite != newBackground)
 		{
+			if(_lastBackground != null)
+			{
+				Destroy(_lastBackground.gameObject);
+			}
 			if (_currentBackground != null)
 			{
 				_lastBackground = _currentBackground;
 				_lastBackground.GetComponent<Animator>().SetTrigger("hide");
 			}
-			_currentBackground = Instantiate(BackgroundPrefab, BackgroundContainer.transform, false);
-			_currentBackground.sprite = newBackground;
-			_currentBackground.GetComponent<Animator>().SetTrigger("show");
+			if (newBackground != null)
+			{
+				_currentBackground = Instantiate(BackgroundPrefab, BackgroundContainer.transform, false);
+				_currentBackground.sprite = newBackground;
+				_currentBackground.GetComponent<Animator>().SetTrigger("show");
+			}
 		}
 	}
 

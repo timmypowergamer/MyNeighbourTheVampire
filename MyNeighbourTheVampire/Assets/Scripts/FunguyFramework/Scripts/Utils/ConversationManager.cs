@@ -103,7 +103,7 @@ namespace Fungus
 		{
 			//find SimpleScript say strings with portrait options
 			//You can test regex matches here: http://regexstorm.net/tester
-			var sayRegex = new Regex(@"(?<sayParams>[\W\w^\r]*?):(?<text>[\W\w^\r]*?):(?<links>[\W\w^\r]*?)\t");
+			var sayRegex = new Regex(@"(?<sayParams>[\W\w^\r]*?)`(?<text>[\W\w^\r]*?)`(?<links>[\W\w^\r]*?)\t");
 			MatchCollection sayMatches = sayRegex.Matches(conv);
 
 			var items = new List<ConversationItem>(sayMatches.Count);
@@ -590,7 +590,7 @@ namespace Fungus
 			}
 			for(int i = 0; i < translationList.Count; i++)
 			{
-				sb.Append($"{LocUtil.TranslateWithDefault("", "params", false, translationList[i])}:{LocUtil.TranslateWithDefault("", "dialogue", false, translationList[i])}:");
+				sb.Append($"{LocUtil.TranslateWithDefault("", "params", false, translationList[i])}`{LocUtil.TranslateWithDefault("", "dialogue", false, translationList[i])}`");
 				for (int j = 1; j < 4; j++)
 				{
 					if (j > 1) sb.Append("|");
