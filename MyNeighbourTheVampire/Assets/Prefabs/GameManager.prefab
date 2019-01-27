@@ -4074,7 +4074,7 @@ MonoBehaviour:
   startDelay: 0
   endDelay: 0
   CharacterID: Duke
-  MustBeInvited: 1
+  MustBeInvited: 0
   skipCondition: 
   entryPoint: day3Intro
 --- !u!1 &7256179480576381155
