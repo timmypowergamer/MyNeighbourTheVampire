@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -14,68 +15,19 @@ public class GameManager : MonoBehaviour
 		public bool isVampire;
 	}
 
-	[System.Serializable]
-	public class CharacterEntry
-	{
-		public string CharacterID;
-		public bool MustBeInvited;
-		public string skipCondition;
-		public string entryPoint;
-	}
-
-	[System.Serializable]
-	public class GameLevel
-	{
-		public string LevelID;
-		public List<CharacterEntry> CharacterOrder = new List<CharacterEntry>();
-
-		private int _currentIndex = 0;
-
-		public CharacterEntry GetNextCharacter()
-		{
-			while (_currentIndex < CharacterOrder.Count)
-			{
-				CharacterEntry ce = CharacterOrder[_currentIndex];
-				_currentIndex++;
-				if (Instance.IsDead(ce.CharacterID))
-				{
-					continue;
-				}
-				if(ce.MustBeInvited && !Instance.IsInvited(ce.CharacterID))
-				{
-					continue;
-				}
-				if(!string.IsNullOrEmpty(ce.skipCondition))
-				{
-					if(CheckCondition(ce.skipCondition))
-					{
-						continue;
-					}
-				}
-				return ce;
-			}
-			return null;
-		}
-
-		public bool CheckCondition(string condition)
-		{
-			string[] conds = condition.Split(new string[] { "==" }, System.StringSplitOptions.None);
-			if (Fungus.ConversationManager.Instance.Variables.ContainsKey(conds[0]))
-			{
-				if (Fungus.ConversationManager.Instance.Variables[conds[0]] == conds[1])
-				{
-					return true;
-				}
-			}
-			return false;
-		}
-	}
-
 	[Header("Characters")]
 	public List<GameCharacter> GameCharacters = new List<GameCharacter>();
 
+	[SerializeField]
+	private RectTransform BackgroundContainer;
+	[SerializeField]
+	private UnityEngine.UI.Image BackgroundPrefab;
+
+	protected Image _lastBackground;
+	protected Image _currentBackground;
+
 	[Header("Game Setup")]
-	public List<GameLevel> Levels = new List<GameLevel>();
+	public GameLevel[] Levels;
 
 	public int NumVampiresMin;
 	public int NumVampiresMax;
@@ -99,6 +51,7 @@ public class GameManager : MonoBehaviour
 	private void Awake()
 	{
 		Instance = this;
+		Levels = GetComponentsInChildren<GameLevel>();
 	}
 
 	private void Start()
@@ -139,26 +92,23 @@ public class GameManager : MonoBehaviour
 		{
 			yield return RunLevel(level);
 		}
+		int vampiresKilled = 0;
+		int guestsAlive = 0;
+		foreach (GameCharacter gc in GameCharacters)
+		{
+			if (gc.isVampire && gc.isDead) vampiresKilled++;
+			if (!gc.isVampire && !gc.isDead && gc.isInvited) guestsAlive++;
+		}
+		Debug.LogWarning($"KilledVampires = {vampiresKilled}, Guests Alive = {guestsAlive}");
 	}
 
 	public IEnumerator RunLevel(GameLevel level)
 	{
-		UILetterboxedDialogue dialogue = CanvasManager.instance.Get<UILetterboxedDialogue>(UIPanelID.Dialogue);
-
-		string completedConvo = "";
-		bool awaitingConversation = true;
-
-		CharacterEntry nextCharacter = level.GetNextCharacter();
-		while (nextCharacter != null)
+		GameEvent nextEvent = level.GetNextEvent();
+		while (nextEvent != null)
 		{
-			awaitingConversation = true;
-			dialogue.OnConversationComplete += (string convoID) => { completedConvo = convoID; awaitingConversation = false; };
-			dialogue.PlayConversation(nextCharacter.CharacterID, nextCharacter.entryPoint);
-			while (awaitingConversation)
-			{
-				yield return null;
-			}
-			nextCharacter = level.GetNextCharacter();
+			yield return nextEvent.Run();
+			nextEvent = level.GetNextEvent();
 		}
 	}
 
@@ -205,7 +155,32 @@ public class GameManager : MonoBehaviour
 		}
 	}
 
+	public static bool CheckCondition(string condition)
+	{
+		string[] conds = condition.Split(new string[] { "==" }, System.StringSplitOptions.None);
+		if (Fungus.ConversationManager.Instance.Variables.ContainsKey(conds[0]))
+		{
+			if (Fungus.ConversationManager.Instance.Variables[conds[0]] == conds[1])
+			{
+				return true;
+			}
+		}
+		return false;
+	}
 
-
+	public void SetBackground(Sprite newBackground)
+	{
+		if (_currentBackground == null || _currentBackground.sprite != newBackground)
+		{
+			if (_currentBackground != null)
+			{
+				_lastBackground = _currentBackground;
+				_lastBackground.GetComponent<Animator>().SetTrigger("hide");
+			}
+			_currentBackground = Instantiate(BackgroundPrefab, BackgroundContainer.transform, false);
+			_currentBackground.sprite = newBackground;
+			_currentBackground.GetComponent<Animator>().SetTrigger("show");
+		}
+	}
 
 }

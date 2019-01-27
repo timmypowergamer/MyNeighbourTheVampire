@@ -37,11 +37,6 @@ namespace Fungus
 		[SerializeField] protected RectTransform arrow;
 		public virtual RectTransform Arrow { get { return arrow; } }
 
-		[SerializeField] protected Image background;
-		public virtual Image Background { get { return background; } }
-
-		[SerializeField] protected Image backgroundPrefab;
-
 
         [Tooltip("Close any other open Say Dialogs when this one is active")]
         [SerializeField] protected bool closeOtherDialogs;
@@ -56,9 +51,6 @@ namespace Fungus
         protected bool fadeWhenDone = true;
         protected float targetAlpha = 0f;
         protected float fadeCoolDownTimer = 0f;
-
-		protected Image _lastBackground;
-		protected Image _currentBackground;
 
         protected Sprite currentCharacterImage;
 
@@ -306,18 +298,7 @@ namespace Fungus
                 }
 
 				if(speakingCharacter.BackgroundImage != null)
-				{
-					if(_currentBackground == null || _currentBackground.sprite != speakingCharacter.BackgroundImage)
-					{
-						if (_currentBackground != null)
-						{
-							_lastBackground = _currentBackground;
-							_lastBackground.GetComponent<Animator>().SetTrigger("hide");
-						}
-						_currentBackground = Instantiate(backgroundPrefab, background.transform, false);
-						_currentBackground.sprite = speakingCharacter.BackgroundImage;
-						_currentBackground.GetComponent<Animator>().SetTrigger("show");
-					}
+				{					
 					//background.color = Color.white;
 					//background.sprite = speakingCharacter.BackgroundImage;
 				}
@@ -331,15 +312,6 @@ namespace Fungus
                 SetCharacterName(characterName, character.NameColor);
 			}
         }
-
-		public void ClearBG()
-		{
-			if (_currentBackground != null)
-			{
-				_lastBackground = _currentBackground;
-				_lastBackground.GetComponent<Animator>().SetTrigger("hide");
-			}
-		}
 
         /// <summary>
         /// Sets the character image to display on the Say Dialog.

@@ -108,8 +108,6 @@ public class UILetterboxedDialogue : UIPanel {
 
 		yield return new WaitForSeconds(endDelay);
 
-		_dialog.ClearBG();
-
 		if(_autoClose)
 		{
 			Close("close");

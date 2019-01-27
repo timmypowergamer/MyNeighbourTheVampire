@@ -167,6 +167,66 @@ MonoBehaviour:
       - 
       Flags: 000000000000000000
       Languages_Touch: []
+    - Term: DOC/Fix TIM's name speed
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: DOC/Buffy Prop
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: DOC/Revisit Buffy Text
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: DOC/Burnie's I.C.Weener Speed
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
     - Term: Character Planner/Name
       TermType: 0
       Description: 
@@ -216,7 +276,7 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - "\u2713"
+      - C
       - 
       - 
       - 
@@ -231,7 +291,7 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - C
+      - "\u2713"
       - 
       - 
       - 
@@ -246,7 +306,7 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - C
+      - "\u2713"
       - 
       - 
       - 
@@ -261,7 +321,7 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - 
+      - C
       - 
       - 
       - 
@@ -306,7 +366,7 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - C
+      - "\u2713"
       - 
       - 
       - 
@@ -321,7 +381,7 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - C
+      - "\u2713"
       - 
       - 
       - 
@@ -377,7 +437,7 @@ MonoBehaviour:
       - 
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: GUEST_1///Guest
+    - Term: Sam///Guest
       TermType: 0
       Description: 
       Languages:
@@ -392,13 +452,13 @@ MonoBehaviour:
       - 
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: GUEST_1/name
+    - Term: Sam/name
       TermType: 0
       Description: 
       Languages:
       - 
       - 
-      - Stake Delivery Guy
+      - Sam the Sexy Satanist
       - 
       - 
       - 
@@ -407,7 +467,7 @@ MonoBehaviour:
       - 
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: GUEST_1/
+    - Term: Sam/
       TermType: 0
       Description: 
       Languages:
@@ -422,13 +482,13 @@ MonoBehaviour:
       - 
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: GUEST_1/intro/1
+    - Term: Sam/Day1
       TermType: 0
       Description: 
       Languages:
       - 
-      - guest_1 normal offscreenleft center
-      - Hi.
+      - 
+      - 
       - 
       - 
       - 
@@ -437,13 +497,13 @@ MonoBehaviour:
       - 
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: GUEST_1/intro/2
+    - Term: Sam/intro/1
       TermType: 0
       Description: 
       Languages:
       - 
-      - noclear
-      - <nl>I am a mushroom...
+      - sam_invite=0
+      - Greetings, neighbour!
       - 
       - 
       - 
@@ -452,58 +512,13 @@ MonoBehaviour:
       - 
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: GUEST_1/intro/3
-      TermType: 0
-      Description: 
-      Languages:
-      - 
-      - name=wumpire
-      - Not a vampire...<wi><nl>...
-      - Oh good!
-      - enter
-      - You sure?
-      - question
-      - 
-      - 
-      Flags: 000000000000000000
-      Languages_Touch: []
-    - Term: GUEST_1/enter/1
+    - Term: Sam/intro/2
       TermType: 0
       Description: 
       Languages:
       - 
       - 
-      - '...'
-      - Come on in.
-      - 
-      - 
-      - 
-      - 
-      - 
-      Flags: 000000000000000000
-      Languages_Touch: []
-    - Term: GUEST_1/question/1
-      TermType: 0
-      Description: 
-      Languages:
-      - 
-      - nervous
-      - Are <i>you</i> a <$name>?
-      - No
-      - 
-      - Yes
-      - 
-      - 
-      - 
-      Flags: 000000000000000000
-      Languages_Touch: []
-    - Term: GUEST_1/enter/v/1
-      TermType: 0
-      Description: 
-      Languages:
-      - 
-      - evil
-      - 'Bleh bleh bleh! '
+      - I brought you a garlic casserole.
       - 
       - 
       - 
@@ -512,28 +527,14 @@ MonoBehaviour:
       - 
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: GUEST_1/question/v/1
+    - Term: Sam/intro/3
       TermType: 0
       Description: 
       Languages:
       - 
-      - name==wumpire>answer
-      - Oh, definitely. No <$name> here.
-      - Come on in.
       - 
-      - 
-      - 
-      - 
-      - 
-      Flags: 000000000000000000
-      Languages_Touch: []
-    - Term: GUEST_1/question/v/2
-      TermType: 0
-      Description: 
-      Languages:
-      - 
-      - evil hide offscreenright
-      - Mua ha ha...
+      - "How do you like this neighbourhood, I know it\u2019s full of weirdos but
+        you\u2019ll learn to sacrifice to live with them."
       - 
       - 
       - 
@@ -542,14 +543,590 @@ MonoBehaviour:
       - 
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: GUEST_1/answer/1
+    - Term: Sam/intro/4
       TermType: 0
       Description: 
       Languages:
       - 
       - 
-      - I might be...
-      - Cool
+      - Did you hear the good news?
+      - No?
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Sam/response1
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - Vampires are the second great sign written in the unspoken book!
+      - Unspoken Book?
+      - invite1
+      - Second Great sign?
+      - invite2
+      - Uh Okay
+      - invite3
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Sam/invite1/1
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - "Oh you haven\u2019t heard of the unspoken book? Its the word of our great
+        lord, he rewrote most of our understanding of Greater and Lesser magic in
+        his books."
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Sam/invite1/2
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - Anyway, I hear you are world renown for your parties. Friday I heard it was?
+        Do you have room not only in your heart but at your party for good ole Sam?
+      - Yeah sure come Friday
+      - invite
+      - "I don\u2019t want to ruin your celebration"
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Sam/invite2/1
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - The first great sign was when we invented fidget spinners. Humanity was severely
+        set back then.
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Sam/invite2/2
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - Anyway, I hear you are world renown for your parties. Friday I heard it was?
+        Do you have room not only in your heart but at your party for good ole Sam?
+      - Yeah sure come Friday
+      - invite
+      - "I don\u2019t want to ruin your celebration"
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Sam/invite3
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - Anyway, I hear you are world renown for your parties. Friday I heard it was?
+        Do you have room not only in your heart but at your party for good ole Sam?
+      - Yeah sure come Friday
+      - invite
+      - "I don\u2019t want to ruin your celebration"
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Sam/invite
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - invite sam_invite=1
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Sam/Day2
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Sam/intro2/1
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - "Came by to let you know that not ALL vampires are bad people. That\u2019s
+        what we\u2019re going to be talking about on Friday at our weekly group talk."
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Sam/intro2/2
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - Vampires can be good people too, neighbour!
+      - You mean the Second Great Sign?
+      - 
+      - Right, what about the blood sucking part?
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Sam/day2response1/1
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - Oh you remembered!
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Sam/day2response1/2
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - So, I know your busy with the party preparations and all but would you spare
+        a moment?
+      - Uh, sure.
+      - speech
+      - "No, Sam I\u2019m really busy right now."
+      - party1
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Sam/day2response2/1
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - Well vampires need to do what they need to do.
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Sam/day2response2/2
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - So, I know your busy with the party preparations and all but would you spare
+        a moment?
+      - Uh, sure.
+      - speech
+      - "No, Sam I\u2019m really busy right now."
+      - party1
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Sam/day2response3
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - So, I know your busy with the party preparations and all but would you spare
+        a moment?
+      - Uh, sure.
+      - speech
+      - "No, Sam I\u2019m really busy right now."
+      - party1
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Sam/speech/1
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - You want to hear about my religion Satanism by our dear lord daddy Anton LeVay!
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Sam/speech/2
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - "My! I wasn\u2019t expecting this? Where do I start? How about I start with
+        one of the stories how he left to the Circus? How he found out how people
+        were willing to pay money to escape for comfort. The Circus is considered
+        the most honest form of trickery."
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Sam/speech/3
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - "Satanism is all about doing what you please, as long as you\u2019re not hurting
+        anyone."
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Sam/speech/v/3
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - "Satanism is all about doing what you please, as long as you\u2019re not hurting
+        anyone, unless you need to survive then hurting humans is a-ok."
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Sam/speech/4
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - Yeah our rituals get weird with candles and sigils, but symbolism is important
+        for our psyche to understand the world around us.
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Sam/speech/5
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - Anyway, if your interested come out to our weekly ritual meetings on Friday
+        evenings.
+      - Uh sure Sam.
+      - invite
+      - Fridays are terrible for me
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Sam/speechResponse1
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - "Great! That reminds me about your party thing\u2026 wasn\u2019t that tomorrow
+        too?"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Sam/speechResponse2
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - If you ever want to change your mind you know where to find me.
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Sam/party1
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - Well, I also wanted to know what you wanted me to bring to the party tomorrow?
+      - Garlic bread?
+      - party2
+      - Garlic loaf?
+      - party2
+      - "You weren\u2019t invited Sam go away."
+      - didntInvite
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Sam/party2/1
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - "Oh Garlic and Flour? Got it. I\u2019ll be sure to bring those you weirdo."
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Sam/party2/v/1
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - Oh Garlic? My late cousin used to run a garlic factory. Loved garlic bread,
+        even wrote a paper about it.
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Sam/party2/2
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - '[Sam leaves before you have a chance to respond]'
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Sam/didntInvite
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - Not invited? Do I take offence? No. Do unto others as they would do unto you
+        as I would say. Your not invited either!
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Sam/Day3
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Sam/preintro3/1
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - sam_invite==0>intro3/1
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Sam/preintro3/2
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - sam_invite==1>intro3/2
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Sam/intro3/1
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - "I know I wasn\u2019t invited to the party, but I showed up anyway. Costume
+        and All."
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Sam/intro3/2
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - What do you think about my Vampire Costume?
+      - "That\u2019s not bad, I changed my mind you're invited."
+      - invite
+      - "It\u2019s not a Costume party Sam."
+      - invading
+      - You weren't invited, get out of here.
+      - invading
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Sam/invading
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - "Bah who cares! I\u2019m coming in!"
+      - "\u2620\uFE0F Kill"
+      - kill
+      - Don't kill
+      - dontkill
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Sam/kill
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - "I\u2026 just wanted to be friends."
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Sam/kill/v
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - OH NOOOOOOOOO
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Sam/dontkill
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - Lets get this party started, pal!
+      - 
       - 
       - 
       - 
@@ -578,7 +1155,7 @@ MonoBehaviour:
       Languages:
       - 
       - 
-      - Duke
+      - Duke the Van Hellsing Stake Salesman
       - 
       - 
       - 
@@ -722,6 +1299,385 @@ MonoBehaviour:
       - 
       - 
       - "Wonderful, don\u2019t let those bloodsuckers in."
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Nurse///Guest
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Nurse/name
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - Duke the Van Hellsing Stake Salesman
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Nurse/
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Nurse/Day 2
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Nurse/intro
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - "Hi <$player>, My name is nurse Gloom, and I am from the local children\u2019s
+        hospital. I was just wondering if I could have a moment of your time to talk
+        about donating blood?"
+      - "Sure nurse Gloom, I\u2019m always ready to help the children."
+      - 
+      - "Oh I\u2019ve always been very afraid of needles and blood."
+      - 
+      - "Don\u2019t you think this is the worst possible time for this collection
+        campaign?"
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Nurse/response1
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - Well as you know, accidents happen all the time and people are in need of
+        blood donations to keep them alive. Would you mind telling me what blood type
+        you are?
+      - "Of course, I\u2019m O-"
+      - response4
+      - "(Lie) I\u2019m actually not sure, I\u2019ve never donated before"
+      - response5
+      - "Sorry, at this trying time I don\u2019t think I feel comfortable giving that
+        information away"
+      - response6
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Nurse/response1/v
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - As you know, people get hurt all the time. We need to fill our blood banks
+        with deli.. I mean, life giving blood so that we can avoid needless death.
+        Would you mind telling me what blood type you are?
+      - "Of course, I\u2019m O-"
+      - response4
+      - "(Lie) I\u2019m actually not sure, I\u2019ve never donated before"
+      - response5
+      - "Sorry, at this trying time I don\u2019t think I feel comfortable giving that
+        information away"
+      - response6
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Nurse/response2
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - "There\u2019s really nothing to be afraid of! It doesn\u2019t hurt a bit,
+        and is over before you know it. Do you happen to know what blood type you
+        are?"
+      - "Of course, I\u2019m O-"
+      - response4
+      - "(Lie) I\u2019m actually not sure, I\u2019ve never donated before"
+      - response5
+      - "Sorry, at this trying time I don\u2019t think I feel comfortable giving that
+        information away"
+      - response6
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Nurse/response2/v
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - "I promise, it doesn\u2019t hurt at all. Nothing like a bite or anything like
+        that. It will be over before you know it. Would it be possible for you to
+        tell me what your blood type is?"
+      - "Of course, I\u2019m O-"
+      - response4
+      - "(Lie) I\u2019m actually not sure, I\u2019ve never donated before"
+      - response5
+      - "Sorry, at this trying time I don\u2019t think I feel comfortable giving that
+        information away"
+      - response6
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Nurse/response3
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - "The children are always in need <$player>, just because a little vampire
+        break out occurs doesn\u2019t mean we can stop doing our jobs. Would it be
+        possible for you to tell me what your blood type is?"
+      - "Of course, I\u2019m O-"
+      - response4
+      - "(Lie) I\u2019m actually not sure, I\u2019ve never donated before"
+      - response5
+      - "Sorry, at this trying time I don\u2019t think I feel comfortable giving that
+        information away"
+      - response6
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Nurse/response4
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - Oh my! The universal donor! You are indeed a lucky find, and your blood is
+        very helpful to all kinds of people. Would you mind terribly if we talked
+        more at your party this Friday?
+      - "Sure nurse Gloom, I\u2019d love to see you there."
+      - invite
+      - "I think your constant talking of blood might make me faint. Sorry nurse Gloom,
+        I can\u2019t invite you."
+      - dontinvite
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Nurse/response4/v
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - "That\u2019s great news! Your blood is the more desirable, and pairs well
+        with most meal.. I mean recipients. You could help a lot of people by donating.
+        Maybe We can talk more on Friday at your party?"
+      - "Sure nurse Gloom, I\u2019d love to see you there."
+      - invite
+      - "I think your constant talking of blood might make me faint. Sorry nurse Gloom,
+        I can\u2019t invite you."
+      - dontinvite
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Nurse/response5
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - "That\u2019s okay, If you want I could walk you through what the process is
+        like. It really isn\u2019t too bad. Maybe I could swing by your party on Friday
+        and we can talk more?"
+      - "Sure nurse Gloom, I\u2019d love to see you there."
+      - invite
+      - "I think your constant talking of blood might make me faint. Sorry nurse Gloom,
+        I can\u2019t invite you."
+      - dontinvite
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Nurse/response5/v
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - "Oh well it\u2019s easy to find out! Every blood type has a distinct taste.
+        We can talk about it more on Friday at your party if you want!"
+      - "Sure nurse Gloom, I\u2019d love to see you there."
+      - invite
+      - "I think your constant talking of blood might make me faint. Sorry nurse Gloom,
+        I can\u2019t invite you."
+      - dontinvite
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Nurse/response6
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - "Well that\u2019s too bad, your blood sure could do a lot of good in the world.
+        Perhaps I can come back and try to change your mind at your party on Friday?"
+      - "Sure nurse Gloom, I\u2019d love to see you there."
+      - invite
+      - "I think your constant talking of blood might make me faint. Sorry nurse Gloom,
+        I can\u2019t invite you."
+      - dontinvite
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Nurse/invite
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - invite
+      - "Perfect! I\u2019ll see you Friday <$player>"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Nurse/dontinvite
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - "Well that\u2019s too bad, there would have been tons of possible donors there.
+        Oh well."
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Nurse/Day3
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Nurse/intro2
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - Hey <$player>, thanks again for inviting me! I brought some red wine for the
+        party.
+      - Not so fast vampire scum! HEEYAA!
+      - kill
+      - Come on in Nurse Gloom, everyone is out back!
+      - nokill
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Nurse/intro2/v
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - "Hello <$player>, glad to see you looking so healthy and full of life! Let\u2019s
+        get this party started!"
+      - Not so fast vampire scum! HEEYAA!
+      - kill
+      - Come on in Nurse Gloom, everyone is out back!
+      - nokill
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Nurse/kill
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - Make sure you donate my blood to the kids!
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Nurse/kill/v
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - AAAHHH! You were about to be mine!
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Nurse/nokill
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - "Don\u2019t mind if I do."
       - 
       - 
       - 
@@ -969,10 +1925,10 @@ MonoBehaviour:
       - 
       - dad
       - "I can\u2019t wait to get this party started!"
-      - "I\u2019ve found you out, you were vampires all along!"
+      - "\u2620\uFE0FI\u2019ve found you out, you were vampires all along!"
       - kill
       - Come right in mom and dad.
-      - notkill
+      - nokill
       - 
       - 
       Flags: 000000000000000000
@@ -1022,7 +1978,7 @@ MonoBehaviour:
       - 
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Parents/notkill
+    - Term: Parents/nokill
       TermType: 0
       Description: 
       Languages:
@@ -1037,7 +1993,7 @@ MonoBehaviour:
       - 
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Parents/notkill/v
+    - Term: Parents/nokill/v
       TermType: 0
       Description: 
       Languages:
@@ -1073,7 +2029,7 @@ MonoBehaviour:
       Languages:
       - 
       - 
-      - Lucy
+      - Lucy the Girl Guide
       - 
       - 
       - 
@@ -1120,8 +2076,7 @@ MonoBehaviour:
       - 
       - 
       - "Hello mister, wanna buy some cookies? They\u2019re special Halloween ones
-        with a bloody red cream in the middle. *drools* My vampire overlords love
-        them."
+        with a bloody red cream in the middle. *drools*"
       - "Sure, I\u2019d love some."
       - acceptCookies
       - "*looks warily at the cookies* I\u2019m not quite interested right now."
@@ -1200,7 +2155,7 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - 
+      - invite
       - "Yay, I\u2019ll be here tomorrow! Bye!"
       - 
       - 
@@ -1264,10 +2219,10 @@ MonoBehaviour:
       - Hey <$player>, thanks again for inviting me! Looks like there are a ton of
         excellent snacks here! By the way, I brought some more flavors of cookies
         if you wanted to buy some.
-      - I reject your cookies and your blood sucking ways! DIE!
+      - "\u2620\uFE0FI reject your cookies and your blood sucking ways! DIE!"
       - kill2
       - There are tons of potential buys here, get in there.
-      - kill3
+      - nokill
       - 
       - 
       Flags: 000000000000000000
@@ -1281,10 +2236,10 @@ MonoBehaviour:
       - Hey <$player>, thanks again for inviting me! You have potato chips, know what
         goes great with potato chips? More girl guide cookies. I brought some if you
         want to take a look.
-      - I reject your cookies and your blood sucking ways! DIE!
+      - "\u2620\uFE0FI reject your cookies and your blood sucking ways! DIE!"
       - kill1
       - There are tons of potential buys here, get in there.
-      - kill3
+      - nokill
       - 
       - 
       Flags: 000000000000000000
@@ -1294,7 +2249,7 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - 
+      - kill
       - "AAAH! How dare you! I\u2019m just a little girl!"
       - 
       - 
@@ -1309,7 +2264,7 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - 
+      - kill
       - Ouch! Why did you do that <$player>? It hurts...
       - 
       - 
@@ -1319,7 +2274,7 @@ MonoBehaviour:
       - 
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Lucy/kill3
+    - Term: Lucy/nokill
       TermType: 0
       Description: 
       Languages:
@@ -1533,7 +2488,7 @@ MonoBehaviour:
       Languages:
       - 
       - 
-      - On other news, World Renown Party Planner <$PLAYER> has recently moved into
+      - On other news, World Renown Party Planner <$player> has recently moved into
         the neighbourhood.
       - 
       - 
@@ -1564,7 +2519,7 @@ MonoBehaviour:
       Languages:
       - 
       - 
-      - "\u201CNo human\u2019s safety will be at risk\u201D stated <$PLAYER>"
+      - "\u201CNo human\u2019s safety will be at risk\u201D stated <$player>"
       - 
       - 
       - 
@@ -1595,7 +2550,7 @@ MonoBehaviour:
       Languages:
       - 
       - 
-      - '{NAME}''s party aims to be the BIGGEST PARTY yet, aiming for 104 guests.'
+      - <$player>'s party aims to be the BIGGEST PARTY yet, aiming for 104 guests.
       - 
       - 
       - 
@@ -1610,7 +2565,7 @@ MonoBehaviour:
       Languages:
       - 
       - 
-      - With over 100 Guests already RSVP'd <$PLAYER> only needs 4 more guests to
+      - With over 100 Guests already RSVP'd <$player> only needs 4 more guests to
         go.
       - 
       - 
@@ -1724,8 +2679,8 @@ MonoBehaviour:
       Languages:
       - 
       - 
-      - Vampires surveyed indicates that 67% are happier then the avaerage human,
-        possibly due to the abundance of blood in the world.
+      - Vampires surveyed indicates that 67% are happier than the average human, possibly
+        due to the abundance of blood in the world.
       - 
       - 
       - 
@@ -1740,7 +2695,7 @@ MonoBehaviour:
       Languages:
       - 
       - fade
-      - ' Be extra weary of inviting guests into your home for the forseeable future.'
+      - ' Be extra weary of inviting guests into your home for the foreseeable future.'
       - 
       - 
       - 
@@ -1755,7 +2710,7 @@ MonoBehaviour:
       Languages:
       - 
       - Burt offscreenbottom center normal
-      - This just in! The Federal Government has enacted total vigilantee law!
+      - This just in! The Federal Government has enacted total vigilante law!
       - 
       - 
       - 
@@ -1802,8 +2757,8 @@ MonoBehaviour:
       Languages:
       - 
       - 
-      - In other news [NAME]'s party is sure to be a hit and totally worth the chance
-        of death upon trying to enter another persons home.
+      - In other news <$player>'s party is sure to be a hit and totally worth the
+        chance of death upon trying to enter another persons home.
       - 
       - 
       - 
@@ -1828,13 +2783,629 @@ MonoBehaviour:
       - 
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Burt/day3/6
+    - Term: Paul///Guest
       TermType: 0
       Description: 
       Languages:
       - 
       - 
-      - And now sports!
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Paul/name
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - Paul, Retired
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Paul/
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - Anyway, I heard you throw amazing parties can I be invited?
+      - Yeah sure pual.
+      - invite
+      - No
+      - novite
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Paul/intro/1
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - Hello Neighbour!
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Paul/intro/2
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - You will never believe what I saw while mowing the lawn.
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Paul/intro/3
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - It was scary! And <s=20>SPOOKY</s>. Just like in those <s=15>SPOOKY</s> movies
+        I rent all the time.
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Paul/intro/4
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - It was <s=120>FAST<s><s=1>,</s> and FLYING.
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Paul/intro/5
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - "It had wings, but didn\u2019t It didn\u2019t have any fur or feathers. Like
+        how does something totally naked fly like that!?"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Paul/intro/6
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - It made noises like I never heard before. Like it was woosh woosh. Or was
+        it a fwaap fwapp?
+      - Paul, that was a airplane.
+      - airplane/1
+      - Paul, that was a bat.
+      - bat/2
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Paul/intro/7
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Paul/airplane/1
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - buff_vamp==1>airplanebuff/1
+      - Oh it was a airplane? I heard of those. I wish I could ride on one of those,
+        I just can't get around so faster.
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Paul/airplanebuff/1
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - Oh it was a airplane? I heard of those. Is that how Buffy gets around so fast
+        by turning into one of those? I need one of those.
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Paul/airplanebuff/2
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - Anyway, I heard you throw amazing parties can I be invited?
+      - Yeah sure pual.
+      - invite
+      - No
+      - novite
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Paul/bat/1
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - Well I wouldn't bat my eyes to see something that terrifying again.
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Paul/bat/2
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - Anyway, I heard you throw amazing parties can I be invited?
+      - Yeah sure pual.
+      - invite
+      - No
+      - novite
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Paul/invite
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - invite
+      - "WHOA Yes! Maybe I\u2019ll come in riding a aero-plane on Friday."
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Paul/novite
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - "WHOA! I wasn\u2019t expecting a no."
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Paul/Day3
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Paul/day3/1
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Paul/day3/2
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Paul/day3/3
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Paul/day3/4
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Paul/day3/5
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Buffy///Guest
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Buffy/name
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - Buffy, Renown Vampire Slayer
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Buffy/
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Buffy/intro/1
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - "Hey there <$player>, I just wanted to come over and introduce myself. My
+        name is Buffy, and I\u2019m a world famous vampire slayer."
+      - A) Wow! A vampire slayer?! You must have so many interesting stories
+      - introa
+      - "B) A vampire slayer? Isn\u2019t that just in T.V.?"
+      - introb
+      - C) I detest violence and detest your way of life.
+      - introc
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Buffy/intro/1/v
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - buff_vamp=1
+      - "Hey there <$player>, I just wanted to come over and introduce myself. My
+        name is Buffy, and I\u2019m a world famous vampire slayer."
+      - A) Wow! A vampire slayer?! You must have so many interesting stories
+      - introa
+      - "B) A vampire slayer? Isn\u2019t that just in T.V.?"
+      - introb
+      - C) I detest violence and detest your way of life.
+      - introc
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Buffy/introa
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - "Yes it is a very interesting life, filled with many stories that would surely
+        impress at a party. Speaking of which, is it true that you\u2019re hosting
+        one of your world famous parties this Friday?"
+      - "Sure Buffy, I\u2019ll bet lots of people will be glad to see you!"
+      - invite
+      - "I don\u2019t think having someone who kills for a living at a party  would
+        fit in very well."
+      - don't invite
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Buffy/introb
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - "Yea, all T.V. is real. The lizard people that rule over us just use it as
+        a means to keep the population calm about the terrifying things that happen
+        on this planet. I\u2019d love to tell you more about it, perhaps at your party?"
+      - Sure, I bet there will be lots of fans waiting for you.
+      - invite
+      - How do I know you arn't one of those lizzard people yourself Buffy?
+      - don't invite
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Buffy/introc
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - "You sound awful sympathetic to those vampires, how can I trust that this
+        party won\u2019t just be a feeding grounds for them? Would you mind if I dropped
+        by this party to make sure there isn\u2019t any funny business?"
+      - Sure come I'm sure the your fans will love it.
+      - invite
+      - I don't know trust is a two way street buffy.
+      - don't invite
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Buffy/invite
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - invite
+      - Alright, see you there partner.
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Buffy/invite/v
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - invite
+      - I'll be looking forward to seeing <i>all</i> my fans Friday.
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Buffy/noinvite
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - Well, have it your way then.
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Buffy/Day3
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Buffy/day3/1
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - Hey [NAME], I brought my vampire detecting radar. Look how cool and useful
+        this is!
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Buffy/day3/2
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - "[ The radar goes off in Buffy\u2019s hands ]"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Buffy/day3/3
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - "Oh that\u2019s weird. It must have some of its settings dialed in wrong."
+      - "\u2620\uFE0FI\u2019ll show you wrong settings! KURPLAH!"
+      - kill
+      - "I\u2019m sure that would be very useful with the correct settings! Come enjoy
+        my 7 layer bean dip."
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Buffy/kill
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - kill
+      - How could you do this... to me.
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Buffy/kill/v
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - I just wanted... to taste the blood of my fans.
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Buffy/nokill
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - Whatever, I think this is a knokoff product anyways. To the DIP.
       - 
       - 
       - 
@@ -1894,9 +3465,9 @@ MonoBehaviour:
       Languages:
       - 
       - Ernie normal offscreenleft center
-      - "Delivery Mattress Delivery! For Mr. I. C. Weeiners. That\u2019s not right\u2026
-        you don\u2019t look like a I. C. Weeiners at all. Well just sign here and
-        it\u2019s all yours I guess."
+      - "Delivery Mattress Delivery! For Mr. I\xB7 C\xB7 Weeiners? That\u2019s not
+        right\u2026 you don\u2019t look like a I\xB7 C\xB7 Weeiners at all. Whatever,
+        just sign here and it\u2019s all yours I guess."
       - 
       - 
       - 
@@ -2002,8 +3573,23 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - Ernie normal hide offscreenleft
+      - 
       - "Man I\u2019m so lucky your house has no stairs."
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Ernie/matress/2
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - Ernie normal hide offscreenleft
+      - "Alright! I\u2019m off to the park now, later playa."
       - 
       - 
       - 
@@ -2018,7 +3604,7 @@ MonoBehaviour:
       Languages:
       - 
       - Ernie normal hide offscreenleft
-      - "Alright! I\u2019m off to the park now, later {NAME}."
+      - "Alright! I\u2019m off to the park now, later playa."
       - 
       - 
       - 
@@ -2192,7 +3778,7 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - 
+      - hide
       - '[Door Shut]'
       - 
       - 
@@ -2202,7 +3788,7 @@ MonoBehaviour:
       - 
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Copy of guest_1///Guest
+    - Term: Ramsy///Guest
       TermType: 0
       Description: 
       Languages:
@@ -2217,13 +3803,15 @@ MonoBehaviour:
       - 
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Copy of guest_1/name
+    - Term: Ramsy/name
       TermType: 0
       Description: 
       Languages:
       - 
       - 
-      - Stake Delivery Guy
+      - 'Gordon Ramsy
+
+'
       - 
       - 
       - 
@@ -2232,7 +3820,7 @@ MonoBehaviour:
       - 
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Copy of guest_1/
+    - Term: Ramsy/
       TermType: 0
       Description: 
       Languages:
@@ -2247,13 +3835,14 @@ MonoBehaviour:
       - 
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Copy of guest_1/intro_1
+    - Term: Ramsy/intro/1
       TermType: 0
       Description: 
       Languages:
       - 
-      - guest_1 normal offscreenleft center
-      - Hi
+      - 
+      - Nice new place, beautiful neighbourhood. I just get so excited about going
+        to places and learning something new.
       - 
       - 
       - 
@@ -2262,45 +3851,326 @@ MonoBehaviour:
       - 
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Copy of guest_1/intro_2
+    - Term: Ramsy/intro/2
       TermType: 0
       Description: 
       Languages:
       - 
-      - nervous
-      - I'm not a vampire
-      - Oh good!
-      - vampire_1
-      - You sure?
-      - regular_1
+      - 
+      - Wait what ARE you eating? Is that a pickle hotdog? Get that shit out of my
+        face right now.
       - 
       - 
-      Flags: 000000000000000000
-      Languages_Touch: []
-    - Term: Copy of guest_1/vampire_1
-      TermType: 0
-      Description: 
-      Languages:
-      - 
-      - evil
-      - Bleh bleh bleh!
-      - 
-      - endings/end_1
       - 
       - 
       - 
       - 
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Copy of guest_1/regular_1
+    - Term: Ramsy/intro/3
       TermType: 0
       Description: 
       Languages:
       - 
-      - nervous hide offscreenright
-      - 'Oh, definitely. No vampire here. ::shifty eyes::'
-      - Come on in.
-      - endings/end_2
+      - 
+      - "You need a proper meal or just go order a fucking pizza on delivery for pete\u2019s
+        sake!"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Ramsy/intro/4
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - "So, I know we usually do seafood Hors d'oeuvres every year just before the
+        dinner but I think we should play it safe and not do that anymore. I can\u2019t
+        afford to replace another city sewer system."
+      - "We don\u2019t talk about <i>\u2018the incident\u2019</i> anymore"
+      - day1end/2
+      - "Don't\u2019 remind me"
+      - day1end/3
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Ramsy/day1end/2
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - Don't worry chap just move to another place and we'll all be fine.
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Ramsy/day1end/3
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - "Oh right. Before I leave, I need to know what kind meal we want to serve
+        on Friday\u2019s Dinner?"
+      - Hamburgers
+      - burg
+      - Steaks, the meat, not the wooden ones.
+      - steak
+      - Garlic Bread, only garlic bread.
+      - garlic
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Ramsy/burg/1
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - ramsy_var=burger
+      - "Perfect, I have the world\u2019s best burger recipe. You donkey."
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Ramsy/steak/1
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - ramsy_var=Steak
+      - Excellent choice, only medium rare. You donkey.
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Ramsy/garlic/1
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - ramsy_var=Garlic
+      - That is the stupidest thing I have ever heard. You donkey.
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Ramsy/Day 3
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Ramsy/day3/1
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - ramsy_var==burger>day3burg/1
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Ramsy/day3/2
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - ramsy_var==Steak>day3steak/1
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Ramsy/day3/3
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - ramsy_var==Garlic>day3garlic/1
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Ramsy/day3burg/1
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - "Alright, all the food\u2019s here dinner should be ready soon. Bloody warm
+        Burgers, world famous and ready to go."
+      - "\u2620\uFE0F Why don't you burg THIS."
+      - kill
+      - (LET IN) Well enjoy the party Gord.
+      - nokill
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Ramsy/day3steak/1
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - "Alright, all the food\u2019s here dinner should be ready soon. Bloody warm
+        Steaks cooked exactly to a medium and ready to go."
+      - "\u2620\uFE0F I can't mistake this vampire!"
+      - kill
+      - (LET IN) Well enjoy the party Gord.
+      - nokill
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Ramsy/day3garlic/1
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - "Alright, all the food\u2019s here dinner should be ready soon. Bloody warm
+        Garlic Bread and ready to go."
+      - "\u2620\uFE0F TAKE THIS!!"
+      - kill
+      - (LET IN) Well enjoy the party Gord.
+      - nokill
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Ramsy/day3burg/1/v
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - "Great news. I learned recently you don\u2019t need to Cook Meat at all."
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Ramsy/day3burg/2/v
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - "I canceled all the burgers you ordered. We\u2019re just going to have Raw
+        Virgin Lamb at the party."
+      - "\u2620\uFE0F Why don't you burg THIS."
+      - kill
+      - (LET IN) Well enjoy the party Gord.
+      - nokill
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Ramsy/day3steak/1/v
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - " I canceled all the steaks you ordered. We\u2019re just going to have Raw
+        Virgin Lamb at the party."
+      - "\u2620\uFE0F I can't mistake this vampire!"
+      - kill
+      - (LET IN) Well enjoy the party Gord.
+      - nokill
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Ramsy/day3garlic/1/v
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - "I canceled all those those Garlic Breads you ordered. We\u2019re just going
+        to have Raw Virgin Lamb at the party."
+      - "\u2620\uFE0F TAKE THAT!!!"
+      - kill
+      - (LET IN) Well enjoy the party Gord.
+      - nokill
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Ramsy/kill
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - You bloody donkey
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Ramsy/nokill
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - Served to perfection.
+      - 
+      - 
       - 
       - 
       - 
@@ -2343,7 +4213,7 @@ MonoBehaviour:
     Google_WebServiceURL: https://script.google.com/macros/s/AKfycbyTHLOw0mSBTa6Ufd1UEzDAtNCYjd1zUlQpf_ew1A/exec
     Google_SpreadsheetKey: 1SAkO2quLFZu3g7w1gxC8mKpIjiZmL4wyQ4gYlq_1ubo
     Google_SpreadsheetName: I2Loc MyNeighbourTheVampire Localization
-    Google_LastUpdatedVersion: 1548555771620
+    Google_LastUpdatedVersion: 1548568828057
     Google_Password: vampires
     GoogleUpdateFrequency: 0
     GoogleInEditorCheckFrequency: 0

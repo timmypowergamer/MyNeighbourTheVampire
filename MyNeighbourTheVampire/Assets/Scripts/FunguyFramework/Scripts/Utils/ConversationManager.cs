@@ -31,6 +31,8 @@ namespace Fungus
 			public string[] ResponseLinks { get; set; }
 			public string[] ResponseTexts { get; set; }
 			public string Condition;
+			public bool Kill;
+			public bool Invite;
 		}
 
 		protected Dictionary<string, Character> characters;
@@ -215,6 +217,8 @@ namespace Fungus
 				{
 					item.Condition = sayParams[i];
 				}
+				if (sayParams[i] == "kill") item.Kill = true;
+				if (sayParams[i] == "invite") item.Invite = true;
 			}
 
 			// Check if there's a Hide parameter
@@ -400,6 +404,14 @@ namespace Fungus
 				if (item.Character != null)
 				{
 					currentCharacter = item.Character;
+					if(item.Kill)
+					{
+						GameManager.Instance.SetDead(currentCharacter.gameObject.name, true);
+					}
+					if (item.Invite)
+					{
+						GameManager.Instance.SetInvited(currentCharacter.gameObject.name, true);
+					}
 				}
 
 				currentPortrait = item.Portrait;
