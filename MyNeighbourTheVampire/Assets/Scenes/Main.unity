@@ -2610,39 +2610,6 @@ MonoBehaviour:
   _invites: {fileID: 11011931}
   _guests: {fileID: 684890076}
   _killed: {fileID: 1855364571}
---- !u!1 &861024837 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1320932506538720, guid: 83aa21a87512978459574bc84ff1b5f3,
-    type: 3}
-  m_PrefabInstance: {fileID: 199882797}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &861024841
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 861024837}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c4782cf42f2644447b9631f6e522160b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  volume: 1
-  loop: 1
-  targetAudioSource: {fileID: 0}
-  audioMode: 2
-  beepSounds: []
-  boopSounds:
-  - {fileID: 8300000, guid: e2d904bc716fc1145942b0493450ffc4, type: 3}
-  - {fileID: 8300000, guid: 113602b37043321449c33ffc21a4de05, type: 3}
-  - {fileID: 8300000, guid: 9c040f35a677db146895613fd7f82b7b, type: 3}
-  - {fileID: 8300000, guid: 8f6e103a7d54fa044a84af9d6e64d29c, type: 3}
-  - {fileID: 8300000, guid: f49e29062fda7d34fbb5cfd5176f25a2, type: 3}
-  - {fileID: 8300000, guid: 5ac0c7cad4be529498a8052e9820949c, type: 3}
-  - {fileID: 8300000, guid: 857347c7fe592c74bb5d8a9009e81852, type: 3}
-  soundEffect: {fileID: 0}
-  inputSound: {fileID: 0}
 --- !u!1 &880386515
 GameObject:
   m_ObjectHideFlags: 0
@@ -5910,39 +5877,6 @@ MonoBehaviour:
   m_ChildForceExpandHeight: 0
   m_ChildControlWidth: 1
   m_ChildControlHeight: 0
---- !u!1 &2121845763 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2121845763, guid: 83aa21a87512978459574bc84ff1b5f3,
-    type: 3}
-  m_PrefabInstance: {fileID: 199882797}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2121845767
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2121845763}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c4782cf42f2644447b9631f6e522160b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  volume: 1
-  loop: 1
-  targetAudioSource: {fileID: 0}
-  audioMode: 2
-  beepSounds: []
-  boopSounds:
-  - {fileID: 8300000, guid: e2d904bc716fc1145942b0493450ffc4, type: 3}
-  - {fileID: 8300000, guid: 113602b37043321449c33ffc21a4de05, type: 3}
-  - {fileID: 8300000, guid: 9c040f35a677db146895613fd7f82b7b, type: 3}
-  - {fileID: 8300000, guid: 8f6e103a7d54fa044a84af9d6e64d29c, type: 3}
-  - {fileID: 8300000, guid: f49e29062fda7d34fbb5cfd5176f25a2, type: 3}
-  - {fileID: 8300000, guid: 5ac0c7cad4be529498a8052e9820949c, type: 3}
-  - {fileID: 8300000, guid: 857347c7fe592c74bb5d8a9009e81852, type: 3}
-  soundEffect: {fileID: 0}
-  inputSound: {fileID: 0}
 --- !u!1 &2132961080
 GameObject:
   m_ObjectHideFlags: 0
