@@ -220,7 +220,7 @@ public class CanvasManager : MonoBehaviour
             Destroy(gameObject);
             return;
         }
-        DontDestroyOnLoad(gameObject);
+        //DontDestroyOnLoad(gameObject);
 
         screenCanvas = _screenCanvas;
         worldCanvas = _worldCanvas;

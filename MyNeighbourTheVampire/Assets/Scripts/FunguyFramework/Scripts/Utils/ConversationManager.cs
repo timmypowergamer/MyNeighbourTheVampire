@@ -414,10 +414,10 @@ namespace Fungus
 					{
 						GameManager.Instance.SetInvited(currentCharacter.gameObject.name);
 					}
-					if(item.PlayerKill)
-					{
-						GameManager.Instance.KillPlayer();
-					}
+				}
+				if (item.PlayerKill)
+				{
+					GameManager.Instance.KillPlayer();
 				}
 
 				currentPortrait = item.Portrait;

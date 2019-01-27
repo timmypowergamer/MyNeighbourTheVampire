@@ -1740,7 +1740,7 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - invite
+      - dad invite
       - 
       - 
       - exit
@@ -1755,7 +1755,7 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - invite
+      - mom invite
       - 
       - 
       - exit
@@ -3208,7 +3208,7 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - 
+      - playerkill
       - " \u201Cthe worst we had was one bathroom malfunction, which won't ever happen
         again\""
       - 
@@ -4008,6 +4008,21 @@ MonoBehaviour:
       Languages:
       - 
       - buffy hide offscreenright
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Buffy/retort/1
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
       - 
       - 
       - 
@@ -5091,7 +5106,7 @@ MonoBehaviour:
     Google_WebServiceURL: https://script.google.com/macros/s/AKfycbyTHLOw0mSBTa6Ufd1UEzDAtNCYjd1zUlQpf_ew1A/exec
     Google_SpreadsheetKey: 1SAkO2quLFZu3g7w1gxC8mKpIjiZmL4wyQ4gYlq_1ubo
     Google_SpreadsheetName: I2Loc MyNeighbourTheVampire Localization
-    Google_LastUpdatedVersion: 1548620469171
+    Google_LastUpdatedVersion: 1548620805883
     Google_Password: vampires
     GoogleUpdateFrequency: 0
     GoogleInEditorCheckFrequency: 0

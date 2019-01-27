@@ -134,6 +134,7 @@ public class GameManager : MonoBehaviour
 			yield return nextEvent.Run();
 			if (IsPlayerDead)
 			{
+				CanvasManager.instance.Get<KillScreen>(UIPanelID.KillScreen).Open();
 				yield break;
 			}
 			else
