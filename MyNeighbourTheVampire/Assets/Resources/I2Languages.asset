@@ -426,7 +426,7 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - "\u2713"
+      - C
       - 
       - 
       - 
@@ -441,7 +441,7 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - "\u2713"
+      - C
       - 
       - 
       - 
@@ -486,7 +486,7 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - "\u2713"
+      - C
       - 
       - 
       - 
@@ -2180,7 +2180,7 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - tim_skipbrella==1>skipbrella/1
+      - tim_skipbrella==1>skipbrella
       - 
       - 
       - 
@@ -2223,7 +2223,7 @@ MonoBehaviour:
       - 
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Tim/accept/1
+    - Term: Tim/invite/1
       TermType: 0
       Description: 
       Languages:
@@ -3844,7 +3844,7 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - buff_vamp==1>airplanebuff/1
+      - buff_vamp==1>airplanebuff
       - Oh it was an airplane? I heard of those. I wish I could ride on one of those,
         I just can't get around too fast.
       - 
@@ -5326,6 +5326,206 @@ MonoBehaviour:
       - 
       Flags: 000000000000000000
       Languages_Touch: []
+    - Term: Ending///Guest
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Ending/name
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - Burt the Newsguy
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Ending/
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Ending/partyfail/1
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - party==success>partysuccess burt normal offscreenbottom center
+      - In entertainment news, last nights big event turned out to be a <b>big flop</b>.
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Ending/partyfail/2
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - The highly anticipated party, thrown by <$player>, was only attended by <$guests>
+        people, falling well short of the 104 attendee goal.
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Ending/partyfail/3
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - When asked to comment, <$player> said:<nl>"Get off my lawn, Vampire!"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Ending/partyfail/4
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - One thing is for certain, <$player>'s party planning days are over.
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Ending/partyfail/5
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - Back to you, Lord Dracula...
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Ending/partysuccess/1
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - burt normal offscreenbottom center
+      - In entertainment news, last nights big event turned out to be a <b>smashing
+        success!</b>.
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Ending/partysuccess/2
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - The highly anticipated party, thrown by <$player>, was attended by <$guests>
+        people, shattering the previous record of 103.
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Ending/partysuccess/3
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - When asked to comment, <$player> said:<nl>"I would like to thank my friends
+        and family for supporting me.<wi><nl>All hail Lord Dracula!"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Ending/partysuccess/4
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - One thing is for certain, <$player>'s party planning career is definitely
+        taking off.
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Ending/partysuccess/5
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - Back to you, Lord Dracula...
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
     CaseInsensitiveTerms: 0
     OnMissingTranslation: 1
     mTerm_AppName: 
@@ -5362,7 +5562,7 @@ MonoBehaviour:
     Google_WebServiceURL: https://script.google.com/macros/s/AKfycbyTHLOw0mSBTa6Ufd1UEzDAtNCYjd1zUlQpf_ew1A/exec
     Google_SpreadsheetKey: 1SAkO2quLFZu3g7w1gxC8mKpIjiZmL4wyQ4gYlq_1ubo
     Google_SpreadsheetName: I2Loc MyNeighbourTheVampire Localization
-    Google_LastUpdatedVersion: 1548626275660
+    Google_LastUpdatedVersion: 1548627819375
     Google_Password: vampires
     GoogleUpdateFrequency: 0
     GoogleInEditorCheckFrequency: 0
