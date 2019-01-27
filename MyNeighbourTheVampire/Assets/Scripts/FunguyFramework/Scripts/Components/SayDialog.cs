@@ -382,6 +382,11 @@ namespace Fungus
         public virtual IEnumerator DoSay(string text, bool clearPrevious, bool waitForInput, bool fadeWhenDone, bool stopVoiceover, bool waitForVO, AudioClip voiceOverClip, Action onComplete)
         {
             var writer = GetWriter();
+			WriterAudio audio = SpeakingCharacter.GetComponent<WriterAudio>();
+			if(audio != null)
+			{
+				writer.writerListeners.Add(audio);
+			}
 
             if (writer.IsWriting || writer.IsWaitingForInput)
             {

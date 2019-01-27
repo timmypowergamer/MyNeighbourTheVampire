@@ -83,7 +83,7 @@ namespace Fungus
 		protected bool inputFlag;
         protected bool exitFlag;
 
-        protected List<IWriterListener> writerListeners = new List<IWriterListener>();
+        public List<IWriterListener> writerListeners = new List<IWriterListener>();
 
         protected StringBuilder openString = new StringBuilder(256);
         protected StringBuilder closeString = new StringBuilder(256);
@@ -955,7 +955,10 @@ namespace Fungus
             gameObject.SetActive(true);
 
             yield return StartCoroutine(ProcessTokens(tokens, stopAudio, onComplete));
-        }
+
+			writerListeners.Clear();
+
+		}
 
         /// <summary>
         /// Sets the color property of the text UI object.

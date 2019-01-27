@@ -14,7 +14,8 @@ namespace Fungus.EditorUtils
         protected SerializedProperty targetAudioSourceProp;
         protected SerializedProperty audioModeProp;
         protected SerializedProperty beepSoundsProp;
-        protected SerializedProperty soundEffectProp;
+		protected SerializedProperty boopSoundsProp;
+		protected SerializedProperty soundEffectProp;
         protected SerializedProperty inputSoundProp;
 
         protected virtual void OnEnable()
@@ -25,7 +26,8 @@ namespace Fungus.EditorUtils
             inputSoundProp = serializedObject.FindProperty("inputSound");
             audioModeProp = serializedObject.FindProperty("audioMode");
             beepSoundsProp = serializedObject.FindProperty("beepSounds");
-            soundEffectProp = serializedObject.FindProperty("soundEffect");
+			boopSoundsProp = serializedObject.FindProperty("boopSounds");
+			soundEffectProp = serializedObject.FindProperty("soundEffect");
         }
 
         public override void OnInspectorGUI()
@@ -42,6 +44,10 @@ namespace Fungus.EditorUtils
             {
                 ReorderableArrayEditor.DrawReorderableArray(beepSoundsProp);
             }
+			else if ((AudioMode)audioModeProp.enumValueIndex == AudioMode.Boopy)
+			{
+				ReorderableArrayEditor.DrawReorderableArray(boopSoundsProp);
+			}
             else
             {
                 EditorGUILayout.PropertyField(soundEffectProp);
