@@ -240,48 +240,48 @@ namespace Fungus
 
             if (playBoops && boopSounds.Count >= 7 )
             {
-                if (nextBeepTime < Time.realtimeSinceStartup)
+                // Read glpyh for mapped sounds
+                int boopIndex = -1;
+                string[] keys = new string[] { "a", "o", "e", "u", "i", "r", "p" };
+                string sKeyResult = keys.FirstOrDefault(s => glyphs.Contains(s));
+                switch (sKeyResult)
                 {
-                    // Read glpyh for mapped sounds
-                    int boopIndex = -1;
-                    string[] keys = new string[] { "a", "o", "e", "u", "i", "r", "p" };
-                    string sKeyResult = keys.FirstOrDefault(s => glyphs.Contains(s));
-                    switch (sKeyResult)
-                    {
-                        case "a":
-                            boopIndex = 0;
-                            break;
-                        case "o":
-                            boopIndex = 1;
-                            break;
-                        case "e":
-                            boopIndex = 2;
-                            break;
-                        case "u":
-                            boopIndex = 3;
-                            break;
-                        case "i":
-                            boopIndex = 4;
-                            break;
-                        case "r":
-                            boopIndex = 5;
-                            break;
-                        case "p":
-                            boopIndex = 6;
-                            break;
-                    }
-                    if (boopIndex == -1) { return; }
+                    case "a":
+                        boopIndex = 0;
+                        break;
+                    case "o":
+                        boopIndex = 1;
+                        break;
+                    case "e":
+                        boopIndex = 2;
+                        break;
+                    case "u":
+                        boopIndex = 3;
+                        break;
+                    case "i":
+                        boopIndex = 4;
+                        break;
+                    case "r":
+                        boopIndex = 5;
+                        break;
+                    case "p":
+                        boopIndex = 6;
+                        break;
+                }
+                if (boopIndex == -1) { return; }
+                if(targetAudioSource.clip !=  null)
+                {
+                    targetAudioSource.Stop();
+                }
+                targetAudioSource.clip = boopSounds[boopIndex];
+                if (targetAudioSource.clip != null)
+                {
+                    targetAudioSource.loop = false;
+                    targetVolume = volume;
+                    targetAudioSource.Play();
 
-                    targetAudioSource.clip = boopSounds[boopIndex];
-                    if (targetAudioSource.clip != null)
-                    {
-                        targetAudioSource.loop = false;
-                        targetVolume = volume;
-                        targetAudioSource.Play();
-
-                        float extend = targetAudioSource.clip.length;
-                        nextBeepTime = Time.realtimeSinceStartup + extend;
-                    }
+                    float extend = targetAudioSource.clip.length;
+                    nextBeepTime = Time.realtimeSinceStartup + extend;
                 }
             }
             else if (playBeeps && beepSounds.Count > 0)
