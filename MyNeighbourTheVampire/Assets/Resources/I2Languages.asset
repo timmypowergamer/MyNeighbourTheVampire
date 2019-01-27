@@ -456,7 +456,7 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - "\u2713"
+      - C
       - 
       - 
       - 
@@ -501,7 +501,7 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - "\u2713"
+      - C2
       - 
       - 
       - 
@@ -733,7 +733,7 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - invite sam_invite=1
+      - sam invite sam_invite=1
       - Thanks. I'm sure it will be... <i>a scream</i>
       - '...'
       - exit
@@ -793,7 +793,7 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - 
+      - 'sam normal offscreenbottom center '
       - "Greetings <$player>!<nl>Came by to let you know that not ALL vampires are
         bad.<wc>That\u2019s what we\u2019re going to be talking about on Friday at
         our weekly group talk."
@@ -1062,9 +1062,9 @@ MonoBehaviour:
       Languages:
       - 
       - 
-      - "Oh Garlic and Flour? Got it. I\u2019ll be sure to bring those you weirdo."
+      - "Oh Garlic and Flour? Got it. I\u2019ll be sure to bring those you weirdo.<wi>"
       - 
-      - 
+      - exit
       - 
       - 
       - 
@@ -1078,24 +1078,9 @@ MonoBehaviour:
       - 
       - 
       - Oh Garlic? My late cousin used to run a garlic factory. Loved garlic bread,
-        even wrote a paper about it.
+        even wrote a paper about it.<wi>
       - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      Flags: 000000000000000000
-      Languages_Touch: []
-    - Term: Sam/party2/2
-      TermType: 0
-      Description: 
-      Languages:
-      - 
-      - 
-      - 
-      - 
-      - 
+      - exit
       - 
       - 
       - 
@@ -1109,9 +1094,9 @@ MonoBehaviour:
       - 
       - 
       - Not invited? Do I take offence? No. Do unto others as they would do unto you
-        as I would say. Your not invited either!
+        as I would say. Your not invited either!<wi>
       - 
-      - 
+      - exit
       - 
       - 
       - 
@@ -1138,7 +1123,7 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - sam_invite==0>intro3/1
+      - sam_invite==0>intro3_1
       - 
       - 
       - 
@@ -1153,7 +1138,7 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - sam_invite==1>intro3/2
+      - sam_invite==1>intro3_2
       - 
       - 
       - 
@@ -1163,12 +1148,12 @@ MonoBehaviour:
       - 
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Sam/intro3/1
+    - Term: Sam/intro3_1/1
       TermType: 0
       Description: 
       Languages:
       - 
-      - 
+      - 'sam normal offscreenbottom center '
       - "I know I wasn\u2019t invited to the party, but I showed up anyway. Costume
         and All."
       - 
@@ -1179,19 +1164,34 @@ MonoBehaviour:
       - 
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Sam/intro3/2
+    - Term: Sam/intro3_1/2
       TermType: 0
       Description: 
       Languages:
       - 
       - 
       - What do you think about my Vampire Costume?
-      - "That\u2019s not bad, I changed my mind you're invited."
+      - Not bad. I changed my mind. you're invited.
       - invite
-      - "It\u2019s not a Costume party Sam."
+      - "It\u2019s not a Costume party, Sam."
       - invading
-      - You weren't invited, get out of here.
+      - You weren't invited. Get out of here.
       - invading
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Sam/intro3_2/1
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 'sam normal offscreenbottom center '
+      - What do you think about my Vampire Costume?
+      - Super spooky. Nice job.
+      - invite
+      - "It\u2019s not a Costume party, Sam."
+      - invading
+      - 
+      - 
       Flags: 000000000000000000
       Languages_Touch: []
     - Term: Sam/invading/1
@@ -1214,10 +1214,10 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - 
+      - sam kill
       - "I\u2026 just wanted to be friends."
       - 
-      - 
+      - exit
       - 
       - 
       - 
@@ -1229,10 +1229,10 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - 
+      - sam kill
       - OH NOOOOOOOOO
       - 
-      - 
+      - exit
       - 
       - 
       - 
@@ -1245,7 +1245,22 @@ MonoBehaviour:
       Languages:
       - 
       - 
-      - Lets get this party started, pal!
+      - Lets get this party started, pal!<wi>
+      - 
+      - exitleft
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Sam/exitleft/1
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - sam hide offscreenleft
+      - 
       - 
       - 
       - 
@@ -1304,7 +1319,7 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - 
+      - duke normal offscreenright center
       - Good day, you must have heard the terrible news, have you not?
       - Of course I have. Vampires are everywhere!
       - responseA
@@ -1402,9 +1417,9 @@ MonoBehaviour:
       Languages:
       - 
       - 
-      - "Wonderful, remember you gotta stick\u2019em with the pointy end!"
+      - "Wonderful, remember you gotta stick\u2019em with the pointy end!<wi>"
       - 
-      - 
+      - exit
       - 
       - 
       - 
@@ -1417,9 +1432,9 @@ MonoBehaviour:
       Languages:
       - 
       - 
-      - "Wonderful, don\u2019t let those bloodsuckers in."
+      - "Wonderful, don\u2019t let those bloodsuckers in.<wi>"
       - 
-      - 
+      - exit
       - 
       - 
       - 
@@ -1446,7 +1461,7 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - 
+      - duke normal offscreenright center
       - The stakes are high now that the vampire plague is at its peak.
       - 
       - 
@@ -1493,9 +1508,9 @@ MonoBehaviour:
       - 
       - 
       - Indeed, even your own mother and father could be a part of the undead horde.
-        It would be a grave mistake to judge wrongly, however.
+        It would be a grave mistake to judge wrongly, however.<wi>
       - 
-      - 
+      - exit
       - 
       - 
       - 
@@ -1509,9 +1524,9 @@ MonoBehaviour:
       - 
       - 
       - While thinking of Lucy as a vampire may be difficult, it is a possibility
-        you must not dismiss. Those cookies of hers may be an important clue.
+        you must not dismiss. Those cookies of hers may be an important clue.<wi>
       - 
-      - 
+      - exit
       - 
       - 
       - 
@@ -1524,7 +1539,22 @@ MonoBehaviour:
       Languages:
       - 
       - 
-      - For goodness stake! Tim is obviously not a vampire!
+      - For goodness stake! Tim is obviously not a vampire!<wi>
+      - 
+      - exit
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Duke/exit/1
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - duke hide offscreenright
+      - 
       - 
       - 
       - 
@@ -1860,10 +1890,10 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - both normal
+      - 
       - AAH! How could you stab your own parents?
       - 
-      - 
+      - exitkill
       - 
       - 
       - 
@@ -1891,9 +1921,9 @@ MonoBehaviour:
       Languages:
       - 
       - dad normal
-      - "<$player>! I can\u2019t believe you\u2019ve done this!"
+      - "<$player>! I can\u2019t believe you\u2019ve done this!<wi>"
       - 
-      - 
+      - exitkill
       - 
       - 
       - 
@@ -1905,10 +1935,10 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - both normal
-      - "Don\u2019t mind if we do. This party looks great."
       - 
+      - "Don\u2019t mind if we do. This party looks great.<wi>"
       - 
+      - exit
       - 
       - 
       - 
@@ -1920,7 +1950,7 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - both normal
+      - playerkill
       - "Don\u2019t mind if we do. We could use some fresh blood."
       - 
       - 
@@ -1951,6 +1981,36 @@ MonoBehaviour:
       Languages:
       - 
       - mom hide offscreenright
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Parents/exitkill/1
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - mom kill hide offscreenbottom
+      - <x>
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Parents/exitkill/2
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - dad kill hide offscreenbottom
       - 
       - 
       - 
@@ -1995,7 +2055,7 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - 
+      - tim normal offscreenright center
       - "Hello Neighbour! sure is sunny today isn\u2019t it?"
       - 
       - 
@@ -2168,10 +2228,10 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - invite
+      - tim invite
       - "Thank you so much! I promise I won\u2019t be a pain in the neck!"
       - 
-      - 
+      - exit
       - 
       - 
       - 
@@ -2186,7 +2246,7 @@ MonoBehaviour:
       - 
       - You will regret this! I swear it on my grandmothers grave!
       - 
-      - 
+      - exit
       - 
       - 
       - 
@@ -2213,7 +2273,7 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - lucy_in_the_house==1>inthehouse
+      - lucy_in_the_house==1>inthehouse tim normal offscreenright center
       - "<$player> so good to see you! Looks like everyone is having a great time.
         Hopefully people won\u2019t be too uncomfortable with such a terrifying vampire
         around."
@@ -2232,10 +2292,10 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - kill
-      - I guess.. this is the fate of every not vampire eventually. [dies]
+      - tim kill
+      - I guess.. this is the fate of every not vampire eventually.
       - 
-      - 
+      - exitdown
       - 
       - 
       - 
@@ -2250,7 +2310,7 @@ MonoBehaviour:
       - 
       - Where is the little bat's room I acutally need to use it!
       - 
-      - 
+      - exitleft
       - 
       - 
       - 
@@ -2262,10 +2322,55 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - 
+      - tim normal offscreenright center
       - "<$player> so good to see yo\u2026 Is that a girl scout? Girl Scouts of America
         has ordered multiple restraining orders against me and I am afraid I must
         leave now."
+      - 
+      - exit
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Tim/exit/1
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - tim hide offscreenright
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Tim/exitleft/1
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - tim hide offscreenleft
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Tim/exitdown/1
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - tim hide offscreencenter
+      - 
       - 
       - 
       - 
@@ -2339,17 +2444,17 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - 
+      - nurse normal offscreenright center
       - "Hi <$player>, My name is nurse Gloom, and I am from the local children\u2019s
         hospital. I was just wondering if I could have a moment of your time to talk
         about donating blood?"
       - "Sure nurse Gloom, I\u2019m always ready to help the children."
-      - 
+      - response1
       - "Oh I\u2019ve always been very afraid of needles and blood."
-      - 
+      - response2
       - "Don\u2019t you think this is the worst possible time for this collection
         campaign?"
-      - 
+      - response3
       Flags: 000000000000000000
       Languages_Touch: []
     - Term: Nurse/response1/1
@@ -2535,10 +2640,10 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - invite
-      - "Perfect! I\u2019ll see you Friday <$player>"
+      - nurse invite
+      - "Perfect! I\u2019ll see you Friday <$player>!<wi>"
       - 
-      - 
+      - exit
       - 
       - 
       - 
@@ -2552,9 +2657,9 @@ MonoBehaviour:
       - 
       - 
       - "Well that\u2019s too bad, there would have been tons of possible donors there.
-        Oh well."
+        Oh well.<wi>"
       - 
-      - 
+      - exit
       - 
       - 
       - 
@@ -2581,7 +2686,7 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - 
+      - nurse normal offscreenright center
       - Hey <$player>, thanks again for inviting me! I brought some red wine for the
         party.
       - Not so fast vampire scum! HEEYAA!
@@ -2597,7 +2702,7 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - 
+      - nurse normal offscreenright center
       - "Hello <$player>, glad to see you looking so healthy and full of life! Let\u2019s
         get this party started!"
       - Not so fast vampire scum! HEEYAA!
@@ -2613,10 +2718,10 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - kill
+      - nurse kill
       - Make sure you donate my blood to the kids!
       - 
-      - 
+      - exitkill
       - 
       - 
       - 
@@ -2628,10 +2733,10 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - kill
+      - nurse kill
       - AAAHHH! You were about to be mine!
       - 
-      - 
+      - exitkill
       - 
       - 
       - 
@@ -2646,7 +2751,7 @@ MonoBehaviour:
       - 
       - "Don\u2019t mind if I do."
       - 
-      - 
+      - exitleft
       - 
       - 
       - 
@@ -2660,6 +2765,51 @@ MonoBehaviour:
       - 
       - playerkill
       - Yum, look at all these Blood Bags walking around in here.
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Nurse/exit/1
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - nurse hide offscreenright
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Nurse/exitkill/1
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - nurse hide offscreenbottom
+      - <wi>
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Nurse/exitleft/1
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - nurse hide offscreenleft
+      - 
       - 
       - 
       - 
@@ -2750,7 +2900,7 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - 
+      - cookies=yes
       - "Great! That will be $5 per box. Oh! Looks like you\u2019re planning a party.
         I love parties! Can I come, can I come, can I?"
       - Oh, sure you can. Come by tomorrow.
@@ -2815,10 +2965,10 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - invite
-      - "Yay, I\u2019ll be here tomorrow! Bye!"
+      - lucy invite
+      - "Yay, I\u2019ll be here tomorrow! Bye!<wi>"
       - 
-      - 
+      - exit
       - 
       - 
       - 
@@ -2831,9 +2981,9 @@ MonoBehaviour:
       Languages:
       - 
       - 
-      - Aww, oh well thanks for buying some cookies. Bye!
+      - Aww, oh well thanks for buying some cookies. Bye!<wi>
       - 
-      - 
+      - exit
       - 
       - 
       - 
@@ -2846,9 +2996,9 @@ MonoBehaviour:
       Languages:
       - 
       - 
-      - "Aww, you\u2019re a meanie!"
+      - "Aww, you\u2019re a meanie!<wi>"
       - 
-      - 
+      - exit
       - 
       - 
       - 
@@ -2875,7 +3025,7 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - 
+      - lucy normal offscreenright center
       - Hey <$player>, thanks again for inviting me! Looks like there are a ton of
         excellent snacks here! By the way, I brought some more flavors of cookies
         if you wanted to buy some.
@@ -2892,7 +3042,7 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - 
+      - lucy normal offscreenright center
       - Hey <$player>, thanks again for inviting me! You have potato chips, know what
         goes great with potato chips? More girl guide cookies. I brought some if you
         want to take a look.
@@ -2909,10 +3059,10 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - kill
-      - "AAAH! How dare you! I\u2019m just a little girl!"
+      - lucy kill
+      - "AAAH! How dare you! I may be a vampire, but I\u2019m just a little girl!<wi>"
       - 
-      - 
+      - exitkill
       - 
       - 
       - 
@@ -2924,10 +3074,10 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - kill
-      - Ouch! Why did you do that <$player>? It hurts...
+      - lucy kill
+      - Ouch! Why did you do that <$player>? It hurts...<wi>
       - 
-      - 
+      - exitkill
       - 
       - 
       - 
@@ -2939,7 +3089,7 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - lucy_in_the_house=1
+      - lucy_in_the_house=1 lucy hide offscreenleft
       - "Yay, it\u2019s going to be so much fun!"
       - 
       - 
@@ -2956,6 +3106,36 @@ MonoBehaviour:
       - 
       - playerkill
       - My overlords will be pleased with your blood offerings.
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Lucy/exitkill/1
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - lucy hide offscreenbottom
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Lucy/exit/1
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - lucy hide offscreenright
+      - 
       - 
       - 
       - 
@@ -3542,11 +3722,11 @@ MonoBehaviour:
       Languages:
       - 
       - 
-      - Anyway, I heard you throw amazing parties can I be invited?
-      - Yeah sure pual.
-      - invite
-      - No
-      - novite
+      - 
+      - 
+      - 
+      - 
+      - 
       - 
       - 
       Flags: 000000000000000000
@@ -3556,7 +3736,7 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - paul leftleft normal
+      - paul normal offscreenright center
       - Hello Neighbour!
       - 
       - 
@@ -3618,8 +3798,8 @@ MonoBehaviour:
       Languages:
       - 
       - 
-      - "It had wings, but didn\u2019t It didn\u2019t have any fur or feathers. Like
-        how does something totally naked fly like that!?"
+      - "It had wings, but didn\u2019t have any fur or feathers. Like, how does something
+        totally naked fly like that!?"
       - 
       - 
       - 
@@ -3636,10 +3816,10 @@ MonoBehaviour:
       - 
       - It made noises like I never heard before. Like it was woosh woosh. Or was
         it a fwaap fwapp?
-      - Paul, that was a airplane.
-      - airplane/1
+      - Paul, that was an airplane.
+      - airplane
       - Paul, that was a bat.
-      - bat/2
+      - bat
       - 
       - 
       Flags: 000000000000000000
@@ -3665,12 +3845,27 @@ MonoBehaviour:
       Languages:
       - 
       - buff_vamp==1>airplanebuff/1
-      - Oh it was a airplane? I heard of those. I wish I could ride on one of those,
-        I just can't get around so faster.
+      - Oh it was an airplane? I heard of those. I wish I could ride on one of those,
+        I just can't get around too fast.
       - 
       - 
       - 
       - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Paul/airplane/2
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - Anyway, I heard you throw amazing parties can I be invited?
+      - Yeah sure Paul.
+      - invite
+      - No
+      - novite
       - 
       - 
       Flags: 000000000000000000
@@ -3681,8 +3876,8 @@ MonoBehaviour:
       Languages:
       - 
       - 
-      - Oh it was a airplane? I heard of those. Is that how Buffy gets around so fast
-        by turning into one of those? I need one of those.
+      - Oh it was an airplane? I heard of those. Is that how Buffy gets around so
+        fast by turning into one of those? I need one of those.
       - 
       - 
       - 
@@ -3698,7 +3893,7 @@ MonoBehaviour:
       - 
       - 
       - Anyway, I heard you throw amazing parties can I be invited?
-      - Yeah sure pual.
+      - Yeah sure Paul.
       - invite
       - No
       - novite
@@ -3728,7 +3923,7 @@ MonoBehaviour:
       - 
       - 
       - Anyway, I heard you throw amazing parties can I be invited?
-      - Yeah sure pual.
+      - Yeah sure Paul.
       - invite
       - No
       - novite
@@ -3741,7 +3936,7 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - invite hide
+      - paul invite hide offscreenright
       - "WHOA Yes! Maybe I\u2019ll come in riding a aero-plane on Friday."
       - 
       - 
@@ -3756,7 +3951,7 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - hide
+      - paul hide offscreenright
       - "WHOA! I wasn\u2019t expecting a no. Oh well I'll just go back to mowing my
         lawn."
       - 
@@ -3787,7 +3982,7 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - paul leftleft normal
+      - paul normal offscreenright center
       - "Holy cow sweet party you got going on here. I hope I wasn\u2019t too late.
         I was busy trying to find a aero-plane to fly in on."
       - "\u2620\uFE0F Die daemon!"
@@ -3803,7 +3998,7 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - kill hide
+      - paul kill hide offscreenbottom
       - Wh..what was that for?
       - 
       - 
@@ -3818,7 +4013,7 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - hide
+      - paul hide offscreenleft
       - To the punch bowl, where all the cool aero-plane kids hang out.
       - 
       - 
@@ -3962,7 +4157,7 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - invite
+      - buffy invite
       - Alright, see you there partner.<wi>
       - 
       - exit
@@ -3977,7 +4172,7 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - invite
+      - buffy invite
       - I'll be looking forward to seeing <i>all</i> my fans Friday.<wi>
       - 
       - exit
@@ -4115,10 +4310,10 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - kill
-      - How could you do this... to me.
+      - buffy kill
+      - How could you do this... to me.<wi>
       - 
-      - 
+      - exitkill
       - 
       - 
       - 
@@ -4130,10 +4325,10 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
+      - buffy kill
+      - I just wanted... to taste the blood of my fans.<wi>
       - 
-      - I just wanted... to taste the blood of my fans.
-      - 
-      - 
+      - exitkill
       - 
       - 
       - 
@@ -4146,9 +4341,9 @@ MonoBehaviour:
       Languages:
       - 
       - 
-      - Whatever, I think this is a knokoff product anyways. Lets dig into that dip!
+      - Whatever, I think this is a knokoff product anyways. Lets dig into that dip!<wi>
       - 
-      - 
+      - exit
       - 
       - 
       - 
@@ -4162,6 +4357,21 @@ MonoBehaviour:
       - 
       - playerkill
       - Well, lets dig into those Fans now!
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Buffy/exitkill/1
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - buffy hide offscreenbottom
+      - 
       - 
       - 
       - 
@@ -4470,7 +4680,7 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - ernie_in_da_house=1
+      - ernie_in_da_house=1 Ernie normal hide offscreenleft
       - "Sweet I\u2019ma just stay right over here till you want that massage."
       - 
       - 
@@ -4519,7 +4729,7 @@ MonoBehaviour:
       Languages:
       - 
       - Ernie normal hide offscreenleft
-      - '[Door Shut]'
+      - 
       - 
       - 
       - 
@@ -4548,7 +4758,7 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - ernie_in_da_house==1>day2alt
+      - ernie_in_da_house==1>day2alt ernie normal offscreenright center
       - "Listen.. You have to let me in. I feel like a camel in a desert who hasn\u2019t
         found any water for days."
       - 
@@ -4579,7 +4789,7 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - 
+      - ernie normal offscreenright center
       - I had to leave to get my dentures, but for some reason I can't get back into
         your place!
       - 
@@ -4641,8 +4851,8 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - Ernie normal hide
-      - '[Door Closes]'
+      - Ernie normal hide offscreenright
+      - 
       - 
       - 
       - 
@@ -4844,7 +5054,7 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - ramsy normal hide offscreenleft
+      - ramsy normal hide offscreenright invite
       - 
       - 
       - 
@@ -5045,10 +5255,10 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - kill
-      - You bloody donkey
+      - ramsy kill
+      - You bloody donkey<wi>
       - 
-      - 
+      - exitkill
       - 
       - 
       - 
@@ -5061,9 +5271,9 @@ MonoBehaviour:
       Languages:
       - 
       - 
-      - Served to perfection.
+      - Served to perfection.<wi>
       - 
-      - 
+      - exitleft
       - 
       - 
       - 
@@ -5078,6 +5288,36 @@ MonoBehaviour:
       - playerkill
       - Lets skip the Lamb all together, and I'm going to just feast on all these
         guests!
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Ramsy/exitleft/1
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - ramsy hide offscreenleft
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Ramsy/exitkill/1
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - ramsy hide offsceenbottom
+      - 
       - 
       - 
       - 
@@ -5122,7 +5362,7 @@ MonoBehaviour:
     Google_WebServiceURL: https://script.google.com/macros/s/AKfycbyTHLOw0mSBTa6Ufd1UEzDAtNCYjd1zUlQpf_ew1A/exec
     Google_SpreadsheetKey: 1SAkO2quLFZu3g7w1gxC8mKpIjiZmL4wyQ4gYlq_1ubo
     Google_SpreadsheetName: I2Loc MyNeighbourTheVampire Localization
-    Google_LastUpdatedVersion: 1548621597326
+    Google_LastUpdatedVersion: 1548626275660
     Google_Password: vampires
     GoogleUpdateFrequency: 0
     GoogleInEditorCheckFrequency: 0
