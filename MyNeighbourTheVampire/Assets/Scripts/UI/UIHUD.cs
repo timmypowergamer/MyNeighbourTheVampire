@@ -18,7 +18,8 @@ public class UIHUD : UIPanel
 
 	public void Show()
 	{
-		Animator.SetBool("visible", false);
+		gameObject.SetActive(true);
+		Animator.SetBool("visible", true);
 	}
 
 	public void Hide()

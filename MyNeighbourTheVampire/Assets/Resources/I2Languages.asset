@@ -882,7 +882,7 @@ MonoBehaviour:
       - 
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Sam/day2response3
+    - Term: Sam/day2response3/1
       TermType: 0
       Description: 
       Languages:
@@ -1026,7 +1026,7 @@ MonoBehaviour:
       - 
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Sam/party_noinvite
+    - Term: Sam/party_noinvite/1
       TermType: 0
       Description: 
       Languages:
@@ -1041,7 +1041,7 @@ MonoBehaviour:
       - didntInvite
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Sam/party1
+    - Term: Sam/party1/1
       TermType: 0
       Description: 
       Languages:
@@ -1102,7 +1102,7 @@ MonoBehaviour:
       - 
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Sam/didntInvite
+    - Term: Sam/didntInvite/1
       TermType: 0
       Description: 
       Languages:
@@ -1194,7 +1194,7 @@ MonoBehaviour:
       - invading
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Sam/invading
+    - Term: Sam/invading/1
       TermType: 0
       Description: 
       Languages:
@@ -1209,7 +1209,7 @@ MonoBehaviour:
       - 
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Sam/kill
+    - Term: Sam/kill/1
       TermType: 0
       Description: 
       Languages:
@@ -1224,7 +1224,7 @@ MonoBehaviour:
       - 
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Sam/kill/v
+    - Term: Sam/kill/v/1
       TermType: 0
       Description: 
       Languages:
@@ -1239,7 +1239,7 @@ MonoBehaviour:
       - 
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Sam/dontkill
+    - Term: Sam/dontkill/1
       TermType: 0
       Description: 
       Languages:
@@ -1353,9 +1353,8 @@ MonoBehaviour:
       Languages:
       - 
       - 
-      - "A fine thought. However that stuff doesn\u2019t work as well as you think.
-        No! You need a more effective weapon like this wooden stake! You can get one
-        today for only $19.99!"
+      - Garlic is useless and a big mistake. No! You need a more effective weapon
+        like this wooden stake! You can get one today for only $19.99!
       - "I guess I do need one if I want to survive. I\u2019ll take one."
       - finalA
       - 
@@ -1434,6 +1433,98 @@ MonoBehaviour:
       - 
       - 
       - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Duke/day3Intro/1
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - The stakes are high now that the vampire plague is at its peak.
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Duke/day3Intro/2
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - You must remember to use your stake whenever you think a vampire has appeared.
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Duke/day3Intro/3
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - Even the people you love could be vampires.
+      - Not my parents!
+      - parents
+      - Not Lucy!
+      - lucy
+      - Not Tim!
+      - tim
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Duke/parents/1
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - Indeed, even your own mother and father could be a part of the undead horde.
+        It would be a grave mistake to judge wrongly, however.
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Duke/lucy/1
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - While thinking of Lucy as a vampire may be difficult, it is a possibility
+        you must not dismiss. Those cookies of hers may be an important clue.
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Duke/tim/1
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - For goodness stake! Tim is obviously not a vampire!
       - 
       - 
       - 
@@ -1603,10 +1694,10 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - mom normal
+      - mom normal invite
       - Great, we will see you there!<wi>
       - 
-      - exit
+      - dad_invite
       - 
       - 
       - 
@@ -1618,10 +1709,10 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - dad normal
+      - dad normal invite
       - Great, we hope to see some young blood there.<wi>
       - 
-      - exit
+      - mom_invite
       - 
       - 
       - 
@@ -1636,6 +1727,36 @@ MonoBehaviour:
       - dad normal
       - "That\u2019s fair... We aren\u2019t as young as we used to be.<wi><nl>Well,
         you have fun now.<wi>"
+      - 
+      - exit
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Parents/dad_invite/1
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - invite
+      - 
+      - 
+      - exit
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Parents/mom_invite/1
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - invite
+      - 
       - 
       - exit
       - 
@@ -2042,7 +2163,7 @@ MonoBehaviour:
       - 
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Tim/accept
+    - Term: Tim/accept/1
       TermType: 0
       Description: 
       Languages:
@@ -2057,7 +2178,7 @@ MonoBehaviour:
       - 
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Tim/novite
+    - Term: Tim/novite/1
       TermType: 0
       Description: 
       Languages:
@@ -2106,7 +2227,7 @@ MonoBehaviour:
       - 
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Tim/kill
+    - Term: Tim/kill/1
       TermType: 0
       Description: 
       Languages:
@@ -2121,7 +2242,7 @@ MonoBehaviour:
       - 
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Tim/nokill
+    - Term: Tim/nokill/1
       TermType: 0
       Description: 
       Languages:
@@ -3615,7 +3736,7 @@ MonoBehaviour:
       - 
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Paul/invite
+    - Term: Paul/invite/1
       TermType: 0
       Description: 
       Languages:
@@ -3630,7 +3751,7 @@ MonoBehaviour:
       - 
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Paul/novite
+    - Term: Paul/novite/1
       TermType: 0
       Description: 
       Languages:
@@ -3677,7 +3798,7 @@ MonoBehaviour:
       - 
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Paul/kill
+    - Term: Paul/kill/1
       TermType: 0
       Description: 
       Languages:
@@ -3692,7 +3813,7 @@ MonoBehaviour:
       - 
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Paul/nokill
+    - Term: Paul/nokill/1
       TermType: 0
       Description: 
       Languages:
@@ -3764,7 +3885,7 @@ MonoBehaviour:
       - introa
       - A vampire slayer? Arent you just a T.V. character?
       - introb
-      - I detest violence and detest your way of life.
+      - What did those vampires ever do to you?
       - introc
       Flags: 000000000000000000
       Languages_Touch: []
@@ -3780,7 +3901,7 @@ MonoBehaviour:
       - introa
       - A vampire slayer? Arent you just a T.V. character?
       - introb
-      - I detest violence and detest your way of life.
+      - What did those vampires ever do to you?
       - introc
       Flags: 000000000000000000
       Languages_Touch: []
@@ -3832,7 +3953,7 @@ MonoBehaviour:
       - invite
       - I don't know... Trust is a two way street, Buffy.
       - noinvite
-      - 
+      - Says the girl who seems to only date vampires.
       - 
       Flags: 000000000000000000
       Languages_Touch: []
@@ -4650,7 +4771,7 @@ MonoBehaviour:
       - ramsy_var=burger hide
       - "Perfect, I have the world\u2019s best burger recipe. You donkey.<wi>"
       - 
-      - 
+      - exit
       - 
       - 
       - 
@@ -4665,7 +4786,7 @@ MonoBehaviour:
       - ramsy_var=Steak hide
       - Excellent choice, only medium rare. You donkey.<wi>
       - 
-      - 
+      - exit
       - 
       - 
       - 
@@ -4888,7 +5009,7 @@ MonoBehaviour:
       - 
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Ramsy/kill
+    - Term: Ramsy/kill/1
       TermType: 0
       Description: 
       Languages:
@@ -4903,7 +5024,7 @@ MonoBehaviour:
       - 
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Ramsy/nokill
+    - Term: Ramsy/nokill/1
       TermType: 0
       Description: 
       Languages:
@@ -4918,7 +5039,7 @@ MonoBehaviour:
       - 
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Ramsy/nokill/v
+    - Term: Ramsy/nokill/v/1
       TermType: 0
       Description: 
       Languages:
@@ -4970,7 +5091,7 @@ MonoBehaviour:
     Google_WebServiceURL: https://script.google.com/macros/s/AKfycbyTHLOw0mSBTa6Ufd1UEzDAtNCYjd1zUlQpf_ew1A/exec
     Google_SpreadsheetKey: 1SAkO2quLFZu3g7w1gxC8mKpIjiZmL4wyQ4gYlq_1ubo
     Google_SpreadsheetName: I2Loc MyNeighbourTheVampire Localization
-    Google_LastUpdatedVersion: 1548613895203
+    Google_LastUpdatedVersion: 1548620469171
     Google_Password: vampires
     GoogleUpdateFrequency: 0
     GoogleInEditorCheckFrequency: 0

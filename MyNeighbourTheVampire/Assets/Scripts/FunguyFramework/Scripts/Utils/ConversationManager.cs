@@ -412,7 +412,7 @@ namespace Fungus
 					}
 					if (item.Invite)
 					{
-						GameManager.Instance.SetInvited(currentCharacter.gameObject.name, true);
+						GameManager.Instance.SetInvited(currentCharacter.gameObject.name);
 					}
 					if(item.PlayerKill)
 					{

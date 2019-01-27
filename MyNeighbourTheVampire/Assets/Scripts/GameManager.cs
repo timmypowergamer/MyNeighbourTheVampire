@@ -45,8 +45,8 @@ public class GameManager : MonoBehaviour
 	}
 
 	public bool IsPlayerDead { get; private set; }
-	public int _numInvited { get; private set; }
-	public int _numGuests { get; private set; }
+	public int _numInvited { get; private set; } = 100;
+	public int _numGuests { get; private set; } = 100;
 	public int _numVampiresKilled { get; private set; }
 
 	private Dictionary<string, GameCharacter> CharacterDict = new Dictionary<string, GameCharacter>();
@@ -82,8 +82,22 @@ public class GameManager : MonoBehaviour
 					continue;
 				}
 
-				CharacterDict[availableChars[rand].CharacterID].isVampire = true;
-				availableChars.Remove(availableChars[rand]);
+				GameCharacter chosenCharacter = availableChars[rand];
+				CharacterDict[chosenCharacter.CharacterID].isVampire = true;
+				availableChars.Remove(chosenCharacter);
+				if (chosenCharacter.CharacterID == "Mom")
+				{
+					CharacterDict["Dad"].isVampire = true;
+					availableChars.Remove(CharacterDict["Dad"]);
+					i++;
+				}
+				if (chosenCharacter.CharacterID == "Dad")
+				{
+					CharacterDict["Mom"].isVampire = true;
+					availableChars.Remove(CharacterDict["Mom"]);
+					i++;
+				}
+				
 				i++;
 			}
 		}
@@ -168,14 +182,14 @@ public class GameManager : MonoBehaviour
 		}
 	}
 
-	public void SetInvited(string characterID, bool value)
+	public void SetInvited(string characterID)
 	{
 		if (CharacterDict.ContainsKey(characterID))
 		{
 			if (!CharacterDict[characterID].isInvited)
 			{
 				_numInvited++;
-				CharacterDict[characterID].isInvited = value;
+				CharacterDict[characterID].isInvited = true;
 			}
 		}
 	}
