@@ -50,6 +50,8 @@ namespace Fungus
 
         [Tooltip("Sound effect to play on user input (e.g. a click)")]
         [SerializeField] protected AudioClip inputSound;
+        [SerializeField] protected float pitchLo = 0.8f;
+        [SerializeField] protected float pitchHi = 1.1f;
 
         protected float targetVolume = 0f;
 
@@ -284,7 +286,7 @@ namespace Fungus
                     if (targetAudioSource.clip != null)
                     {
                         targetAudioSource.loop = false;
-                        targetAudioSource.pitch = Random.Range(0.70f, 1.10f);
+                        targetAudioSource.pitch = Random.Range(pitchLo, pitchHi);
                         targetVolume = volume;
                         targetAudioSource.Play();
                         

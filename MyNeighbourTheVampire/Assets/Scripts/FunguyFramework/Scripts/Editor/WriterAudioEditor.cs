@@ -10,6 +10,8 @@ namespace Fungus.EditorUtils
     public class WriterAudioEditor : Editor
     {
         protected SerializedProperty volumeProp;
+        protected SerializedProperty pitchLoProp;
+        protected SerializedProperty pitchHiProp; 
         protected SerializedProperty loopProp;
         protected SerializedProperty targetAudioSourceProp;
         protected SerializedProperty audioModeProp;
@@ -28,6 +30,8 @@ namespace Fungus.EditorUtils
             beepSoundsProp = serializedObject.FindProperty("beepSounds");
 			boopSoundsProp = serializedObject.FindProperty("boopSounds");
 			soundEffectProp = serializedObject.FindProperty("soundEffect");
+            pitchLoProp = serializedObject.FindProperty("pitchLo");
+            pitchHiProp = serializedObject.FindProperty("pitchHi");
         }
 
         public override void OnInspectorGUI()
@@ -35,6 +39,8 @@ namespace Fungus.EditorUtils
             serializedObject.Update();
 
             EditorGUILayout.PropertyField(volumeProp);
+            EditorGUILayout.PropertyField(pitchLoProp);
+            EditorGUILayout.PropertyField(pitchHiProp);
             EditorGUILayout.PropertyField(loopProp);
             EditorGUILayout.PropertyField(targetAudioSourceProp);
             EditorGUILayout.PropertyField(inputSoundProp);
