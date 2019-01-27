@@ -33,7 +33,7 @@ namespace Fungus
         void OnEnd(bool stopAudio);
 
         /// Called every time the Writer writes a new character glyph.
-        void OnGlyph();
+        void OnGlyph(string glyphs);
 
         /// <summary>
         /// Called when voiceover should start.

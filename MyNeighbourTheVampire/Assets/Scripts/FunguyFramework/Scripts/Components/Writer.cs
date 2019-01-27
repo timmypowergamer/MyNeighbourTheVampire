@@ -637,6 +637,7 @@ namespace Fungus
             outputString.Append(startText);
             outputString.Append(openString);
             outputString.Append(leftString);
+
             outputString.Append(closeString);
 
             // Track how many visible characters are currently displayed so
@@ -839,7 +840,7 @@ namespace Fungus
             for (int i = 0; i < writerListeners.Count; i++)
             {
                 var writerListener = writerListeners[i];
-                writerListener.OnGlyph();
+                writerListener.OnGlyph(leftString.ToString());
             }
         }
 

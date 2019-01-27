@@ -3,6 +3,7 @@
 
 ﻿using UnityEngine;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Fungus
 {
@@ -15,6 +16,8 @@ namespace Fungus
         Beeps,
         /// <summary> Use long looping sound effect. </summary>
         SoundEffect,
+        /// <summary> Use per vowel boop sounds. </summary>
+        Boopy,
     }
 
     /// <summary>
@@ -39,6 +42,9 @@ namespace Fungus
         [Tooltip("List of beeps to randomly select when playing beep sound effects. Will play maximum of one beep per character, with only one beep playing at a time.")]
         [SerializeField] protected List<AudioClip> beepSounds = new List<AudioClip>();
 
+        [Tooltip("List of beeps to randomly select when playing custom boop sound effects. Will play maximum of one beep per character, with only one beep playing at a time.")]
+        [SerializeField] protected List<AudioClip> boopSounds = new List<AudioClip>();
+
         [Tooltip("Long playing sound effect to play when writing text")]
         [SerializeField] protected AudioClip soundEffect;
 
@@ -49,6 +55,8 @@ namespace Fungus
 
         // When true, a beep will be played on every written character glyph
         protected bool playBeeps;
+
+        protected bool playBoops;
 
         // True when a voiceover clip is playing
         protected bool playingVoiceover = false;
@@ -126,6 +134,13 @@ namespace Fungus
                 targetAudioSource.loop = false;
                 playBeeps = true;
             }
+            else if (audioMode == AudioMode.Boopy)
+            {
+                // Use beeps defined in WriterAudio
+                targetAudioSource.clip = null;
+                targetAudioSource.loop = false;
+                playBoops = true;
+            }
         }
 
         protected virtual void Pause()
@@ -151,6 +166,7 @@ namespace Fungus
             targetVolume = 0f;
             targetAudioSource.loop = false;
             playBeeps = false;
+            playBoops = false;
             playingVoiceover = false;
         }
 
@@ -215,16 +231,63 @@ namespace Fungus
             }
         }
 
-        public virtual void OnGlyph()
+        public virtual void OnGlyph(string glyphs)
         {
             if (playingVoiceover)
             {
                 return;
             }
 
-            if (playBeeps && beepSounds.Count > 0)
+            if (playBoops && boopSounds.Count >= 7 )
+            {
+                if (nextBeepTime < Time.realtimeSinceStartup)
+                {
+                    // Read glpyh for mapped sounds
+                    int boopIndex = -1;
+                    string[] keys = new string[] { "a", "o", "e", "u", "i", "r", "p" };
+                    string sKeyResult = keys.FirstOrDefault(s => glyphs.Contains(s));
+                    switch (sKeyResult)
+                    {
+                        case "a":
+                            boopIndex = 0;
+                            break;
+                        case "o":
+                            boopIndex = 1;
+                            break;
+                        case "e":
+                            boopIndex = 2;
+                            break;
+                        case "u":
+                            boopIndex = 3;
+                            break;
+                        case "i":
+                            boopIndex = 4;
+                            break;
+                        case "r":
+                            boopIndex = 5;
+                            break;
+                        case "p":
+                            boopIndex = 6;
+                            break;
+                    }
+                    if (boopIndex == -1) { return; }
+
+                    targetAudioSource.clip = boopSounds[boopIndex];
+                    if (targetAudioSource.clip != null)
+                    {
+                        targetAudioSource.loop = false;
+                        targetVolume = volume;
+                        targetAudioSource.Play();
+
+                        float extend = targetAudioSource.clip.length;
+                        nextBeepTime = Time.realtimeSinceStartup + extend;
+                    }
+                }
+            }
+            else if (playBeeps && beepSounds.Count > 0)
             {
                 if (!targetAudioSource.isPlaying)
+
                 {
                     if (nextBeepTime < Time.realtimeSinceStartup)
                     {
