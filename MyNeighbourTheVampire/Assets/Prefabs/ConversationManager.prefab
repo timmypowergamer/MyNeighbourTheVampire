@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 223908655}
   - component: {fileID: 223908657}
   - component: {fileID: 223908656}
+  - component: {fileID: 914765396}
   m_Layer: 0
   m_Name: Lucy
   m_TagString: Untagged
@@ -71,6 +72,35 @@ MonoBehaviour:
   icon: {fileID: 21300000, guid: 9351e55eb34255740bf830475b1b39fa, type: 3}
   profileSprite: {fileID: 21300000, guid: 6e075076635297242ac8d8a57cde812e, type: 3}
   description: The Stake Delivery Guy
+--- !u!114 &914765396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 223908654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4782cf42f2644447b9631f6e522160b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  volume: 1
+  loop: 1
+  targetAudioSource: {fileID: 0}
+  audioMode: 2
+  beepSounds: []
+  boopSounds:
+  - {fileID: 8300000, guid: 98eb646d028a047dc910ec40e8cdb8a9, type: 3}
+  - {fileID: 8300000, guid: e068e28a7fc8949d0b5c40c5545fe9a6, type: 3}
+  - {fileID: 8300000, guid: adb67e7b11ebc4485a91765e8f840332, type: 3}
+  - {fileID: 8300000, guid: ff7e2769cc9a04ee8bee49e7e5050542, type: 3}
+  - {fileID: 8300000, guid: 6293494da9c8d49ceb61a7f2d971a7ad, type: 3}
+  - {fileID: 8300000, guid: 4a425407abf7c438f981a95c7ab46382, type: 3}
+  - {fileID: 8300000, guid: 7011f8ce38ef54e75a929dd39bf8cd6a, type: 3}
+  soundEffect: {fileID: 0}
+  inputSound: {fileID: 0}
+  pitchLo: 0.8
+  pitchHi: 1.1
 --- !u!1 &643333823
 GameObject:
   m_ObjectHideFlags: 0
@@ -82,6 +112,7 @@ GameObject:
   - component: {fileID: 643333824}
   - component: {fileID: 643333826}
   - component: {fileID: 643333825}
+  - component: {fileID: 1237267710}
   m_Layer: 0
   m_Name: Paul
   m_TagString: Untagged
@@ -142,6 +173,35 @@ MonoBehaviour:
   icon: {fileID: 21300000, guid: 9351e55eb34255740bf830475b1b39fa, type: 3}
   profileSprite: {fileID: 21300000, guid: 6e075076635297242ac8d8a57cde812e, type: 3}
   description: The Stake Delivery Guy
+--- !u!114 &1237267710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 643333823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4782cf42f2644447b9631f6e522160b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  volume: 1
+  loop: 1
+  targetAudioSource: {fileID: 0}
+  audioMode: 2
+  beepSounds: []
+  boopSounds:
+  - {fileID: 8300000, guid: dbd60eda0b82447f4a8985b2715741aa, type: 3}
+  - {fileID: 8300000, guid: 17d228deb04b94ceaabd675b5bc82dd7, type: 3}
+  - {fileID: 8300000, guid: 35748e7ad33ef4bc68b38fec7585d520, type: 3}
+  - {fileID: 8300000, guid: 9860472e58ae44a649909aebd96b7aa0, type: 3}
+  - {fileID: 8300000, guid: 02dc3a06e49ac4705af2fc066b6e75ad, type: 3}
+  - {fileID: 8300000, guid: 287f654833edf44bc841a011b7887a27, type: 3}
+  - {fileID: 8300000, guid: e02f36f34af294ef58b34f4366c8ae96, type: 3}
+  soundEffect: {fileID: 0}
+  inputSound: {fileID: 0}
+  pitchLo: 0.8
+  pitchHi: 1.1
 --- !u!1 &697510293
 GameObject:
   m_ObjectHideFlags: 0
@@ -153,6 +213,7 @@ GameObject:
   - component: {fileID: 697510294}
   - component: {fileID: 697510296}
   - component: {fileID: 697510295}
+  - component: {fileID: 699220348}
   m_Layer: 0
   m_Name: Buffy
   m_TagString: Untagged
@@ -213,6 +274,36 @@ MonoBehaviour:
   icon: {fileID: 21300000, guid: 9351e55eb34255740bf830475b1b39fa, type: 3}
   profileSprite: {fileID: 21300000, guid: 6e075076635297242ac8d8a57cde812e, type: 3}
   description: The Stake Delivery Guy
+--- !u!114 &699220348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 697510293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4782cf42f2644447b9631f6e522160b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  volume: 1
+  loop: 1
+  targetAudioSource: {fileID: 0}
+  audioMode: 2
+  beepSounds: []
+  boopSounds:
+  - {fileID: 8300000, guid: 59a806e41dec2461ab50b346b1c849eb, type: 3}
+  - {fileID: 8300000, guid: 3c082ada3a1144a518d4ff94bbe7a8cf, type: 3}
+  - {fileID: 8300000, guid: 28ee408d612c54cc4a55b41f6afda05d, type: 3}
+  - {fileID: 8300000, guid: a5ec27cddd84a40d89f032272d6c967e, type: 3}
+  - {fileID: 8300000, guid: 5ec14af665c1044e9bb0648d87d7a2ce, type: 3}
+  - {fileID: 8300000, guid: d645bcbe4aa514d41bc44e63e3473d78, type: 3}
+  - {fileID: 8300000, guid: 0886a3435bf0f4cdda9d185087a4ca03, type: 3}
+  - {fileID: 8300000, guid: a40b1a0eded7b4bffbc9c632447577fa, type: 3}
+  soundEffect: {fileID: 0}
+  inputSound: {fileID: 0}
+  pitchLo: 1
+  pitchHi: 1.1
 --- !u!1 &877127468
 GameObject:
   m_ObjectHideFlags: 0
@@ -224,6 +315,7 @@ GameObject:
   - component: {fileID: 877127469}
   - component: {fileID: 877127471}
   - component: {fileID: 877127470}
+  - component: {fileID: 201694079}
   m_Layer: 0
   m_Name: Dad
   m_TagString: Untagged
@@ -284,6 +376,35 @@ MonoBehaviour:
   icon: {fileID: 21300000, guid: 9351e55eb34255740bf830475b1b39fa, type: 3}
   profileSprite: {fileID: 21300000, guid: 6e075076635297242ac8d8a57cde812e, type: 3}
   description: The Stake Delivery Guy
+--- !u!114 &201694079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 877127468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4782cf42f2644447b9631f6e522160b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  volume: 1
+  loop: 1
+  targetAudioSource: {fileID: 0}
+  audioMode: 2
+  beepSounds: []
+  boopSounds:
+  - {fileID: 8300000, guid: c0d7d27be7d29413f9c18a0dc21b7475, type: 3}
+  - {fileID: 8300000, guid: 1acd416b148254f8aa1a594466025930, type: 3}
+  - {fileID: 8300000, guid: 9dbc507e9157041ca84b64a68abeda1a, type: 3}
+  - {fileID: 8300000, guid: 04097274424574751af68e0cf84696b4, type: 3}
+  - {fileID: 8300000, guid: f8bd8a0c8a53b492cb4bf75357c8390a, type: 3}
+  - {fileID: 8300000, guid: e0c2b51d2ed37496db1cbcfac8a184db, type: 3}
+  - {fileID: 8300000, guid: cbb0bbf6e95ff4b4d8ee64a84b9e84ff, type: 3}
+  soundEffect: {fileID: 0}
+  inputSound: {fileID: 0}
+  pitchLo: 0.8
+  pitchHi: 1
 --- !u!1 &1258736906
 GameObject:
   m_ObjectHideFlags: 0
@@ -295,6 +416,7 @@ GameObject:
   - component: {fileID: 1258736907}
   - component: {fileID: 1258736909}
   - component: {fileID: 1258736908}
+  - component: {fileID: 1101800193}
   m_Layer: 0
   m_Name: Mom
   m_TagString: Untagged
@@ -355,6 +477,35 @@ MonoBehaviour:
   icon: {fileID: 21300000, guid: 9351e55eb34255740bf830475b1b39fa, type: 3}
   profileSprite: {fileID: 21300000, guid: 6e075076635297242ac8d8a57cde812e, type: 3}
   description: The Stake Delivery Guy
+--- !u!114 &1101800193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1258736906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4782cf42f2644447b9631f6e522160b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  volume: 1
+  loop: 1
+  targetAudioSource: {fileID: 0}
+  audioMode: 2
+  beepSounds: []
+  boopSounds:
+  - {fileID: 8300000, guid: aec0895df6a4d4d35a6e4dee0871c629, type: 3}
+  - {fileID: 8300000, guid: ebb3d262b2e70416dbfbf7e7eb9012f4, type: 3}
+  - {fileID: 8300000, guid: c4eba41f98672469d8c232aa28950cc5, type: 3}
+  - {fileID: 8300000, guid: 1bdd1b82f4aa741298c1f527e35c6767, type: 3}
+  - {fileID: 8300000, guid: 13b01ad1b575a4bc08ed03df3d346e5d, type: 3}
+  - {fileID: 8300000, guid: 42ac8dd6596aa4743ab87408d49deaf3, type: 3}
+  - {fileID: 8300000, guid: 03e221cdf04dc4336b5ed801c0a9033c, type: 3}
+  soundEffect: {fileID: 0}
+  inputSound: {fileID: 0}
+  pitchLo: 0.8
+  pitchHi: 1.1
 --- !u!1 &1568467296
 GameObject:
   m_ObjectHideFlags: 0
@@ -366,6 +517,7 @@ GameObject:
   - component: {fileID: 1568467297}
   - component: {fileID: 1568467299}
   - component: {fileID: 1568467298}
+  - component: {fileID: 1964870540}
   m_Layer: 0
   m_Name: Nurse
   m_TagString: Untagged
@@ -426,6 +578,35 @@ MonoBehaviour:
   icon: {fileID: 21300000, guid: 9351e55eb34255740bf830475b1b39fa, type: 3}
   profileSprite: {fileID: 21300000, guid: 6e075076635297242ac8d8a57cde812e, type: 3}
   description: The Stake Delivery Guy
+--- !u!114 &1964870540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1568467296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4782cf42f2644447b9631f6e522160b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  volume: 1
+  loop: 1
+  targetAudioSource: {fileID: 0}
+  audioMode: 2
+  beepSounds: []
+  boopSounds:
+  - {fileID: 8300000, guid: 5b49a76b23b1b475b8d405f815ec4063, type: 3}
+  - {fileID: 8300000, guid: b1602f25b4a114af6a177c09984c5182, type: 3}
+  - {fileID: 8300000, guid: 6271e875e06d445ffbcb11cffc31a488, type: 3}
+  - {fileID: 8300000, guid: 6b67a103db5f5484faa6c1a9b9b0a296, type: 3}
+  - {fileID: 8300000, guid: bf1fd8dac964a4882b9c608f42b60c53, type: 3}
+  - {fileID: 8300000, guid: 89d71d3c288804e74a7dab46ea26813e, type: 3}
+  - {fileID: 8300000, guid: 994b02abb1db245ea9bab86c98289a98, type: 3}
+  soundEffect: {fileID: 0}
+  inputSound: {fileID: 0}
+  pitchLo: 0.8
+  pitchHi: 1.1
 --- !u!1 &1711731198
 GameObject:
   m_ObjectHideFlags: 0
@@ -437,6 +618,7 @@ GameObject:
   - component: {fileID: 1711731199}
   - component: {fileID: 1711731201}
   - component: {fileID: 1711731200}
+  - component: {fileID: 942125667}
   m_Layer: 0
   m_Name: Ramsy
   m_TagString: Untagged
@@ -497,6 +679,35 @@ MonoBehaviour:
   icon: {fileID: 21300000, guid: 9351e55eb34255740bf830475b1b39fa, type: 3}
   profileSprite: {fileID: 21300000, guid: 6e075076635297242ac8d8a57cde812e, type: 3}
   description: The Stake Delivery Guy
+--- !u!114 &942125667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1711731198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4782cf42f2644447b9631f6e522160b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  volume: 1
+  loop: 1
+  targetAudioSource: {fileID: 0}
+  audioMode: 2
+  beepSounds: []
+  boopSounds:
+  - {fileID: 8300000, guid: 73259d8d783d74d78bdca8cab27e39e5, type: 3}
+  - {fileID: 8300000, guid: 65a60e6cd2c134c6cb012314e427dc06, type: 3}
+  - {fileID: 8300000, guid: 5d069db764c0a4253a77ff2ba249c077, type: 3}
+  - {fileID: 8300000, guid: 87261f03bb1fe4325ad1b092c3726cf7, type: 3}
+  - {fileID: 8300000, guid: 03db3bfdb154a4f288120b6ffecf98eb, type: 3}
+  - {fileID: 8300000, guid: 85caacd22e378418fac54906a2296701, type: 3}
+  - {fileID: 8300000, guid: 821b0cba83a444b44abe5d56f643ff3c, type: 3}
+  soundEffect: {fileID: 0}
+  inputSound: {fileID: 0}
+  pitchLo: 0.8
+  pitchHi: 1.1
 --- !u!1 &1824846595
 GameObject:
   m_ObjectHideFlags: 0
@@ -508,6 +719,7 @@ GameObject:
   - component: {fileID: 1824846596}
   - component: {fileID: 1824846598}
   - component: {fileID: 1824846597}
+  - component: {fileID: 594362866}
   m_Layer: 0
   m_Name: Sam
   m_TagString: Untagged
@@ -568,6 +780,35 @@ MonoBehaviour:
   icon: {fileID: 21300000, guid: 9351e55eb34255740bf830475b1b39fa, type: 3}
   profileSprite: {fileID: 21300000, guid: 6e075076635297242ac8d8a57cde812e, type: 3}
   description: The Stake Delivery Guy
+--- !u!114 &594362866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1824846595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4782cf42f2644447b9631f6e522160b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  volume: 1
+  loop: 1
+  targetAudioSource: {fileID: 0}
+  audioMode: 2
+  beepSounds: []
+  boopSounds:
+  - {fileID: 8300000, guid: c828d9a567c56474cafd3b52473491d7, type: 3}
+  - {fileID: 8300000, guid: 311d12fad453841059f214f197d3daae, type: 3}
+  - {fileID: 8300000, guid: f698edd8c849b433caf3f45e80f30531, type: 3}
+  - {fileID: 8300000, guid: 718128886d52b4a74a4c79c13912cd7c, type: 3}
+  - {fileID: 8300000, guid: 2928e3ef85fb04f478af86eac79d83f6, type: 3}
+  - {fileID: 8300000, guid: 9bd2b7544b62b42ca8917e3789c07393, type: 3}
+  - {fileID: 8300000, guid: c64adc3614d734da4932bf416cf6b94f, type: 3}
+  soundEffect: {fileID: 0}
+  inputSound: {fileID: 0}
+  pitchLo: 0.8
+  pitchHi: 1.1
 --- !u!1 &2034381912
 GameObject:
   m_ObjectHideFlags: 0
@@ -579,6 +820,7 @@ GameObject:
   - component: {fileID: 2034381913}
   - component: {fileID: 2034381915}
   - component: {fileID: 2034381914}
+  - component: {fileID: 567774199}
   m_Layer: 0
   m_Name: Tim
   m_TagString: Untagged
@@ -639,6 +881,42 @@ MonoBehaviour:
   icon: {fileID: 21300000, guid: 9351e55eb34255740bf830475b1b39fa, type: 3}
   profileSprite: {fileID: 21300000, guid: 6e075076635297242ac8d8a57cde812e, type: 3}
   description: The Stake Delivery Guy
+--- !u!114 &567774199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2034381912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4782cf42f2644447b9631f6e522160b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  volume: 1
+  loop: 1
+  targetAudioSource: {fileID: 0}
+  audioMode: 2
+  beepSounds:
+  - {fileID: 8300000, guid: f7539b68ee82e4f5bb06c95592679806, type: 3}
+  - {fileID: 8300000, guid: 2a348c0b269cf4bd1a9c3fccdc7e8513, type: 3}
+  - {fileID: 8300000, guid: 0802845ddcc494619888d42c02a5853e, type: 3}
+  - {fileID: 8300000, guid: e84175942ae174ab5aa58aa2afe23d96, type: 3}
+  - {fileID: 8300000, guid: 40a565583bf9943888034f01430cf8d7, type: 3}
+  - {fileID: 8300000, guid: 4296e95a08be6442a91a8ca13f0f0b65, type: 3}
+  - {fileID: 8300000, guid: 9e72db1f4437d4da2ab18b365881ef28, type: 3}
+  boopSounds:
+  - {fileID: 8300000, guid: f7539b68ee82e4f5bb06c95592679806, type: 3}
+  - {fileID: 8300000, guid: 2a348c0b269cf4bd1a9c3fccdc7e8513, type: 3}
+  - {fileID: 8300000, guid: 0802845ddcc494619888d42c02a5853e, type: 3}
+  - {fileID: 8300000, guid: e84175942ae174ab5aa58aa2afe23d96, type: 3}
+  - {fileID: 8300000, guid: 40a565583bf9943888034f01430cf8d7, type: 3}
+  - {fileID: 8300000, guid: 4296e95a08be6442a91a8ca13f0f0b65, type: 3}
+  - {fileID: 8300000, guid: 9e72db1f4437d4da2ab18b365881ef28, type: 3}
+  soundEffect: {fileID: 0}
+  inputSound: {fileID: 0}
+  pitchLo: 0.8
+  pitchHi: 1.1
 --- !u!1 &2121845763
 GameObject:
   m_ObjectHideFlags: 0
@@ -650,6 +928,7 @@ GameObject:
   - component: {fileID: 2121845764}
   - component: {fileID: 2121845766}
   - component: {fileID: 2121845765}
+  - component: {fileID: 2121845767}
   m_Layer: 0
   m_Name: Burt
   m_TagString: Untagged
@@ -710,6 +989,35 @@ MonoBehaviour:
   icon: {fileID: 21300000, guid: 9351e55eb34255740bf830475b1b39fa, type: 3}
   profileSprite: {fileID: 21300000, guid: 6e075076635297242ac8d8a57cde812e, type: 3}
   description: The Stake Delivery Guy
+--- !u!114 &2121845767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2121845763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4782cf42f2644447b9631f6e522160b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  volume: 1
+  loop: 1
+  targetAudioSource: {fileID: 0}
+  audioMode: 2
+  beepSounds: []
+  boopSounds:
+  - {fileID: 8300000, guid: 46d8266466df54e6c8cbea0391f7decf, type: 3}
+  - {fileID: 8300000, guid: a7eba9e40a9e645daa0517f47f41e7d5, type: 3}
+  - {fileID: 8300000, guid: 8dfe6107123434c638c99070ae07209d, type: 3}
+  - {fileID: 8300000, guid: 2bc4eec2f6c6e4ad2a12cda9e4eabaa7, type: 3}
+  - {fileID: 8300000, guid: cedde4b054a1b473a8f551613b25b3d7, type: 3}
+  - {fileID: 8300000, guid: f2e25738839cf4c5c9519566e5b66c97, type: 3}
+  - {fileID: 8300000, guid: 0bd440182b73d4d1aae770b8d073f693, type: 3}
+  soundEffect: {fileID: 0}
+  inputSound: {fileID: 0}
+  pitchLo: 0.8
+  pitchHi: 1.1
 --- !u!1 &1320932506538720
 GameObject:
   m_ObjectHideFlags: 0
@@ -721,6 +1029,7 @@ GameObject:
   - component: {fileID: 4587884602695764}
   - component: {fileID: 222563416877433838}
   - component: {fileID: 114026887395396064}
+  - component: {fileID: 861024841}
   m_Layer: 0
   m_Name: Ernie
   m_TagString: Untagged
@@ -781,6 +1090,35 @@ MonoBehaviour:
   icon: {fileID: 21300000, guid: 9351e55eb34255740bf830475b1b39fa, type: 3}
   profileSprite: {fileID: 21300000, guid: 6e075076635297242ac8d8a57cde812e, type: 3}
   description: The Stake Delivery Guy
+--- !u!114 &861024841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1320932506538720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4782cf42f2644447b9631f6e522160b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  volume: 1
+  loop: 1
+  targetAudioSource: {fileID: 0}
+  audioMode: 2
+  beepSounds: []
+  boopSounds:
+  - {fileID: 8300000, guid: 46d8266466df54e6c8cbea0391f7decf, type: 3}
+  - {fileID: 8300000, guid: a7eba9e40a9e645daa0517f47f41e7d5, type: 3}
+  - {fileID: 8300000, guid: 8dfe6107123434c638c99070ae07209d, type: 3}
+  - {fileID: 8300000, guid: 2bc4eec2f6c6e4ad2a12cda9e4eabaa7, type: 3}
+  - {fileID: 8300000, guid: cedde4b054a1b473a8f551613b25b3d7, type: 3}
+  - {fileID: 8300000, guid: f2e25738839cf4c5c9519566e5b66c97, type: 3}
+  - {fileID: 8300000, guid: 0bd440182b73d4d1aae770b8d073f693, type: 3}
+  soundEffect: {fileID: 0}
+  inputSound: {fileID: 0}
+  pitchLo: 0.8
+  pitchHi: 1.1
 --- !u!1 &1620403147873052
 GameObject:
   m_ObjectHideFlags: 0
@@ -848,6 +1186,7 @@ GameObject:
   - component: {fileID: 1657337518999463671}
   - component: {fileID: 5340894234454591497}
   - component: {fileID: 6688935372163145339}
+  - component: {fileID: 628986930}
   m_Layer: 0
   m_Name: Duke
   m_TagString: Untagged
@@ -908,6 +1247,35 @@ MonoBehaviour:
   icon: {fileID: 21300000, guid: 9351e55eb34255740bf830475b1b39fa, type: 3}
   profileSprite: {fileID: 21300000, guid: 6e075076635297242ac8d8a57cde812e, type: 3}
   description: The Stake Delivery Guy
+--- !u!114 &628986930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3352102910147497060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4782cf42f2644447b9631f6e522160b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  volume: 1
+  loop: 1
+  targetAudioSource: {fileID: 0}
+  audioMode: 2
+  beepSounds: []
+  boopSounds:
+  - {fileID: 8300000, guid: 1019a736189c541fca4f8fc345a50e23, type: 3}
+  - {fileID: 8300000, guid: 4c282483f1edd42faa31954d4f86c144, type: 3}
+  - {fileID: 8300000, guid: f59aae5843662422bb530eda2f7330b7, type: 3}
+  - {fileID: 8300000, guid: f8fa9e67ca04c4bab93b6056ed66050e, type: 3}
+  - {fileID: 8300000, guid: 3c057ad5df4b545169e09c3c79873300, type: 3}
+  - {fileID: 8300000, guid: 0c3b130308e994ca2ac796b346a66027, type: 3}
+  - {fileID: 8300000, guid: 0030d25b5944f4d30b1f3be8b4aec620, type: 3}
+  soundEffect: {fileID: 0}
+  inputSound: {fileID: 0}
+  pitchLo: 0.8
+  pitchHi: 1.1
 --- !u!1 &5484760047201509915
 GameObject:
   m_ObjectHideFlags: 0
@@ -919,6 +1287,7 @@ GameObject:
   - component: {fileID: 5519424613159706064}
   - component: {fileID: 7318526905168933986}
   - component: {fileID: 7373287334057356484}
+  - component: {fileID: 349320150}
   m_Layer: 0
   m_Name: Pickle
   m_TagString: Untagged
@@ -979,3 +1348,39 @@ MonoBehaviour:
   icon: {fileID: 21300000, guid: 9351e55eb34255740bf830475b1b39fa, type: 3}
   profileSprite: {fileID: 21300000, guid: 6e075076635297242ac8d8a57cde812e, type: 3}
   description: The Stake Delivery Guy
+--- !u!114 &349320150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5484760047201509915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4782cf42f2644447b9631f6e522160b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  volume: 1
+  loop: 1
+  targetAudioSource: {fileID: 0}
+  audioMode: 2
+  beepSounds:
+  - {fileID: 8300000, guid: 73259d8d783d74d78bdca8cab27e39e5, type: 3}
+  - {fileID: 8300000, guid: 65a60e6cd2c134c6cb012314e427dc06, type: 3}
+  - {fileID: 8300000, guid: 5d069db764c0a4253a77ff2ba249c077, type: 3}
+  - {fileID: 8300000, guid: 87261f03bb1fe4325ad1b092c3726cf7, type: 3}
+  - {fileID: 8300000, guid: 03db3bfdb154a4f288120b6ffecf98eb, type: 3}
+  - {fileID: 8300000, guid: 85caacd22e378418fac54906a2296701, type: 3}
+  - {fileID: 8300000, guid: 821b0cba83a444b44abe5d56f643ff3c, type: 3}
+  boopSounds:
+  - {fileID: 8300000, guid: 73259d8d783d74d78bdca8cab27e39e5, type: 3}
+  - {fileID: 8300000, guid: 65a60e6cd2c134c6cb012314e427dc06, type: 3}
+  - {fileID: 8300000, guid: 5d069db764c0a4253a77ff2ba249c077, type: 3}
+  - {fileID: 8300000, guid: 87261f03bb1fe4325ad1b092c3726cf7, type: 3}
+  - {fileID: 8300000, guid: 03db3bfdb154a4f288120b6ffecf98eb, type: 3}
+  - {fileID: 8300000, guid: 85caacd22e378418fac54906a2296701, type: 3}
+  - {fileID: 8300000, guid: 821b0cba83a444b44abe5d56f643ff3c, type: 3}
+  soundEffect: {fileID: 0}
+  inputSound: {fileID: 0}
+  pitchLo: 0.8
+  pitchHi: 1.1

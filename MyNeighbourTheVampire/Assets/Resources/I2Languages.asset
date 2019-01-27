@@ -366,7 +366,7 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - C 1,2
+      - "\u2713"
       - 
       - 
       - 
@@ -381,7 +381,7 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - C 1
+      - "\u2713"
       - 
       - 
       - 
@@ -396,7 +396,7 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - C 1
+      - c
       - 
       - 
       - 
@@ -411,7 +411,7 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - C 1
+      - c
       - 
       - 
       - 
@@ -426,7 +426,7 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - C
+      - c
       - 
       - 
       - 
@@ -441,7 +441,7 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - C
+      - c
       - 
       - 
       - 
@@ -456,7 +456,7 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - C
+      - c
       - 
       - 
       - 
@@ -471,7 +471,7 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - C1
+      - c
       - 
       - 
       - 
@@ -486,7 +486,7 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - C
+      - c
       - 
       - 
       - 
@@ -501,7 +501,7 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - C2
+      - c
       - 
       - 
       - 
@@ -516,7 +516,7 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - C1
+      - c
       - 
       - 
       - 
@@ -1172,7 +1172,7 @@ MonoBehaviour:
       - 
       - What do you think about my Vampire Costume?
       - Not bad. I changed my mind. you're invited.
-      - invite
+      - dontkill
       - "It\u2019s not a Costume party, Sam."
       - invading
       - You weren't invited. Get out of here.
@@ -1187,7 +1187,7 @@ MonoBehaviour:
       - 'sam normal offscreenbottom center '
       - What do you think about my Vampire Costume?
       - Super spooky. Nice job.
-      - invite
+      - dontkill
       - "It\u2019s not a Costume party, Sam."
       - invading
       - 
@@ -1201,7 +1201,7 @@ MonoBehaviour:
       - 
       - 
       - "Bah who cares! I\u2019m coming in!"
-      - "\u2620\uFE0F Kill"
+      - Kill
       - kill
       - Don't kill
       - dontkill
@@ -1214,8 +1214,8 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - sam kill
-      - "I\u2026 just wanted to be friends."
+      - sam kill staked
+      - "I\u2026 just wanted to be friends.<wi>"
       - 
       - exit
       - 
@@ -1229,8 +1229,8 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - sam kill
-      - OH NOOOOOOOOO
+      - sam kill staked
+      - OH NOOOOOOOOO<wi>
       - 
       - exit
       - 
@@ -1259,7 +1259,7 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - sam hide offscreenleft
+      - sam staked hide offscreenleft
       - 
       - 
       - 
@@ -1890,8 +1890,23 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
+      - dad staked
       - 
-      - AAH! How could you stab your own parents?
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Parents/kill/v/2
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - mom staked
+      - AAH! How could you stab your own parents?<wi>
       - 
       - exitkill
       - 
@@ -1905,7 +1920,7 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - mom normal
+      - mom staked
       - "How could you <$player>! I\u2019m your mother!"
       - 
       - 
@@ -1920,7 +1935,7 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - dad normal
+      - dad staked
       - "<$player>! I can\u2019t believe you\u2019ve done this!<wi>"
       - 
       - exitkill
@@ -2292,7 +2307,7 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - tim kill
+      - tim staked kill
       - I guess.. this is the fate of every not vampire eventually.
       - 
       - exitdown
@@ -2718,7 +2733,7 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - nurse kill
+      - nurse staked kill
       - Make sure you donate my blood to the kids!
       - 
       - exitkill
@@ -2733,7 +2748,7 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - nurse kill
+      - nurse staked kill
       - AAAHHH! You were about to be mine!
       - 
       - exitkill
@@ -3029,7 +3044,7 @@ MonoBehaviour:
       - Hey <$player>, thanks again for inviting me! Looks like there are a ton of
         excellent snacks here! By the way, I brought some more flavors of cookies
         if you wanted to buy some.
-      - "\u2620\uFE0FI reject your cookies and your blood sucking ways! DIE!"
+      - I reject your cookies and your blood sucking ways! DIE!
       - kill2
       - There are tons of potential buys here, get in there.
       - nokill
@@ -3046,7 +3061,7 @@ MonoBehaviour:
       - Hey <$player>, thanks again for inviting me! You have potato chips, know what
         goes great with potato chips? More girl guide cookies. I brought some if you
         want to take a look.
-      - "\u2620\uFE0FI reject your cookies and your blood sucking ways! DIE!"
+      - I reject your cookies and your blood sucking ways! DIE!
       - kill1
       - There are tons of potential buys here, get in there.
       - nokill
@@ -3059,7 +3074,7 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - lucy kill
+      - lucy staked kill
       - "AAAH! How dare you! I may be a vampire, but I\u2019m just a little girl!<wi>"
       - 
       - exitkill
@@ -3074,7 +3089,7 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - lucy kill
+      - lucy staked kill
       - Ouch! Why did you do that <$player>? It hurts...<wi>
       - 
       - exitkill
@@ -3676,7 +3691,7 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - Burt offscreenbottom center normal
+      - Burt hide offscreenbottom
       - 
       - 
       - 
@@ -3985,9 +4000,9 @@ MonoBehaviour:
       - paul normal offscreenright center
       - "Holy cow sweet party you got going on here. I hope I wasn\u2019t too late.
         I was busy trying to find a aero-plane to fly in on."
-      - "\u2620\uFE0F Die daemon!"
+      - Die demon!
       - kill
-      - Come on in Pual.
+      - Come on in Paul.
       - nokill
       - 
       - 
@@ -3998,10 +4013,10 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - paul kill hide offscreenbottom
-      - Wh..what was that for?
+      - paul staked kill
+      - Wh..what was that for?<wi>
       - 
-      - 
+      - exit
       - 
       - 
       - 
@@ -4015,6 +4030,21 @@ MonoBehaviour:
       - 
       - paul hide offscreenleft
       - To the punch bowl, where all the cool aero-plane kids hang out.
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Paul/exit/1
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - paul hide offscreenbottom
+      - 
       - 
       - 
       - 
@@ -4263,7 +4293,7 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - 
+      - buffy normal offscreenright center
       - Hey <$player>, I brought my vampire detecting radar. Look how cool and useful
         this is!
       - 
@@ -4296,7 +4326,7 @@ MonoBehaviour:
       - 
       - 
       - "Oh that\u2019s weird. It must have some of its settings dialed in wrong."
-      - "\u2620\uFE0FI\u2019ll show you wrong settings! KURPLAH!"
+      - "I\u2019ll show you wrong settings! KURPLAH!"
       - kill
       - "I\u2019m sure that would be very useful with the correct settings! Come enjoy
         my 7 layer bean dip."
@@ -4310,7 +4340,7 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - buffy kill
+      - buffy staked kill
       - How could you do this... to me.<wi>
       - 
       - exitkill
@@ -4325,7 +4355,7 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - buffy kill
+      - buffy staked kill
       - I just wanted... to taste the blood of my fans.<wi>
       - 
       - exitkill
@@ -4583,7 +4613,7 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - Ernie normal offscreenright center
+      - Ernie vamp offscreenright center
       - "I... I don\u2019t know what came over me. Maybe I\u2019ve become psychic,
         but I thought you would <i>really, really</i> like some Wendy\u2019s. "
       - 
@@ -4680,7 +4710,7 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - ernie_in_da_house=1 Ernie normal hide offscreenleft
+      - ernie_in_da_house=1 Ernie vamp hide offscreenleft
       - "Sweet I\u2019ma just stay right over here till you want that massage."
       - 
       - 
@@ -4728,7 +4758,7 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - Ernie normal hide offscreenleft
+      - Ernie vamp hide offscreenleft
       - 
       - 
       - 
@@ -4758,7 +4788,7 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - ernie_in_da_house==1>day2alt ernie normal offscreenright center
+      - ernie_in_da_house==1>day2alt ernie vamp offscreenright center
       - "Listen.. You have to let me in. I feel like a camel in a desert who hasn\u2019t
         found any water for days."
       - 
@@ -4789,7 +4819,7 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - ernie normal offscreenright center
+      - ernie vamp offscreenright center
       - I had to leave to get my dentures, but for some reason I can't get back into
         your place!
       - 
@@ -4836,7 +4866,7 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - Ernie normal hide offscreenbottom
+      - Ernie vamp hide offscreenbottom
       - '[Ernie collapses and turns into dust infront of you.]'
       - 
       - 
@@ -4851,7 +4881,7 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - Ernie normal hide offscreenright
+      - Ernie vamp hide offscreenright
       - 
       - 
       - 
@@ -5009,7 +5039,7 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - ramsy_var=burger hide
+      - ramsy_var=burger
       - "Perfect, I have the world\u2019s best burger recipe. You donkey.<wi>"
       - 
       - exit
@@ -5024,7 +5054,7 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - ramsy_var=Steak hide
+      - ramsy_var=Steak
       - Excellent choice, only medium rare. You donkey.<wi>
       - 
       - exit
@@ -5039,7 +5069,7 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - ramsy_var=Garlic hide
+      - ramsy_var=Garlic
       - That is the stupidest thing I have ever heard. You donkey.<wi>
       - 
       - exit
@@ -5147,7 +5177,7 @@ MonoBehaviour:
       - 
       - "Alright, all the food\u2019s here dinner should be ready soon. Bloody warm
         Burgers, world famous and ready to go."
-      - "\u2620\uFE0F Why don't you burg THIS."
+      - Why don't you burg THIS.
       - kill
       - (LET IN) Well enjoy the party Gord.
       - nokill
@@ -5163,7 +5193,7 @@ MonoBehaviour:
       - 
       - "Alright, all the food\u2019s here dinner should be ready soon. Bloody warm
         Steaks cooked exactly to a medium and ready to go."
-      - "\u2620\uFE0F I can't mistake this vampire!"
+      - I can't mistake this vampire!
       - kill
       - (LET IN) Well enjoy the party Gord.
       - nokill
@@ -5179,7 +5209,7 @@ MonoBehaviour:
       - 
       - "Alright, all the food\u2019s here dinner should be ready soon. Bloody warm
         Garlic Bread and ready to go."
-      - "\u2620\uFE0F TAKE THIS!!"
+      - TAKE THIS!!
       - kill
       - (LET IN) Well enjoy the party Gord.
       - nokill
@@ -5187,7 +5217,7 @@ MonoBehaviour:
       - 
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Ramsy/day3burg/1/v
+    - Term: Ramsy/day3burg/v/1
       TermType: 0
       Description: 
       Languages:
@@ -5202,7 +5232,7 @@ MonoBehaviour:
       - 
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Ramsy/day3burg/2/v
+    - Term: Ramsy/day3burg/v/2
       TermType: 0
       Description: 
       Languages:
@@ -5210,7 +5240,7 @@ MonoBehaviour:
       - 
       - "I canceled all the burgers you ordered. We\u2019re just going to have Raw
         Virgin Lamb at the party."
-      - "\u2620\uFE0F Why don't you burg THIS."
+      - Why don't you burg THIS.
       - kill
       - (LET IN) Well enjoy the party Gord.
       - nokill
@@ -5218,7 +5248,7 @@ MonoBehaviour:
       - 
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Ramsy/day3steak/1/v
+    - Term: Ramsy/day3steak/v/1
       TermType: 0
       Description: 
       Languages:
@@ -5226,7 +5256,7 @@ MonoBehaviour:
       - 
       - " I canceled all the steaks you ordered. We\u2019re just going to have Raw
         Virgin Lamb at the party."
-      - "\u2620\uFE0F I can't mistake this vampire!"
+      - I can't mistake this vampire!
       - kill
       - (LET IN) Well enjoy the party Gord.
       - nokill
@@ -5234,7 +5264,7 @@ MonoBehaviour:
       - 
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Ramsy/day3garlic/1/v
+    - Term: Ramsy/day3garlic/v/1
       TermType: 0
       Description: 
       Languages:
@@ -5242,7 +5272,7 @@ MonoBehaviour:
       - 
       - "I canceled all those those Garlic Breads you ordered. We\u2019re just going
         to have Raw Virgin Lamb at the party."
-      - "\u2620\uFE0F TAKE THAT!!!"
+      - TAKE THAT!!!
       - kill
       - (LET IN) Well enjoy the party Gord.
       - nokill
@@ -5255,7 +5285,7 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - ramsy kill
+      - ramsy staked kill
       - You bloody donkey<wi>
       - 
       - exitkill
@@ -5562,7 +5592,7 @@ MonoBehaviour:
     Google_WebServiceURL: https://script.google.com/macros/s/AKfycbyTHLOw0mSBTa6Ufd1UEzDAtNCYjd1zUlQpf_ew1A/exec
     Google_SpreadsheetKey: 1SAkO2quLFZu3g7w1gxC8mKpIjiZmL4wyQ4gYlq_1ubo
     Google_SpreadsheetName: I2Loc MyNeighbourTheVampire Localization
-    Google_LastUpdatedVersion: 1548627819375
+    Google_LastUpdatedVersion: 1548632270238
     Google_Password: vampires
     GoogleUpdateFrequency: 0
     GoogleInEditorCheckFrequency: 0
