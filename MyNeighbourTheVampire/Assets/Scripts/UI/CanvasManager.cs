@@ -24,7 +24,8 @@ public enum UIPanelID
     Dialogue = 2,
 	DialogueOptions = 3,
 	EnterName = 4,
-	Fader = 5
+	Fader = 5,
+	KillScreen = 6
 }
 
 public class CanvasManager : MonoBehaviour

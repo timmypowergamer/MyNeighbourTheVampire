@@ -33,6 +33,7 @@ namespace Fungus
 			public string Condition;
 			public bool Kill;
 			public bool Invite;
+			public bool PlayerKill;
 		}
 
 		protected Dictionary<string, Character> characters;
@@ -219,6 +220,7 @@ namespace Fungus
 				}
 				if (sayParams[i] == "kill") item.Kill = true;
 				if (sayParams[i] == "invite") item.Invite = true;
+				if (sayParams[i] == "playerkill") item.PlayerKill = true;
 			}
 
 			// Check if there's a Hide parameter
@@ -411,6 +413,10 @@ namespace Fungus
 					if (item.Invite)
 					{
 						GameManager.Instance.SetInvited(currentCharacter.gameObject.name, true);
+					}
+					if(item.PlayerKill)
+					{
+						GameManager.Instance.KillPlayer();
 					}
 				}
 

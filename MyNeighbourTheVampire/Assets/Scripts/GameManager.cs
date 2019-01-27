@@ -44,6 +44,11 @@ public class GameManager : MonoBehaviour
 		}
 	}
 
+	public bool IsPlayerDead { get; private set; }
+	public int _numInvited { get; private set; }
+	public int _numGuests { get; private set; }
+	public int _numVampiresKilled { get; private set; }
+
 	private Dictionary<string, GameCharacter> CharacterDict = new Dictionary<string, GameCharacter>();
 
 	public static GameManager Instance;
@@ -91,15 +96,20 @@ public class GameManager : MonoBehaviour
 		foreach (GameLevel level in Levels)
 		{
 			yield return RunLevel(level);
+			if (IsPlayerDead) yield break;
 		}
-		int vampiresKilled = 0;
-		int guestsAlive = 0;
-		foreach (GameCharacter gc in GameCharacters)
+
+		if (!IsPlayerDead)
 		{
-			if (gc.isVampire && gc.isDead) vampiresKilled++;
-			if (!gc.isVampire && !gc.isDead && gc.isInvited) guestsAlive++;
+			int vampiresKilled = 0;
+			int guestsAlive = 0;
+			foreach (GameCharacter gc in GameCharacters)
+			{
+				if (gc.isVampire && gc.isDead) vampiresKilled++;
+				if (!gc.isVampire && !gc.isDead && gc.isInvited) guestsAlive++;
+			}
+			Debug.LogWarning($"KilledVampires = {vampiresKilled}, Guests Alive = {guestsAlive}");
 		}
-		Debug.LogWarning($"KilledVampires = {vampiresKilled}, Guests Alive = {guestsAlive}");
 	}
 
 	public IEnumerator RunLevel(GameLevel level)
@@ -108,7 +118,14 @@ public class GameManager : MonoBehaviour
 		while (nextEvent != null)
 		{
 			yield return nextEvent.Run();
-			nextEvent = level.GetNextEvent();
+			if (IsPlayerDead)
+			{
+				yield break;
+			}
+			else
+			{
+				nextEvent = level.GetNextEvent();
+			}
 		}
 	}
 
@@ -143,7 +160,11 @@ public class GameManager : MonoBehaviour
 	{
 		if (CharacterDict.ContainsKey(characterID))
 		{
-			CharacterDict[characterID].isDead = value;
+			if (!CharacterDict[characterID].isDead)
+			{
+				CharacterDict[characterID].isDead = value;
+				if (CharacterDict[characterID].isVampire) _numVampiresKilled++;
+			}
 		}
 	}
 
@@ -151,8 +172,22 @@ public class GameManager : MonoBehaviour
 	{
 		if (CharacterDict.ContainsKey(characterID))
 		{
-			CharacterDict[characterID].isInvited = value;
+			if (!CharacterDict[characterID].isInvited)
+			{
+				_numInvited++;
+				CharacterDict[characterID].isInvited = value;
+			}
 		}
+	}
+
+	public void AddGuest()
+	{
+		_numGuests++;
+	}
+
+	public void KillPlayer()
+	{
+		IsPlayerDead = true;
 	}
 
 	public static bool CheckCondition(string condition)

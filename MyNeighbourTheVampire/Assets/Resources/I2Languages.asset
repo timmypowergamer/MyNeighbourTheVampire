@@ -366,7 +366,7 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - C
+      - C 1,2
       - 
       - 
       - 
@@ -381,7 +381,7 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - "\u2713"
+      - C 1
       - 
       - 
       - 
@@ -396,7 +396,7 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - "\u2713"
+      - C 1
       - 
       - 
       - 
@@ -411,7 +411,7 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - "\u2713"
+      - C 1
       - 
       - 
       - 
@@ -426,7 +426,7 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - C - missing day3 cut?
+      - "\u2713"
       - 
       - 
       - 
@@ -471,7 +471,7 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - "\u2713"
+      - C1
       - 
       - 
       - 
@@ -516,7 +516,7 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - "\u2713"
+      - C1
       - 
       - 
       - 
@@ -607,7 +607,7 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - sam_invite=0
+      - sam normal offscreenbottom center sam_invite=0
       - Greetings, neighbour!
       - 
       - 
@@ -639,7 +639,7 @@ MonoBehaviour:
       - 
       - 
       - "How do you like this neighbourhood, I know it\u2019s full of weirdos but
-        you\u2019ll learn to sacrifice to live with them."
+        you\u2019ll learn to sacrifi- err... I mean...<nl>to live with them."
       - 
       - 
       - 
@@ -656,14 +656,14 @@ MonoBehaviour:
       - 
       - Did you hear the good news?
       - No?
-      - 
+      - response1
       - 
       - 
       - 
       - 
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Sam/response1
+    - Term: Sam/response1/1
       TermType: 0
       Description: 
       Languages:
@@ -686,26 +686,10 @@ MonoBehaviour:
       - 
       - "Oh you haven\u2019t heard of the unspoken book? Its the word of our great
         lord, he rewrote most of our understanding of Greater and Lesser magic in
-        his books."
+        his books.<wi>"
       - 
+      - invite3
       - 
-      - 
-      - 
-      - 
-      - 
-      Flags: 000000000000000000
-      Languages_Touch: []
-    - Term: Sam/invite1/2
-      TermType: 0
-      Description: 
-      Languages:
-      - 
-      - 
-      - Anyway, I hear you are world renown for your parties. Friday I heard it was?
-        Do you have room not only in your heart but at your party for good ole Sam?
-      - Yeah sure come Friday
-      - invite
-      - "I don\u2019t want to ruin your celebration"
       - 
       - 
       - 
@@ -718,53 +702,68 @@ MonoBehaviour:
       - 
       - 
       - The first great sign was when we invented fidget spinners. Humanity was severely
-        set back then.
+        set back then.<wi>
       - 
-      - 
+      - invite3
       - 
       - 
       - 
       - 
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Sam/invite2/2
+    - Term: Sam/invite3/1
       TermType: 0
       Description: 
       Languages:
       - 
       - 
-      - Anyway, I hear you are world renown for your parties. Friday I heard it was?
-        Do you have room not only in your heart but at your party for good ole Sam?
+      - Anyway, I hear you are world renowned for your parties. Friday I heard it
+        was? Do you have room not only in your heart but at your party for good ole
+        Sam?
       - Yeah sure come Friday
       - invite
-      - "I don\u2019t want to ruin your celebration"
-      - 
+      - You seem... Nice. But it's not <i>that</i> kind of party
+      - deny
       - 
       - 
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Sam/invite3
-      TermType: 0
-      Description: 
-      Languages:
-      - 
-      - 
-      - Anyway, I hear you are world renown for your parties. Friday I heard it was?
-        Do you have room not only in your heart but at your party for good ole Sam?
-      - Yeah sure come Friday
-      - invite
-      - "I don\u2019t want to ruin your celebration"
-      - 
-      - 
-      - 
-      Flags: 000000000000000000
-      Languages_Touch: []
-    - Term: Sam/invite
+    - Term: Sam/invite/1
       TermType: 0
       Description: 
       Languages:
       - 
       - invite sam_invite=1
+      - Thanks. I'm sure it will be... <i>a scream</i>
+      - '...'
+      - exit
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Sam/deny/1
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - I understand...<nl>Call me if you need anything<wi>
+      - 
+      - exit
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Sam/exit/1
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - sam hide offscreenbottom
       - 
       - 
       - 
@@ -795,8 +794,9 @@ MonoBehaviour:
       Languages:
       - 
       - 
-      - "Came by to let you know that not ALL vampires are bad people. That\u2019s
-        what we\u2019re going to be talking about on Friday at our weekly group talk."
+      - "Greetings <$player>!<nl>Came by to let you know that not ALL vampires are
+        bad.<wc>That\u2019s what we\u2019re going to be talking about on Friday at
+        our weekly group talk."
       - 
       - 
       - 
@@ -812,10 +812,10 @@ MonoBehaviour:
       - 
       - 
       - Vampires can be good people too, neighbour!
-      - You mean the Second Great Sign?
-      - 
+      - Because of the Second Great Sign?
+      - day2response1
       - Right, what about the blood sucking part?
-      - 
+      - day2response2
       - 
       - 
       Flags: 000000000000000000
@@ -954,7 +954,7 @@ MonoBehaviour:
       - 
       - 
       - "Satanism is all about doing what you please, as long as you\u2019re not hurting
-        anyone, unless you need to survive then hurting humans is a-ok."
+        anyone, unless you need to survive...<wi>Then hurting humans is a-ok!"
       - 
       - 
       - 
@@ -985,17 +985,17 @@ MonoBehaviour:
       Languages:
       - 
       - 
-      - Anyway, if your interested come out to our weekly ritual meetings on Friday
+      - Anyway, if you're interested, come out to our weekly ritual meetings on Friday
         evenings.
-      - Uh sure Sam.
-      - invite
+      - Uh... sure Sam.
+      - speechResponse1
       - Fridays are terrible for me
-      - 
+      - speechResponse2
       - 
       - 
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Sam/speechResponse1
+    - Term: Sam/speechResponse1/1
       TermType: 0
       Description: 
       Languages:
@@ -1003,7 +1003,7 @@ MonoBehaviour:
       - 
       - "Great! That reminds me about your party thing\u2026 wasn\u2019t that tomorrow
         too?"
-      - 
+      - Yes. That's right.
       - 
       - 
       - 
@@ -1011,7 +1011,7 @@ MonoBehaviour:
       - 
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Sam/speechResponse2
+    - Term: Sam/speechResponse2/1
       TermType: 0
       Description: 
       Languages:
@@ -1026,7 +1026,7 @@ MonoBehaviour:
       - 
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Sam/party1
+    - Term: Sam/party_noinvite
       TermType: 0
       Description: 
       Languages:
@@ -1039,6 +1039,21 @@ MonoBehaviour:
       - party2
       - "You weren\u2019t invited Sam go away."
       - didntInvite
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Sam/party1
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - sam_invite==1>party_noinvite
+      - Well, I also wanted to know what you wanted me to bring to the party tomorrow?
+      - Garlic bread?
+      - party2
+      - Garlic loaf?
+      - party2
+      - 
+      - 
       Flags: 000000000000000000
       Languages_Touch: []
     - Term: Sam/party2/1
@@ -1078,7 +1093,7 @@ MonoBehaviour:
       Languages:
       - 
       - 
-      - '[Sam leaves before you have a chance to respond]'
+      - 
       - 
       - 
       - 
@@ -1284,7 +1299,7 @@ MonoBehaviour:
       - 
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Duke/intro
+    - Term: Duke/intro/1
       TermType: 0
       Description: 
       Languages:
@@ -1299,7 +1314,7 @@ MonoBehaviour:
       - 
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Duke/responseA
+    - Term: Duke/responseA/1
       TermType: 0
       Description: 
       Languages:
@@ -1315,7 +1330,7 @@ MonoBehaviour:
       - stakeResponse
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Duke/responseB
+    - Term: Duke/responseB/1
       TermType: 0
       Description: 
       Languages:
@@ -1332,7 +1347,7 @@ MonoBehaviour:
       - 
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Duke/garlicResponse
+    - Term: Duke/garlicResponse/1
       TermType: 0
       Description: 
       Languages:
@@ -1349,7 +1364,7 @@ MonoBehaviour:
       - 
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Duke/crucifixResponse
+    - Term: Duke/crucifixResponse/1
       TermType: 0
       Description: 
       Languages:
@@ -1366,7 +1381,7 @@ MonoBehaviour:
       - 
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Duke/stakeResponse
+    - Term: Duke/stakeResponse/1
       TermType: 0
       Description: 
       Languages:
@@ -1382,7 +1397,7 @@ MonoBehaviour:
       - 
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Duke/finalA
+    - Term: Duke/finalA/1
       TermType: 0
       Description: 
       Languages:
@@ -1397,7 +1412,7 @@ MonoBehaviour:
       - 
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Duke/finalB
+    - Term: Duke/finalB/1
       TermType: 0
       Description: 
       Languages:
@@ -1418,6 +1433,403 @@ MonoBehaviour:
       Languages:
       - 
       - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Parents///Guest
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Parents/mom_name
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - Mom
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Parents/dad_name
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - Dad
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Parents/
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Parents/intro/1
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - mom normal midright
+      - Hey honey, we love your new home. I brought your favourite garlic chocolate
+        chip cookies.
+      - Thanks! You know I love them.
+      - dadIntro
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Parents/intro/v/1
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - mom normal midright
+      - Hey honey, we love your new home. I brought your favourite chocolate chip
+        cookies.
+      - Thanks! You know I love them.
+      - dadIntro
+      - Thank you but you know I like them better with garlic.
+      - answer1
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Parents/dadIntro/1
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - dad normal midleft
+      - "Hi <$player>, I heard you have a party this weekend. You are planning to
+        invite us aren\u2019t you?"
+      - "Of course you\u2019re invited. I wouldn\u2019t leave my own parents out."
+      - answer4
+      - "Umm, This isn\u2019t really a party for old-timers like yourselves."
+      - answer5
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Parents/answer1/1
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - mom normal
+      - "Oh I\u2019m sorry, I recently developed an allergy so I couldn\u2019t add
+        it in this time."
+      - You look a little pale, and a bit younger too.
+      - answer2
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Parents/answer2/1
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - mom normal
+      - "Why, thank you honey! Well, we recently joined this amazing new health club.
+        It\u2019s done wonders for our looks. Our new Fortnite addiction doesn\u2019t
+        help our complexion though."
+      - When did you start playing Fortnite?
+      - answer3
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Parents/answer3/1
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - mom normal
+      - A while ago but nevermind that.
+      - Alright then.
+      - dadIntro
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Parents/answer4/1
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - mom normal
+      - Great, we will see you there!<wi>
+      - 
+      - exit
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Parents/answer4/v/1
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - dad normal
+      - Great, we hope to see some young blood there.<wi>
+      - 
+      - exit
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Parents/answer5/1
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - dad normal
+      - "That\u2019s fair... We aren\u2019t as young as we used to be.<wi><nl>Well,
+        you have fun now.<wi>"
+      - 
+      - exit
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Parents/answer5/v/1
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - mom normal
+      - Are you sure?<nl>We feel younger than ever.
+      - I'm sure. Go home to your coffins. I mean beds
+      - 
+      - If you think so...
+      - answer4
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Parents/answer5/v/2
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - mom hide offscreenright
+      - <x>
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Parents/answer5/v/3
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - dad hide offscreenleft
+      - '...'
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Parents///Day3
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Parents/day3intro/1
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - mom normal
+      - Hello honey, thank you so much for inviting us.
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Parents/day3intro/2
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - dad normal
+      - "I can\u2019t wait to get this party started!"
+      - "\u2620\uFE0FI\u2019ve found you out, you were vampires all along!"
+      - kill
+      - Come right in mom and dad.
+      - nokill
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Parents/kill/v/1
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - both normal
+      - AAH! How could you stab your own parents?
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Parents/kill/1
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - mom normal
+      - "How could you <$player>! I\u2019m your mother!"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Parents/kill/2
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - dad normal
+      - "<$player>! I can\u2019t believe you\u2019ve done this!"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Parents/nokill/1
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - both normal
+      - "Don\u2019t mind if we do. This party looks great."
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Parents/nokill/v/1
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - both normal
+      - "Don\u2019t mind if we do. We could use some fresh blood."
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Parents/exit/1
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - dad hide offscreenleft
+      - <x>
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Parents/exit/2
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - mom hide offscreenright
       - 
       - 
       - 
@@ -1478,13 +1890,13 @@ MonoBehaviour:
       Languages:
       - 
       - 
-      - "I\u2019m Tim the Vampire. Tim T. Vampire is what my parents named me. I\u2019ve
-        been waiting all my life for an opportunity such as this outbreak to come
-        outside with my umbrella."
-      - So.. what's with the umbrella?
-      - umbrella
-      - What brings you here Tim?
-      - skipbrella
+      - "I\u2019m Tim the Vampire<s=1>.</s> <i>Tim T. Vampire</i> is what my parents
+        named me.<nl>My name never caused me a problem untill the outbreak, but now
+        everyone freaks out."
+      - 
+      - 
+      - 
+      - 
       - 
       - 
       Flags: 000000000000000000
@@ -1495,11 +1907,11 @@ MonoBehaviour:
       Languages:
       - 
       - 
-      - 
-      - 
-      - 
-      - 
-      - 
+      - I sleep in a coffin and enjoy having my coffee black.
+      - So.. what's with the umbrella?
+      - umbrella
+      - What brings you here Tim?
+      - skipbrella
       - 
       - 
       Flags: 000000000000000000
@@ -1556,8 +1968,8 @@ MonoBehaviour:
       Languages:
       - 
       - 
-      - Plus the last time I stayed outside without my umbrella, mother yelled at
-        me for ruining white makeup.
+      - The last time I stayed outside without my umbrella, mother yelled at me for
+        ruining white makeup. So I must never leave.
       - 
       - 
       - 
@@ -1572,8 +1984,8 @@ MonoBehaviour:
       Languages:
       - 
       - 
-      - "But ultimately, my pale vampire skin just can\u2019t handle any direct sunlight.
-        That is why I live where I live."
+      - "Also, my pale vampire skin just can\u2019t handle any direct sunlight. That
+        is why I live where I live."
       - 
       - 
       - 
@@ -1801,7 +2213,7 @@ MonoBehaviour:
       - 
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Nurse/intro
+    - Term: Nurse/intro/1
       TermType: 0
       Description: 
       Languages:
@@ -1819,7 +2231,7 @@ MonoBehaviour:
       - 
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Nurse/response1
+    - Term: Nurse/response1/1
       TermType: 0
       Description: 
       Languages:
@@ -1837,7 +2249,7 @@ MonoBehaviour:
       - response6
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Nurse/response1/v
+    - Term: Nurse/response1/v/1
       TermType: 0
       Description: 
       Languages:
@@ -1855,7 +2267,7 @@ MonoBehaviour:
       - response6
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Nurse/response2
+    - Term: Nurse/response2/1
       TermType: 0
       Description: 
       Languages:
@@ -1873,7 +2285,7 @@ MonoBehaviour:
       - response6
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Nurse/response2/v
+    - Term: Nurse/response2/v/1
       TermType: 0
       Description: 
       Languages:
@@ -1891,7 +2303,7 @@ MonoBehaviour:
       - response6
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Nurse/response3
+    - Term: Nurse/response3/1
       TermType: 0
       Description: 
       Languages:
@@ -1909,7 +2321,7 @@ MonoBehaviour:
       - response6
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Nurse/response4
+    - Term: Nurse/response4/1
       TermType: 0
       Description: 
       Languages:
@@ -1927,7 +2339,7 @@ MonoBehaviour:
       - 
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Nurse/response4/v
+    - Term: Nurse/response4/v/1
       TermType: 0
       Description: 
       Languages:
@@ -1945,7 +2357,7 @@ MonoBehaviour:
       - 
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Nurse/response5
+    - Term: Nurse/response5/1
       TermType: 0
       Description: 
       Languages:
@@ -1963,7 +2375,7 @@ MonoBehaviour:
       - 
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Nurse/response5/v
+    - Term: Nurse/response5/v/1
       TermType: 0
       Description: 
       Languages:
@@ -1980,7 +2392,7 @@ MonoBehaviour:
       - 
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Nurse/response6
+    - Term: Nurse/response6/1
       TermType: 0
       Description: 
       Languages:
@@ -1997,7 +2409,7 @@ MonoBehaviour:
       - 
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Nurse/invite
+    - Term: Nurse/invite/1
       TermType: 0
       Description: 
       Languages:
@@ -2012,7 +2424,7 @@ MonoBehaviour:
       - 
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Nurse/dontinvite
+    - Term: Nurse/dontinvite/1
       TermType: 0
       Description: 
       Languages:
@@ -2043,7 +2455,7 @@ MonoBehaviour:
       - 
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Nurse/intro2
+    - Term: Nurse/intro2/1
       TermType: 0
       Description: 
       Languages:
@@ -2059,7 +2471,7 @@ MonoBehaviour:
       - 
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Nurse/intro2/v
+    - Term: Nurse/intro2/v/1
       TermType: 0
       Description: 
       Languages:
@@ -2075,12 +2487,12 @@ MonoBehaviour:
       - 
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Nurse/kill
+    - Term: Nurse/kill/1
       TermType: 0
       Description: 
       Languages:
       - 
-      - 
+      - kill
       - Make sure you donate my blood to the kids!
       - 
       - 
@@ -2090,12 +2502,12 @@ MonoBehaviour:
       - 
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Nurse/kill/v
+    - Term: Nurse/kill/v/1
       TermType: 0
       Description: 
       Languages:
       - 
-      - 
+      - kill
       - AAAHHH! You were about to be mine!
       - 
       - 
@@ -2105,7 +2517,7 @@ MonoBehaviour:
       - 
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Nurse/nokill
+    - Term: Nurse/nokill/1
       TermType: 0
       Description: 
       Languages:
@@ -2120,350 +2532,13 @@ MonoBehaviour:
       - 
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Nurse/nokill/v
+    - Term: Nurse/nokill/v/1
       TermType: 0
       Description: 
       Languages:
       - 
-      - 
+      - playerkill
       - Yum, look at all these Blood Bags walking around in here.
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      Flags: 000000000000000000
-      Languages_Touch: []
-    - Term: Parents///Guest
-      TermType: 0
-      Description: 
-      Languages:
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      Flags: 000000000000000000
-      Languages_Touch: []
-    - Term: Parents/mom_name
-      TermType: 0
-      Description: 
-      Languages:
-      - 
-      - 
-      - Mom
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      Flags: 000000000000000000
-      Languages_Touch: []
-    - Term: Parents/dad_name
-      TermType: 0
-      Description: 
-      Languages:
-      - 
-      - 
-      - Dad
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      Flags: 000000000000000000
-      Languages_Touch: []
-    - Term: Parents/
-      TermType: 0
-      Description: 
-      Languages:
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      Flags: 000000000000000000
-      Languages_Touch: []
-    - Term: Parents/intro/1
-      TermType: 0
-      Description: 
-      Languages:
-      - 
-      - mom normal right
-      - Hey honey, we love your new home. I brought your favourite garlic chocolate
-        chip cookies.
-      - Thanks! You know I love them.
-      - dadIntro
-      - 
-      - 
-      - 
-      - 
-      Flags: 000000000000000000
-      Languages_Touch: []
-    - Term: Parents/intro/v/1
-      TermType: 0
-      Description: 
-      Languages:
-      - 
-      - mom normal right
-      - Hey honey, we love your new home. I brought your favourite chocolate chip
-        cookies.
-      - Thanks! You know I love them.
-      - dadIntro
-      - Thank you but you know I like them better with garlic.
-      - answer1
-      - 
-      - 
-      Flags: 000000000000000000
-      Languages_Touch: []
-    - Term: Parents/dadIntro/1
-      TermType: 0
-      Description: 
-      Languages:
-      - 
-      - dad normal left
-      - "Hi <$player>, I heard you have a party this weekend. You are planning to
-        invite us aren\u2019t you?"
-      - "Of course you\u2019re invited. I wouldn\u2019t leave my own parents out."
-      - answer4
-      - "Umm, This isn\u2019t really a party for old-timers like yourselves."
-      - answer5
-      - 
-      - 
-      Flags: 000000000000000000
-      Languages_Touch: []
-    - Term: Parents/answer1/1
-      TermType: 0
-      Description: 
-      Languages:
-      - 
-      - mom normal
-      - "Oh I\u2019m sorry, I recently developed an allergy so I couldn\u2019t add
-        it in this time."
-      - You look a little pale, and a bit younger too.
-      - answer2
-      - 
-      - 
-      - 
-      - 
-      Flags: 000000000000000000
-      Languages_Touch: []
-    - Term: Parents/answer2/1
-      TermType: 0
-      Description: 
-      Languages:
-      - 
-      - mom normal
-      - "Why, thank you honey! Well, we recently joined this amazing new health club.
-        It\u2019s done wonders for our looks. Our new Fortnite addiction doesn\u2019t
-        help our complexion though."
-      - When did you start playing Fortnite?
-      - answer3
-      - 
-      - 
-      - 
-      - 
-      Flags: 000000000000000000
-      Languages_Touch: []
-    - Term: Parents/answer3/1
-      TermType: 0
-      Description: 
-      Languages:
-      - 
-      - mom normal
-      - A while ago but nevermind that.
-      - Alright then.
-      - dadIntro
-      - 
-      - 
-      - 
-      - 
-      Flags: 000000000000000000
-      Languages_Touch: []
-    - Term: Parents/answer4/1
-      TermType: 0
-      Description: 
-      Languages:
-      - 
-      - mom normal
-      - Great, we will see you there!
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      Flags: 000000000000000000
-      Languages_Touch: []
-    - Term: Parents/answer4/v/1
-      TermType: 0
-      Description: 
-      Languages:
-      - 
-      - dad normal
-      - Great, we hope to see some young blood there.
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      Flags: 000000000000000000
-      Languages_Touch: []
-    - Term: Parents/answer5/1
-      TermType: 0
-      Description: 
-      Languages:
-      - 
-      - both normal
-      - "That\u2019s a little we aren\u2019t as young as we used to be. Well, you
-        have fun now."
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      Flags: 000000000000000000
-      Languages_Touch: []
-    - Term: Parents/answer5/v/1
-      TermType: 0
-      Description: 
-      Languages:
-      - 
-      - both normal
-      - "Are you sure? Until recently we\u2019ve felt younger than ever."
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      Flags: 000000000000000000
-      Languages_Touch: []
-    - Term: Parents///Day3
-      TermType: 0
-      Description: 
-      Languages:
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      Flags: 000000000000000000
-      Languages_Touch: []
-    - Term: Parents/day3intro/1
-      TermType: 0
-      Description: 
-      Languages:
-      - 
-      - mom normal
-      - Hello honey, thank you so much for inviting us.
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      Flags: 000000000000000000
-      Languages_Touch: []
-    - Term: Parents/day3intro/2
-      TermType: 0
-      Description: 
-      Languages:
-      - 
-      - dad normal
-      - "I can\u2019t wait to get this party started!"
-      - "\u2620\uFE0FI\u2019ve found you out, you were vampires all along!"
-      - kill
-      - Come right in mom and dad.
-      - nokill
-      - 
-      - 
-      Flags: 000000000000000000
-      Languages_Touch: []
-    - Term: Parents/kill/v/1
-      TermType: 0
-      Description: 
-      Languages:
-      - 
-      - both normal
-      - AAH! How could you stab your own parents?
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      Flags: 000000000000000000
-      Languages_Touch: []
-    - Term: Parents/kill/1
-      TermType: 0
-      Description: 
-      Languages:
-      - 
-      - mom normal
-      - "How could you <$player>! I\u2019m your mother!"
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      Flags: 000000000000000000
-      Languages_Touch: []
-    - Term: Parents/kill/2
-      TermType: 0
-      Description: 
-      Languages:
-      - 
-      - dad normal
-      - "<$player>! I can\u2019t believe you\u2019ve done this!"
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      Flags: 000000000000000000
-      Languages_Touch: []
-    - Term: Parents/nokill/1
-      TermType: 0
-      Description: 
-      Languages:
-      - 
-      - both normal
-      - "Don\u2019t mind if we do. This party looks great."
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      Flags: 000000000000000000
-      Languages_Touch: []
-    - Term: Parents/nokill/v/1
-      TermType: 0
-      Description: 
-      Languages:
-      - 
-      - both normal
-      - "Don\u2019t mind if we do. We could use some fresh blood."
       - 
       - 
       - 
@@ -2517,12 +2592,12 @@ MonoBehaviour:
       - 
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Lucy/intro
+    - Term: Lucy/intro/1
       TermType: 0
       Description: 
       Languages:
       - 
-      - 
+      - lucy normal offscreenright center
       - "Hello mister, wanna buy some cookies? They\u2019re special Halloween ones
         with a bloody red cream in the middle. Our new vampire overlords love them."
       - "Sure, I\u2019d love some."
@@ -2533,12 +2608,12 @@ MonoBehaviour:
       - explain
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Lucy/intro/v
+    - Term: Lucy/intro/v/1
       TermType: 0
       Description: 
       Languages:
       - 
-      - 
+      - lucy normal offscreenright center
       - "Hello mister, wanna buy some cookies? They\u2019re special Halloween ones
         with a bloody red cream in the middle. *drools*"
       - "Sure, I\u2019d love some."
@@ -2549,7 +2624,7 @@ MonoBehaviour:
       - explain
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Lucy/acceptCookies
+    - Term: Lucy/acceptCookies/1
       TermType: 0
       Description: 
       Languages:
@@ -2565,7 +2640,7 @@ MonoBehaviour:
       - 
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Lucy/declineCookies
+    - Term: Lucy/declineCookies/1
       TermType: 0
       Description: 
       Languages:
@@ -2582,7 +2657,7 @@ MonoBehaviour:
       - 
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Lucy/explain
+    - Term: Lucy/explain/1
       TermType: 0
       Description: 
       Languages:
@@ -2598,7 +2673,7 @@ MonoBehaviour:
       - 
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Lucy/explain/v
+    - Term: Lucy/explain/v/1
       TermType: 0
       Description: 
       Languages:
@@ -2614,7 +2689,7 @@ MonoBehaviour:
       - 
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Lucy/end1
+    - Term: Lucy/end1/1
       TermType: 0
       Description: 
       Languages:
@@ -2629,7 +2704,7 @@ MonoBehaviour:
       - 
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Lucy/end2
+    - Term: Lucy/end2/1
       TermType: 0
       Description: 
       Languages:
@@ -2644,7 +2719,7 @@ MonoBehaviour:
       - 
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Lucy/end3
+    - Term: Lucy/end3/1
       TermType: 0
       Description: 
       Languages:
@@ -2674,7 +2749,7 @@ MonoBehaviour:
       - 
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Lucy/day3intro
+    - Term: Lucy/day3intro/1
       TermType: 0
       Description: 
       Languages:
@@ -2691,7 +2766,7 @@ MonoBehaviour:
       - 
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Lucy/day3intro/v
+    - Term: Lucy/day3intro/v/1
       TermType: 0
       Description: 
       Languages:
@@ -2708,7 +2783,7 @@ MonoBehaviour:
       - 
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Lucy/kill1
+    - Term: Lucy/kill1/1
       TermType: 0
       Description: 
       Languages:
@@ -2723,7 +2798,7 @@ MonoBehaviour:
       - 
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Lucy/kill2
+    - Term: Lucy/kill2/1
       TermType: 0
       Description: 
       Languages:
@@ -2738,7 +2813,7 @@ MonoBehaviour:
       - 
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Lucy/nokill
+    - Term: Lucy/nokill/1
       TermType: 0
       Description: 
       Languages:
@@ -2753,12 +2828,12 @@ MonoBehaviour:
       - 
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Lucy/nokill/v
+    - Term: Lucy/nokill/v/1
       TermType: 0
       Description: 
       Languages:
       - 
-      - lucy_in_the_house=1
+      - playerkill
       - My overlords will be pleased with your blood offerings.
       - 
       - 
@@ -3096,8 +3171,8 @@ MonoBehaviour:
       Languages:
       - 
       - Burt offscreenbottom center normal
-      - 'Turns out vampires LIKE garlic and does not in fact cause any of the previously
-        mentioned symptoms. '
+      - 'Breaking news!<nl>Turns out vampires <i>LIKE</i> garlic, and it does not,
+        in fact, cause any of the previously mentioned symptoms. '
       - 
       - 
       - 
@@ -3112,7 +3187,7 @@ MonoBehaviour:
       Languages:
       - 
       - 
-      - 'The original article was recently confirmed to be written by a vampire solely
+      - 'The original article was recently confirmed to be written by a vampire, solely
         so he could keep working in a garlic-bread factory. '
       - 
       - 
@@ -3128,7 +3203,8 @@ MonoBehaviour:
       Languages:
       - 
       - 
-      - Just goes to show you nobody can be trusted these days, not even me.
+      - Just goes to show you that nobody can be trusted these days...<wi><nl>not
+        even me.
       - 
       - 
       - 
@@ -3143,8 +3219,8 @@ MonoBehaviour:
       Languages:
       - 
       - 
-      - Dracula has indicated that he will continue to fight for the rights of vampire
-        kind, as he believes they are the next evolutionary step of mankind.
+      - Dracula has indicated that he will continue to fight for vampire equality,
+        as he believes they are the next evolutionary step of mankind.
       - 
       - 
       - 
@@ -3159,8 +3235,8 @@ MonoBehaviour:
       Languages:
       - 
       - 
-      - Vampires surveyed indicates that 67% are happier than the average human, possibly
-        due to the abundance of blood in the world.
+      - A survey of vampires indicates that 67% are happier than the average human,
+        possibly due to an abundance of blood in the world.
       - 
       - 
       - 
@@ -3174,8 +3250,23 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - fade
-      - ' Be extra wary of inviting guests into your home for the foreseeable future.'
+      - 
+      - Be extra wary of inviting guests into your home for the foreseeable future.
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Burt/day2/7
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - Burt normal hide offscreenbottom
+      - 
       - 
       - 
       - 
@@ -3190,7 +3281,7 @@ MonoBehaviour:
       Languages:
       - 
       - Burt offscreenbottom center normal
-      - This just in! The Federal Government has enacted total vigilante law!
+      - This just in!<nl>The Federal Government has enacted total marshal law!
       - 
       - 
       - 
@@ -3206,7 +3297,7 @@ MonoBehaviour:
       - 
       - 
       - Any person trying to gain access into your home can now be met with lethal
-        force if you so choose.
+        force, if you so choose.
       - 
       - 
       - 
@@ -3221,7 +3312,7 @@ MonoBehaviour:
       Languages:
       - 
       - 
-      - So if you have any wooden steaks sitting around, make sure you have them by
+      - So if you have any wooden steaks sitting around, make sure to keep them by
         your door.
       - 
       - 
@@ -3238,7 +3329,7 @@ MonoBehaviour:
       - 
       - 
       - In other news <$player>'s party is sure to be a hit and totally worth the
-        chance of death upon trying to enter another persons home.
+        chance of death for invited guests.
       - 
       - 
       - 
@@ -3253,8 +3344,39 @@ MonoBehaviour:
       Languages:
       - 
       - 
-      - Make sure you try extra hard not to look like a vampire when trying to get
-        in.
+      - If planning to attend, make sure to try <i>extra</i> hard not to look like
+        a vampire when trying to get in.
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Burt/day3/6
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - Stay tuned for our new segment "Your Body, Your Blood", with Dr. Acula.<nl>When
+        we come back.
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Burt/day3/7
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - Burt offscreenbottom center normal
+      - 
       - 
       - 
       - 
@@ -3313,7 +3435,7 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - 
+      - paul leftleft normal
       - Hello Neighbour!
       - 
       - 
@@ -3360,7 +3482,7 @@ MonoBehaviour:
       Languages:
       - 
       - 
-      - It was <s=120>FAST<s><s=1>,</s> and FLYING.
+      - It was <s=120>FAST<s><s=1>,</s> and <s=30>FLYING</s>.
       - 
       - 
       - 
@@ -3498,7 +3620,7 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - invite
+      - invite hide
       - "WHOA Yes! Maybe I\u2019ll come in riding a aero-plane on Friday."
       - 
       - 
@@ -3513,7 +3635,7 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - 
+      - hide
       - "WHOA! I wasn\u2019t expecting a no. Oh well I'll just go back to mowing my
         lawn."
       - 
@@ -3544,7 +3666,7 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - 
+      - paul leftleft normal
       - "Holy cow sweet party you got going on here. I hope I wasn\u2019t too late.
         I was busy trying to find a aero-plane to fly in on."
       - "\u2620\uFE0F Die daemon!"
@@ -3560,7 +3682,7 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - kill
+      - kill hide
       - Wh..what was that for?
       - 
       - 
@@ -3575,7 +3697,7 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - 
+      - hide
       - To the punch bowl, where all the cool aero-plane kids hang out.
       - 
       - 
@@ -3606,7 +3728,7 @@ MonoBehaviour:
       Languages:
       - 
       - 
-      - Buffy, Renown Vampire Slayer
+      - Buffy, Vampire Slayer
       - 
       - 
       - 
@@ -3635,14 +3757,14 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - 
+      - buffy normal offscreenleft center
       - "Hey there <$player>, I just wanted to come over and introduce myself. My
         name is Buffy, and I\u2019m a world famous vampire slayer."
-      - A) Wow! A vampire slayer?! You must have so many interesting stories
+      - Wow! A vampire slayer?! You must have so many interesting stories
       - introa
-      - "B) A vampire slayer? Isn\u2019t that just in T.V.?"
+      - A vampire slayer? Arent you just a T.V. character?
       - introb
-      - C) I detest violence and detest your way of life.
+      - I detest violence and detest your way of life.
       - introc
       Flags: 000000000000000000
       Languages_Touch: []
@@ -3651,106 +3773,121 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - buff_vamp=1
+      - buff_vamp=1 buffy normal offscreenleft center
       - "Hey there <$player>, I just wanted to come over and introduce myself. My
         name is Buffy, and I\u2019m a world famous vampire slayer."
-      - A) Wow! A vampire slayer?! You must have so many interesting stories
+      - Wow! A vampire slayer?! You must have so many interesting stories
       - introa
-      - "B) A vampire slayer? Isn\u2019t that just in T.V.?"
+      - A vampire slayer? Arent you just a T.V. character?
       - introb
-      - C) I detest violence and detest your way of life.
+      - I detest violence and detest your way of life.
       - introc
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Buffy/introa
+    - Term: Buffy/introa/1
       TermType: 0
       Description: 
       Languages:
       - 
       - 
-      - "Yes it is a very interesting life, filled with many stories that would surely
-        impress at a party. Speaking of which, is it true that you\u2019re hosting
+      - "Yes, it is a very interesting life, filled with many stories that would surely
+        impress at a party.<wc>Speaking of which, is it true that you\u2019re hosting
         one of your world famous parties this Friday?"
       - "Sure Buffy, I\u2019ll bet lots of people will be glad to see you!"
       - invite
       - "I don\u2019t think having someone who kills for a living at a party  would
         fit in very well."
-      - don't invite
+      - noinvite
       - 
       - 
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Buffy/introb
+    - Term: Buffy/introb/1
       TermType: 0
       Description: 
       Languages:
       - 
       - 
-      - "Yea, all T.V. is real. The lizard people that rule over us just use it as
+      - "Yeah, all T.V. is real. The lizard people that rule over us just use it as
         a means to keep the population calm about the terrifying things that happen
         on this planet. I\u2019d love to tell you more about it, perhaps at your party?"
       - Sure, I bet there will be lots of fans waiting for you.
       - invite
-      - How do I know you arn't one of those lizzard people yourself Buffy?
-      - don't invite
+      - How do I know you aren't one of those lizard people yourself, Buffy?
+      - noinvite
       - 
       - 
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Buffy/introc
+    - Term: Buffy/introc/1
       TermType: 0
       Description: 
       Languages:
       - 
       - 
-      - "You sound awful sympathetic to those vampires, how can I trust that this
+      - "You sound awfully sympathetic to those vampires, how can I trust that this
         party won\u2019t just be a feeding grounds for them? Would you mind if I dropped
         by this party to make sure there isn\u2019t any funny business?"
-      - Sure come I'm sure the your fans will love it.
+      - Sure, come. I bet your fans will love it.
       - invite
-      - I don't know trust is a two way street buffy.
-      - don't invite
+      - I don't know... Trust is a two way street, Buffy.
+      - noinvite
       - 
       - 
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Buffy/invite
+    - Term: Buffy/invite/1
       TermType: 0
       Description: 
       Languages:
       - 
       - invite
-      - Alright, see you there partner.
+      - Alright, see you there partner.<wi>
       - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      Flags: 000000000000000000
-      Languages_Touch: []
-    - Term: Buffy/invite/v
-      TermType: 0
-      Description: 
-      Languages:
-      - 
-      - invite
-      - I'll be looking forward to seeing <i>all</i> my fans Friday.
-      - 
-      - 
+      - exit
       - 
       - 
       - 
       - 
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Buffy/noinvite
+    - Term: Buffy/invite/v/1
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - invite
+      - I'll be looking forward to seeing <i>all</i> my fans Friday.<wi>
+      - 
+      - exit
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Buffy/noinvite/1
       TermType: 0
       Description: 
       Languages:
       - 
       - 
-      - Well, have it your way then.
+      - Well, have it your way then.<wi>
+      - 
+      - exit
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Buffy/exit/1
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - buffy hide offscreenright
+      - 
       - 
       - 
       - 
@@ -3821,7 +3958,7 @@ MonoBehaviour:
       - 
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Buffy/kill
+    - Term: Buffy/kill/1
       TermType: 0
       Description: 
       Languages:
@@ -3836,7 +3973,7 @@ MonoBehaviour:
       - 
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Buffy/kill/v
+    - Term: Buffy/kill/v/1
       TermType: 0
       Description: 
       Languages:
@@ -3851,7 +3988,7 @@ MonoBehaviour:
       - 
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Buffy/nokill
+    - Term: Buffy/nokill/1
       TermType: 0
       Description: 
       Languages:
@@ -3866,12 +4003,12 @@ MonoBehaviour:
       - 
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Buffy/nokill/v
+    - Term: Buffy/nokill/v/1
       TermType: 0
       Description: 
       Languages:
       - 
-      - 
+      - playerkill
       - Well, lets dig into those Fans now!
       - 
       - 
@@ -4102,7 +4239,7 @@ MonoBehaviour:
       - 
       - 
       - I suddenly have this unbearable urge to come into your House...<wi><i><b>Right
-        now.</b></i><wi><size=50%>Also to massage your neck with my teeth.</size>
+        now.</b></i><wi><nl><size=75%>Also to massage your neck with my teeth.</size>
       - 
       - 
       - 
@@ -4430,7 +4567,7 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - 
+      - Pickle normal offscreenbottom center
       - Wait what ARE you eating? Is that a pickle hotdog? Get that shit out of my
         face right now.
       - 
@@ -4447,8 +4584,8 @@ MonoBehaviour:
       Languages:
       - 
       - 
-      - "You need a proper meal or just go order a fucking pizza on delivery for pete\u2019s
-        sake!"
+      - "Just go order a fucking pizza on delivery for pete\u2019s sake if your so
+        busy!"
       - 
       - 
       - 
@@ -4462,34 +4599,34 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - 
+      - Pickle normal hide offscreenbottom
       - "So, I know we usually do seafood Hors d'oeuvres every year just before the
         dinner but I think we should play it safe and not do that anymore. I can\u2019t
         afford to replace another city sewer system."
       - "We don\u2019t talk about <i>\u2018the incident\u2019</i> anymore"
-      - day1end/2
+      - day1end
       - "Don't\u2019 remind me"
-      - day1end/3
+      - day1end_2
       - 
       - 
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Ramsy/day1end/2
+    - Term: Ramsy/day1end/1
       TermType: 0
       Description: 
       Languages:
       - 
       - 
-      - Don't worry chap just move to another place and we'll all be fine.
+      - Don't worry chap just move to another place and we'll all be fine.<wi>
       - 
-      - 
+      - day1end_2
       - 
       - 
       - 
       - 
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Ramsy/day1end/3
+    - Term: Ramsy/day1end_2/1
       TermType: 0
       Description: 
       Languages:
@@ -4511,7 +4648,7 @@ MonoBehaviour:
       Languages:
       - 
       - ramsy_var=burger hide
-      - "Perfect, I have the world\u2019s best burger recipe. You donkey."
+      - "Perfect, I have the world\u2019s best burger recipe. You donkey.<wi>"
       - 
       - 
       - 
@@ -4526,7 +4663,7 @@ MonoBehaviour:
       Languages:
       - 
       - ramsy_var=Steak hide
-      - Excellent choice, only medium rare. You donkey.
+      - Excellent choice, only medium rare. You donkey.<wi>
       - 
       - 
       - 
@@ -4541,7 +4678,22 @@ MonoBehaviour:
       Languages:
       - 
       - ramsy_var=Garlic hide
-      - That is the stupidest thing I have ever heard. You donkey.
+      - That is the stupidest thing I have ever heard. You donkey.<wi>
+      - 
+      - exit
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Ramsy/exit/1
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - ramsy normal hide offscreenleft
+      - 
       - 
       - 
       - 
@@ -4771,8 +4923,9 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - 
-      - Lets skip the Lamb all together, and I'ma just feast on all these guests!
+      - playerkill
+      - Lets skip the Lamb all together, and I'm going to just feast on all these
+        guests!
       - 
       - 
       - 
@@ -4817,7 +4970,7 @@ MonoBehaviour:
     Google_WebServiceURL: https://script.google.com/macros/s/AKfycbyTHLOw0mSBTa6Ufd1UEzDAtNCYjd1zUlQpf_ew1A/exec
     Google_SpreadsheetKey: 1SAkO2quLFZu3g7w1gxC8mKpIjiZmL4wyQ4gYlq_1ubo
     Google_SpreadsheetName: I2Loc MyNeighbourTheVampire Localization
-    Google_LastUpdatedVersion: 1548581058826
+    Google_LastUpdatedVersion: 1548613895203
     Google_Password: vampires
     GoogleUpdateFrequency: 0
     GoogleInEditorCheckFrequency: 0

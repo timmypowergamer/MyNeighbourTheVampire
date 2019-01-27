@@ -16,6 +16,12 @@ public class UIDialogueOptions : UIPanel
 
 	public void Open(string[] links, string[] text, System.Action<string> onComplete)
 	{
+		if(!string.IsNullOrEmpty(links[0]) && string.IsNullOrEmpty(text[0]))
+		{
+			onComplete.Invoke(links[0]);
+			return;
+		}
+
 		Open("bring_in");
 		TransformUtil.DestroyChildren(_content);
 
