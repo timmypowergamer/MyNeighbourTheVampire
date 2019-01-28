@@ -1004,7 +1004,7 @@ MonoBehaviour:
       - "Great! That reminds me about your party thing\u2026 wasn\u2019t that tomorrow
         too?"
       - Yes. That's right.
-      - 
+      - party1
       - 
       - 
       - 
@@ -1017,16 +1017,16 @@ MonoBehaviour:
       Languages:
       - 
       - 
-      - If you ever want to change your mind you know where to find me.
+      - If you ever want to change your mind you know where to find me.<wi>
       - 
-      - 
+      - party1
       - 
       - 
       - 
       - 
       Flags: 000000000000000000
       Languages_Touch: []
-    - Term: Sam/party_noinvite/1
+    - Term: Sam/party_invite/1
       TermType: 0
       Description: 
       Languages:
@@ -1037,8 +1037,8 @@ MonoBehaviour:
       - party2
       - Garlic loaf?
       - party2
-      - "You weren\u2019t invited Sam go away."
-      - didntInvite
+      - 
+      - 
       Flags: 000000000000000000
       Languages_Touch: []
     - Term: Sam/party1/1
@@ -1046,14 +1046,14 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - sam_invite==1>party_noinvite
+      - sam_invite==1>party_invite
       - Well, I also wanted to know what you wanted me to bring to the party tomorrow?
       - Garlic bread?
       - party2
       - Garlic loaf?
       - party2
-      - 
-      - 
+      - "You weren\u2019t invited Sam go away."
+      - didntInvite
       Flags: 000000000000000000
       Languages_Touch: []
     - Term: Sam/party2/1
@@ -1244,7 +1244,7 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - 
+      - guest
       - Lets get this party started, pal!<wi>
       - 
       - exitleft
@@ -1724,7 +1724,7 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - mom normal invite
+      - mom invite
       - Great, we will see you there!<wi>
       - 
       - dad_invite
@@ -1739,7 +1739,7 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - dad normal invite
+      - dad invite
       - Great, we hope to see some young blood there.<wi>
       - 
       - mom_invite
@@ -1754,7 +1754,7 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - dad normal
+      - dad normal parents_invite=no
       - "That\u2019s fair... We aren\u2019t as young as we used to be.<wi><nl>Well,
         you have fun now.<wi>"
       - 
@@ -1860,7 +1860,7 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - mom normal
+      - mom normal midright
       - Hello honey, thank you so much for inviting us.
       - 
       - 
@@ -1875,9 +1875,9 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - dad normal
+      - dad normal midleft
       - "I can\u2019t wait to get this party started!"
-      - "\u2620\uFE0FI\u2019ve found you out, you were vampires all along!"
+      - "I\u2019ve found you out, you were vampires all along!"
       - kill
       - Come right in mom and dad.
       - nokill
@@ -1950,7 +1950,22 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
+      - guest
       - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: Parents/nokill/2
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - guest
       - "Don\u2019t mind if we do. This party looks great.<wi>"
       - 
       - exit
@@ -1981,7 +1996,7 @@ MonoBehaviour:
       Languages:
       - 
       - dad hide offscreenleft
-      - <x>
+      - 
       - 
       - 
       - 
@@ -2011,7 +2026,7 @@ MonoBehaviour:
       Languages:
       - 
       - mom kill hide offscreenbottom
-      - <x>
+      - 
       - 
       - 
       - 
@@ -2244,7 +2259,7 @@ MonoBehaviour:
       Languages:
       - 
       - tim invite
-      - "Thank you so much! I promise I won\u2019t be a pain in the neck!"
+      - "Thank you so much! I promise I won\u2019t be a pain in the neck!<wi>"
       - 
       - exit
       - 
@@ -2259,7 +2274,7 @@ MonoBehaviour:
       Languages:
       - 
       - 
-      - You will regret this! I swear it on my grandmothers grave!
+      - You will regret this! I swear it on my grandmothers grave!<wi>
       - 
       - exit
       - 
@@ -2322,8 +2337,8 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - 
-      - Where is the little bat's room I acutally need to use it!
+      - guest
+      - Where is the little bat's room I acutally need to use it!<wi>
       - 
       - exitleft
       - 
@@ -2734,7 +2749,7 @@ MonoBehaviour:
       Languages:
       - 
       - nurse staked kill
-      - Make sure you donate my blood to the kids!
+      - Make sure you donate my blood to the kids!<wi>
       - 
       - exitkill
       - 
@@ -2749,7 +2764,7 @@ MonoBehaviour:
       Languages:
       - 
       - nurse staked kill
-      - AAAHHH! You were about to be mine!
+      - AAAHHH! You were about to be mine!<wi>
       - 
       - exitkill
       - 
@@ -2763,8 +2778,8 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - 
-      - "Don\u2019t mind if I do."
+      - guest
+      - "Don\u2019t mind if I do.<wi>"
       - 
       - exitleft
       - 
@@ -2809,7 +2824,7 @@ MonoBehaviour:
       Languages:
       - 
       - nurse hide offscreenbottom
-      - <wi>
+      - 
       - 
       - 
       - 
@@ -3104,7 +3119,7 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - lucy_in_the_house=1 lucy hide offscreenleft
+      - lucy_in_the_house=1 lucy hide offscreenleft guest
       - "Yay, it\u2019s going to be so much fun!"
       - 
       - 
@@ -4028,7 +4043,7 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - paul hide offscreenleft
+      - paul hide offscreenleft guest
       - To the punch bowl, where all the cool aero-plane kids hang out.
       - 
       - 
@@ -4330,7 +4345,7 @@ MonoBehaviour:
       - kill
       - "I\u2019m sure that would be very useful with the correct settings! Come enjoy
         my 7 layer bean dip."
-      - 
+      - nokill
       - 
       - 
       Flags: 000000000000000000
@@ -4370,7 +4385,7 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - 
+      - guest
       - Whatever, I think this is a knokoff product anyways. Lets dig into that dip!<wi>
       - 
       - exit
@@ -5129,7 +5144,7 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - ramsy_var==burger>day3burg/1
+      - ramsy_var==burger>day3burg
       - 
       - 
       - 
@@ -5144,7 +5159,7 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - ramsy_var==Steak>day3steak/1
+      - ramsy_var==Steak>day3steak
       - 
       - 
       - 
@@ -5159,7 +5174,7 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - ramsy_var==Garlic>day3garlic/1
+      - ramsy_var==Garlic>day3garlic
       - 
       - 
       - 
@@ -5300,7 +5315,7 @@ MonoBehaviour:
       Description: 
       Languages:
       - 
-      - 
+      - guest
       - Served to perfection.<wi>
       - 
       - exitleft
@@ -5588,15 +5603,15 @@ MonoBehaviour:
       Code: 
       Flags: 0
     IgnoreDeviceLanguage: 0
-    _AllowUnloadingLanguages: 1
+    _AllowUnloadingLanguages: 0
     Google_WebServiceURL: https://script.google.com/macros/s/AKfycbyTHLOw0mSBTa6Ufd1UEzDAtNCYjd1zUlQpf_ew1A/exec
     Google_SpreadsheetKey: 1SAkO2quLFZu3g7w1gxC8mKpIjiZmL4wyQ4gYlq_1ubo
     Google_SpreadsheetName: I2Loc MyNeighbourTheVampire Localization
-    Google_LastUpdatedVersion: 1548632270238
+    Google_LastUpdatedVersion: 1548658178424
     Google_Password: vampires
-    GoogleUpdateFrequency: 0
+    GoogleUpdateFrequency: 2
     GoogleInEditorCheckFrequency: 0
-    GoogleUpdateDelay: 5
+    GoogleUpdateDelay: 0
     Assets: []
     Spreadsheet_LocalFileName: 
     Spreadsheet_LocalCSVSeparator: ','

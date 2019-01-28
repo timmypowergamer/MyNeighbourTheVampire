@@ -261,7 +261,7 @@ MonoBehaviour:
   portraits:
   - Name: normal
     Sprite: {fileID: 21300000, guid: adc499c878b22664390b948b5b21d905, type: 3}
-  - Name: buffy
+  - Name: staked
     Sprite: {fileID: 21300000, guid: efa0d271ea6be60419e9b92c50bea32a, type: 3}
   - Name: evil
     Sprite: {fileID: 21300000, guid: c1583edd3e86f404ba87f89e25d64386, type: 3}

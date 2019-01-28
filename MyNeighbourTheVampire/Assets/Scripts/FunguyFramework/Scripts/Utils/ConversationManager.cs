@@ -34,6 +34,7 @@ namespace Fungus
 			public bool Kill;
 			public bool Invite;
 			public bool PlayerKill;
+			public bool Guest;
 		}
 
 		protected Dictionary<string, Character> characters;
@@ -221,6 +222,7 @@ namespace Fungus
 				if (sayParams[i] == "kill") item.Kill = true;
 				if (sayParams[i] == "invite") item.Invite = true;
 				if (sayParams[i] == "playerkill") item.PlayerKill = true;
+				if (sayParams[i] == "guest") item.Guest = true;
 			}
 
 			// Check if there's a Hide parameter
@@ -401,6 +403,11 @@ namespace Fungus
 				{
 					CanvasManager.instance.Get<UILetterboxedDialogue>(UIPanelID.Dialogue).NextConvoID = alt;
 					yield break;
+				}
+
+				if (item.Guest)
+				{
+					GameManager.Instance.AddGuest();
 				}
 
 				if (item.Character != null)
